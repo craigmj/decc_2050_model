@@ -13,7 +13,7 @@ if `git status --porcelain | wc -l`.to_i > 0
 end
 
 Gem::Specification.new do |s|
-  s.name = "decc_2050_model"
+  s.name = "decc_2050_za_model"
   s.required_ruby_version = ">1.9.1"
   s.version = version
   s.add_dependency('ffi','>= 1.0.11')

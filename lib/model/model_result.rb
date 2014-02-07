@@ -12,18 +12,19 @@ class ModelResult < ModelUtilities
   end
   
   def calculate_pathway(code)
+    #CMJ: Choose what you want.
     Thread.exclusive do 
       reset
       @pathway = { _id: code, choices: set_choices(code) }
-      sankey_table
+      # sankey_table 
       primary_energy_tables
       electricity_tables
-      heating_choice_table
-      cost_components_table
-      map_table
+      # heating_choice_table
+      # cost_components_table
+      # map_table
       energy_imports 
       energy_diversity
-      air_quality
+      # air_quality
     end
     return pathway
   end
@@ -35,20 +36,29 @@ class ModelResult < ModelUtilities
     end
     pathway[:sankey] = s
   end
+
   
   def primary_energy_tables
-    pathway[:ghg] = table 182, 192
-    pathway[:final_energy_demand, ] = table 13, 18
-    pathway[:primary_energy_supply] = table 283, 296
+    # CMJ: These are on Intermediate Output worksheet
+    pathway[:ghg] = table 204, 214
+    # CMJ: 
+    pathway[:final_energy_demand, ] = table 13, 25
+    # CMJ
+    pathway[:primary_energy_supply] = table 305, 318
+    # CMJ - circa O175 (but we don't have this value right now)
     pathway[:ghg][:percent_reduction_from_1990] = (r("intermediate_output_bh155") * 100).round
   end
   
   def electricity_tables
     e = {}
-    e[:demand] = table 322, 326
-    e[:supply] = table 96, 111
-    e[:emissions] = table 270, 273
-    e[:capacity] = table 118, 132
+    # CMJ: 
+    e[:demand] = table 344, 348
+    # CMJ
+    e[:supply] = table 100, 116
+    # CMJ
+    e[:emissions] = table 292, 295
+    # CMJ
+    e[:capacity] = table 126, 140
     e['automatically_built'] = r("intermediate_output_bh120")
     e['peaking'] = r("intermediate_output_bh131")
     pathway['electricity'] = e
@@ -195,7 +205,8 @@ class ModelResult < ModelUtilities
   end
   
   def annual_data(sheet,row)
-    ['az','ba','bb','bc','bd','be','bf','bg','bh'].map { |c| r("#{sheet}_#{c}#{row}") }
+    ('g'..'p').to_a.map { |c| r("#{sheet}_#{c}#{row}") }
+    # ['az','ba','bb','bc','bd','be','bf','bg','bh'].map { |c| r("#{sheet}_#{c}#{row}") }
   end
   
   def sum(hash_a,hash_b)

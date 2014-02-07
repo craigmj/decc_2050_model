@@ -19,43 +19,58 @@ class ModelStructure < ModelUtilities
   end
   
   def reported_calculator_version
-    excel.control_m1
+    # CMJ: This contains the position of the version information for the calculator
+    excel.control_a1
   end
   
   def types
-    @types ||= (5..57).to_a.map { |row| excel.send("control_f#{row}") }
+    # CMJ: Map to the types
+    @types ||= (5..64).to_a.map { |row| excel.send("control_f#{row}") }
   end
   
   def names
-    @names ||= (5..57).to_a.map { |row| excel.send("control_d#{row}") }
+    # CMJ: Map to the names of each option
+    @names ||= (5..64).to_a.map { |row| excel.send("control_d#{row}") }
   end
 
   def descriptions
-    @descriptions ||= (5..57).to_a.map { |row| [r("control_h#{row}"),r("control_i#{row}"),r("control_j#{row}"),r("control_k#{row}")] }
+    # CMJ: Short descriptions
+    @descriptions ||= (5..64).to_a.map { |row| [r("control_h#{row}"),
+      r("control_i#{row}"),r("control_j#{row}"),r("control_k#{row}")] }
   end
 
   def long_descriptions
-    @long_descriptions ||=  (5..57).to_a.map  { |row| [r("control_bo#{row}"), r("control_bp#{row}"),r("control_bq#{row}"),r("control_br#{row}")] }
+    # CMJ: Long descriptions
+    @long_descriptions ||=  (5..64).to_a.map  { |row| [
+      r("control_az#{row}"), r("control_ba#{row}"),r("control_bb#{row}"),r("control_bc#{row}")] }
   end
     
   def demand_choices
-    choices[21..39]
+    # CMJ: Subset of choices that are demand
+    choices[37..64]
   end
   
   def supply_choices
-    choices[0..20]
+    # CMJ: Subset of choices that are supply
+    choices[8..35]
   end
   
   def geosequestration_choice
-    choices[40]
+    # CMJ: Single choice that is geosequestration - pure 'suck CO2 out of atmosphere'
+    # choices[40]
+    []
   end
   
   def balancing_choice
-    choices[41]
+    # CMJ: Lever for interconnections in storage
+    # choices[41]
+    []
   end
 
   def indigenous_fossil_fuel_production
-    choices[42]
+    # @TODO CMJ: All iffp - might be split in our case 
+    # choices[42]
+    []
   end
   
   def example_pathways
@@ -63,15 +78,17 @@ class ModelStructure < ModelUtilities
   end
   
   def generate_example_pathways
-    ('m'..'z').to_a.push('aa','ab').map do |column|
-      {
-        name: r("control_#{column}4"),
-        code: convert_float_to_letters((5..57).map { |row| r("control_#{column}#{row}") }).join,
-        description: wrap(r("control_#{column}58")),
-        wiki: r("control_#{column}59"),
-        cost_comparator: (c = r("control_#{column}60"); c.is_a?(Numeric) ? c : nil )
-      }
-    end
+    # CMJ: These are example pathways pre-configured. We don't have any.
+    # ('m'..'z').to_a.push('aa','ab').map do |column|
+    #   {
+    #     name: r("control_#{column}4"),
+    #     code: convert_float_to_letters((5..64).map { |row| r("control_#{column}#{row}") }).join,
+    #     description: wrap(r("control_#{column}58")),
+    #     wiki: r("control_#{column}59"),
+    #     cost_comparator: (c = r("control_#{column}60"); c.is_a?(Numeric) ? c : nil )
+    #   }
+    # end
+    []
   end
 
   # FIXME: Only wraps one line into two
