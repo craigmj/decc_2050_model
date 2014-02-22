@@ -173,14 +173,23 @@ class ModelResult < ModelUtilities
 
   def energy_diversity
     d = {}
-    total_2007 = r("intermediate_output_f296").to_f
-    total_2050 = r("intermediate_output_bh296").to_f
-    (283..295).each do |row|
+    # total_2007 = r("intermediate_output_f296").to_f
+    # total_2050 = r("intermediate_output_bh296").to_f
+    # (283..295).each do |row|
+    #   d[r("intermediate_output_d#{row}")] = { 
+    #     '2007' => "#{((r("intermediate_output_f#{row}").to_f / total_2007)*100).round}%",
+    #     '2050' => "#{((r("intermediate_output_bh#{row}").to_f / total_2050)*100).round}%"
+    #   }
+    # end
+    total_2007 = r("intermediate_output_g318").to_f
+    total_2050 = r("intermediate_output_p318").to_f
+    (305..317).each do |row|
       d[r("intermediate_output_d#{row}")] = { 
-        '2007' => "#{((r("intermediate_output_f#{row}").to_f / total_2007)*100).round}%",
-        '2050' => "#{((r("intermediate_output_bh#{row}").to_f / total_2050)*100).round}%"
+        '2007' => "#{((r("intermediate_output_g#{row}").to_f / total_2007)*100).round}%",
+        '2050' => "#{((r("intermediate_output_p#{row}").to_f / total_2050)*100).round}%"
       }
     end
+
     pathway['diversity'] = d
   end
 

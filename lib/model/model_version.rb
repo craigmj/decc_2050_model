@@ -1,1 +1,2 @@
-def Model.last_modified_date() @last_modified_date ||= Time.utc(*[4, 46, 12, 12, 2, 2014, 3, 43, false, "GMT"]); end
+def Model.last_modified_date() @last_modified_date ||= Time.utc(*[47, 37, 19, 21, 2, 2014, 5, 52, false, "SAST"]); end
+def Model.version() "Feb 21 0.0.1" end

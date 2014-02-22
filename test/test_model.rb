@@ -275,6 +275,48 @@ class TestModel < Minitest::Unit::TestCase
   def test_control_i57; assert_equal("Lever Leve 2", worksheet.control_i57); end
   def test_control_j57; assert_equal("Lever Level 3", worksheet.control_j57); end
   def test_control_k57; assert_equal("Lever Level 4", worksheet.control_k57); end
+  def test_control_d58; assert_equal("Energy efficiency of plant", worksheet.control_d58); end
+  def test_control_f58; assert_in_epsilon(4.0, worksheet.control_f58, 0.002); end
+  def test_control_h58; assert_equal("Lever Level 1", worksheet.control_h58); end
+  def test_control_i58; assert_equal("Lever Leve 2", worksheet.control_i58); end
+  def test_control_j58; assert_equal("Lever Level 3", worksheet.control_j58); end
+  def test_control_k58; assert_equal("Lever Level 4", worksheet.control_k58); end
+  def test_control_d59; assert_equal("Industrial boiler/furnace fuel migration to gas and/or waste", worksheet.control_d59); end
+  def test_control_f59; assert_in_epsilon(4.0, worksheet.control_f59, 0.002); end
+  def test_control_h59; assert_equal("Lever Level 1", worksheet.control_h59); end
+  def test_control_i59; assert_equal("Lever Leve 2", worksheet.control_i59); end
+  def test_control_j59; assert_equal("Lever Level 3", worksheet.control_j59); end
+  def test_control_k59; assert_equal("Lever Level 4", worksheet.control_k59); end
+  def test_control_d60; assert_equal("CHP share of demand above base year", worksheet.control_d60); end
+  def test_control_f60; assert_in_epsilon(4.0, worksheet.control_f60, 0.002); end
+  def test_control_h60; assert_equal("Lever Level 1", worksheet.control_h60); end
+  def test_control_i60; assert_equal("Lever Leve 2", worksheet.control_i60); end
+  def test_control_j60; assert_equal("Lever Level 3", worksheet.control_j60); end
+  def test_control_k60; assert_equal("Lever Level 4", worksheet.control_k60); end
+  def test_control_d61; assert_equal("Public Services", worksheet.control_d61); end
+  def test_control_f61; assert_in_epsilon(4.0, worksheet.control_f61, 0.002); end
+  def test_control_h61; assert_equal("Lever Level 1", worksheet.control_h61); end
+  def test_control_i61; assert_equal("Lever Leve 2", worksheet.control_i61); end
+  def test_control_j61; assert_equal("Lever Level 3", worksheet.control_j61); end
+  def test_control_k61; assert_equal("Lever Level 4", worksheet.control_k61); end
+  def test_control_d62; assert_equal("Existing Building Retrofits for HVAC and Lights", worksheet.control_d62); end
+  def test_control_f62; assert_in_epsilon(4.0, worksheet.control_f62, 0.002); end
+  def test_control_h62; assert_equal("Lever Level 1", worksheet.control_h62); end
+  def test_control_i62; assert_equal("Lever Leve 2", worksheet.control_i62); end
+  def test_control_j62; assert_equal("Lever Level 3", worksheet.control_j62); end
+  def test_control_k62; assert_equal("Lever Level 4", worksheet.control_k62); end
+  def test_control_d63; assert_equal("Existing Building tech shares mix", worksheet.control_d63); end
+  def test_control_f63; assert_equal("D", worksheet.control_f63); end
+  def test_control_h63; assert_equal("Lever Level 1", worksheet.control_h63); end
+  def test_control_i63; assert_equal("Lever Leve 2", worksheet.control_i63); end
+  def test_control_j63; assert_equal("Lever Level 3", worksheet.control_j63); end
+  def test_control_k63; assert_equal("Lever Level 4", worksheet.control_k63); end
+  def test_control_d64; assert_equal("New Building code Strength", worksheet.control_d64); end
+  def test_control_f64; assert_equal("D", worksheet.control_f64); end
+  def test_control_h64; assert_equal("Lever Level 1", worksheet.control_h64); end
+  def test_control_i64; assert_equal("Lever Leve 2", worksheet.control_i64); end
+  def test_control_j64; assert_equal("Lever Level 3", worksheet.control_j64); end
+  def test_control_k64; assert_equal("Lever Level 4", worksheet.control_k64); end
   def test_control_a1; assert_equal("Version 0.46.20140130fa", worksheet.control_a1); end
   def test_intermediate_output_b2; assert_equal("Energy source / use charts", worksheet.intermediate_output_b2); end
   def test_intermediate_output_g3; assert_equal("2050 Calculator calculations", worksheet.intermediate_output_g3); end

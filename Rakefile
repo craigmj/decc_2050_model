@@ -22,7 +22,8 @@ file 'ext/model.c' do
     # f#{r} are the LIMITS
     # h..k#{r} are the trajectory descriptions
     # az..bc#{r} are the longer trajectory descriptions used in the Story 
-    "Control" => (5.upto(57).to_a.map { |r| ["d#{r}","f#{r}","h#{r}","i#{r}","j#{r}","k#{r}",
+    "Control" => (5.upto(64).to_a.map { |r| [
+        "d#{r}","f#{r}","h#{r}","i#{r}","j#{r}","k#{r}",
         "az#{r}","ba#{r}","bb#{r}","bc#{r}"] }).flatten, 
     "Intermediate output" => :all, 
     # "CostPerCapita" => :all, 

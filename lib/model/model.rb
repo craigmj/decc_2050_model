@@ -706,6 +706,76 @@ module Model
   attach_function 'control_ba57', [], ExcelValue.by_value
   attach_function 'control_bb57', [], ExcelValue.by_value
   attach_function 'control_bc57', [], ExcelValue.by_value
+  attach_function 'control_d58', [], ExcelValue.by_value
+  attach_function 'control_f58', [], ExcelValue.by_value
+  attach_function 'control_h58', [], ExcelValue.by_value
+  attach_function 'control_i58', [], ExcelValue.by_value
+  attach_function 'control_j58', [], ExcelValue.by_value
+  attach_function 'control_k58', [], ExcelValue.by_value
+  attach_function 'control_az58', [], ExcelValue.by_value
+  attach_function 'control_ba58', [], ExcelValue.by_value
+  attach_function 'control_bb58', [], ExcelValue.by_value
+  attach_function 'control_bc58', [], ExcelValue.by_value
+  attach_function 'control_d59', [], ExcelValue.by_value
+  attach_function 'control_f59', [], ExcelValue.by_value
+  attach_function 'control_h59', [], ExcelValue.by_value
+  attach_function 'control_i59', [], ExcelValue.by_value
+  attach_function 'control_j59', [], ExcelValue.by_value
+  attach_function 'control_k59', [], ExcelValue.by_value
+  attach_function 'control_az59', [], ExcelValue.by_value
+  attach_function 'control_ba59', [], ExcelValue.by_value
+  attach_function 'control_bb59', [], ExcelValue.by_value
+  attach_function 'control_bc59', [], ExcelValue.by_value
+  attach_function 'control_d60', [], ExcelValue.by_value
+  attach_function 'control_f60', [], ExcelValue.by_value
+  attach_function 'control_h60', [], ExcelValue.by_value
+  attach_function 'control_i60', [], ExcelValue.by_value
+  attach_function 'control_j60', [], ExcelValue.by_value
+  attach_function 'control_k60', [], ExcelValue.by_value
+  attach_function 'control_az60', [], ExcelValue.by_value
+  attach_function 'control_ba60', [], ExcelValue.by_value
+  attach_function 'control_bb60', [], ExcelValue.by_value
+  attach_function 'control_bc60', [], ExcelValue.by_value
+  attach_function 'control_d61', [], ExcelValue.by_value
+  attach_function 'control_f61', [], ExcelValue.by_value
+  attach_function 'control_h61', [], ExcelValue.by_value
+  attach_function 'control_i61', [], ExcelValue.by_value
+  attach_function 'control_j61', [], ExcelValue.by_value
+  attach_function 'control_k61', [], ExcelValue.by_value
+  attach_function 'control_az61', [], ExcelValue.by_value
+  attach_function 'control_ba61', [], ExcelValue.by_value
+  attach_function 'control_bb61', [], ExcelValue.by_value
+  attach_function 'control_bc61', [], ExcelValue.by_value
+  attach_function 'control_d62', [], ExcelValue.by_value
+  attach_function 'control_f62', [], ExcelValue.by_value
+  attach_function 'control_h62', [], ExcelValue.by_value
+  attach_function 'control_i62', [], ExcelValue.by_value
+  attach_function 'control_j62', [], ExcelValue.by_value
+  attach_function 'control_k62', [], ExcelValue.by_value
+  attach_function 'control_az62', [], ExcelValue.by_value
+  attach_function 'control_ba62', [], ExcelValue.by_value
+  attach_function 'control_bb62', [], ExcelValue.by_value
+  attach_function 'control_bc62', [], ExcelValue.by_value
+  attach_function 'control_d63', [], ExcelValue.by_value
+  attach_function 'control_f63', [], ExcelValue.by_value
+  attach_function 'control_h63', [], ExcelValue.by_value
+  attach_function 'control_i63', [], ExcelValue.by_value
+  attach_function 'control_j63', [], ExcelValue.by_value
+  attach_function 'control_k63', [], ExcelValue.by_value
+  attach_function 'control_az63', [], ExcelValue.by_value
+  attach_function 'control_ba63', [], ExcelValue.by_value
+  attach_function 'control_bb63', [], ExcelValue.by_value
+  attach_function 'control_bc63', [], ExcelValue.by_value
+  attach_function 'control_d64', [], ExcelValue.by_value
+  attach_function 'control_f64', [], ExcelValue.by_value
+  attach_function 'control_h64', [], ExcelValue.by_value
+  attach_function 'control_i64', [], ExcelValue.by_value
+  attach_function 'control_j64', [], ExcelValue.by_value
+  attach_function 'control_k64', [], ExcelValue.by_value
+  attach_function 'control_az64', [], ExcelValue.by_value
+  attach_function 'control_ba64', [], ExcelValue.by_value
+  attach_function 'control_bb64', [], ExcelValue.by_value
+  attach_function 'control_bc64', [], ExcelValue.by_value
   attach_function 'control_a1', [], ExcelValue.by_value
   # end of Control
   # end of Glossary

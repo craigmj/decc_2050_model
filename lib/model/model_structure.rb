@@ -58,19 +58,19 @@ class ModelStructure < ModelUtilities
   def geosequestration_choice
     # CMJ: Single choice that is geosequestration - pure 'suck CO2 out of atmosphere'
     # choices[40]
-    []
+    choices[1]
   end
   
   def balancing_choice
     # CMJ: Lever for interconnections in storage
     # choices[41]
-    []
+    choices[2]
   end
 
   def indigenous_fossil_fuel_production
     # @TODO CMJ: All iffp - might be split in our case 
     # choices[42]
-    []
+    choices[3]
   end
   
   def example_pathways
@@ -79,16 +79,16 @@ class ModelStructure < ModelUtilities
   
   def generate_example_pathways
     # CMJ: These are example pathways pre-configured. We don't have any.
-    # ('m'..'z').to_a.push('aa','ab').map do |column|
-    #   {
-    #     name: r("control_#{column}4"),
-    #     code: convert_float_to_letters((5..64).map { |row| r("control_#{column}#{row}") }).join,
-    #     description: wrap(r("control_#{column}58")),
-    #     wiki: r("control_#{column}59"),
-    #     cost_comparator: (c = r("control_#{column}60"); c.is_a?(Numeric) ? c : nil )
-    #   }
-    # end
-    []
+    ('m'..'z').to_a.push('aa','ab').map do |column|
+      {
+        name: r("control_#{column}4"),
+        code: convert_float_to_letters((5..64).map { |row| r("control_#{column}#{row}") }).join,
+        description: wrap(r("control_#{column}58")),
+        wiki: r("control_#{column}59"),
+        cost_comparator: (c = r("control_#{column}60"); c.is_a?(Numeric) ? c : nil )
+      }
+    end
+    
   end
 
   # FIXME: Only wraps one line into two
