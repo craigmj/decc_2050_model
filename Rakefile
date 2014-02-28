@@ -14,7 +14,7 @@ file 'ext/model.c' do
 
   # CMJ: These rows should correspond to the rows in Control sheet where the 'model values' are
   # set. The e#{r} here defines the COLUMN.
-  command.cells_that_can_be_set_at_runtime = { "Control" => (5.upto(64).to_a.map { |r| "e#{r}" }) }
+  command.cells_that_can_be_set_at_runtime = { "Control" => (5.upto(46).to_a.map { |r| "e#{r}" }) }
 
   command.cells_to_keep = {
     # CMJ: The names, limits, 10 worders, long descriptions
@@ -22,7 +22,7 @@ file 'ext/model.c' do
     # f#{r} are the LIMITS
     # h..k#{r} are the trajectory descriptions
     # az..bc#{r} are the longer trajectory descriptions used in the Story 
-    "Control" => (5.upto(64).to_a.map { |r| [
+    "Control" => (5.upto(46).to_a.map { |r| [
         "d#{r}","f#{r}","h#{r}","i#{r}","j#{r}","k#{r}",
         "az#{r}","ba#{r}","bb#{r}","bc#{r}"] }).flatten, 
     "Intermediate output" => :all, 
@@ -40,7 +40,7 @@ file 'ext/model.c' do
   # Add the example pathways
   # CMJ: These are example pathways that are pre-programmed on the webapp
   # CMJ: We don't have any at the moment, so we'll just skip this entirely.
-  # rows = (4..67).to_a
+  # rows = (4..46).to_a
   # ('m'..'z').to_a.push('aa','ab').each do |column|
   #   rows.each do |row|
   #     command.cells_to_keep["Control"].push("#{column}#{row}")

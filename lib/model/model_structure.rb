@@ -25,34 +25,34 @@ class ModelStructure < ModelUtilities
   
   def types
     # CMJ: Map to the types
-    @types ||= (5..64).to_a.map { |row| excel.send("control_f#{row}") }
+    @types ||= (5..46).to_a.map { |row| excel.send("control_f#{row}") }
   end
   
   def names
     # CMJ: Map to the names of each option
-    @names ||= (5..64).to_a.map { |row| excel.send("control_d#{row}") }
+    @names ||= (5..46).to_a.map { |row| excel.send("control_d#{row}") }
   end
 
   def descriptions
     # CMJ: Short descriptions
-    @descriptions ||= (5..64).to_a.map { |row| [r("control_h#{row}"),
+    @descriptions ||= (5..46).to_a.map { |row| [r("control_h#{row}"),
       r("control_i#{row}"),r("control_j#{row}"),r("control_k#{row}")] }
   end
 
   def long_descriptions
     # CMJ: Long descriptions
-    @long_descriptions ||=  (5..64).to_a.map  { |row| [
+    @long_descriptions ||=  (5..46).to_a.map  { |row| [
       r("control_az#{row}"), r("control_ba#{row}"),r("control_bb#{row}"),r("control_bc#{row}")] }
   end
     
   def demand_choices
     # CMJ: Subset of choices that are demand
-    choices[37..64]
+    choices[29..46]
   end
   
   def supply_choices
     # CMJ: Subset of choices that are supply
-    choices[8..35]
+    choices[8..27]
   end
   
   def geosequestration_choice

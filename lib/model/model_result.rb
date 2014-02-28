@@ -39,12 +39,12 @@ class ModelResult < ModelUtilities
 
   
   def primary_energy_tables
-    # CMJ: These are on Intermediate Output worksheet
-    pathway[:ghg] = table 204, 214
+    # CMJ: These are on Intermediate Output worksheet in column D
+    pathway[:ghg] = table 174,184 # CMJ0228ok
     # CMJ: 
-    pathway[:final_energy_demand, ] = table 13, 25
+    pathway[:final_energy_demand, ] = table 13, 24 # CMJ0228ok
     # CMJ
-    pathway[:primary_energy_supply] = table 305, 318
+    pathway[:primary_energy_supply] = table 216,226 # CMJ0228ok
     # CMJ - circa O175 (but we don't have this value right now)
     pathway[:ghg][:percent_reduction_from_1990] = (r("intermediate_output_bh155") * 100).round
   end
