@@ -12,6 +12,10 @@ class ModelShim
     Model.reset
   end
 
+  def CMJTest
+    "CMJTest"
+  end
+
   def method_missing(name, *arguments)
     if arguments.size == 0
       get(name)
@@ -580,7 +584,7 @@ module Model
   attach_function 'control_bc46', [], ExcelValue.by_value
   attach_function 'control_a1', [], ExcelValue.by_value
   # end of Control
-  # end of Glossary
+  # end of Glossary  
   # end of Preferences
   attach_function 'intermediate_output_b2', [], ExcelValue.by_value
   attach_function 'intermediate_output_g3', [], ExcelValue.by_value

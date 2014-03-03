@@ -236,6 +236,7 @@ class TestModel < Minitest::Unit::TestCase
   def test_control_i46; assert_equal("A building code revision process leads to energy efficient buildings. Buildings built after 2030 are 25% more efficient", worksheet.control_i46); end
   def test_control_j46; assert_equal("A strict code revision process. Buildings built after 2030 are 35% more efficient", worksheet.control_j46); end
   def test_control_k46; assert_equal("Very strict code revision process. Buildings built after 2030 are 55% more efficient than today.", worksheet.control_k46); end
+  def test_control_a1; assert_equal("Version 0.60.20140228", worksheet.control_a1); end
   def test_intermediate_output_b2; assert_equal("Energy source / use charts", worksheet.intermediate_output_b2); end
   def test_intermediate_output_g3; assert_equal("2050 Calculator calculations", worksheet.intermediate_output_g3); end
   def test_intermediate_output_d4; assert_equal("PJ / year", worksheet.intermediate_output_d4); end

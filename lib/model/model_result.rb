@@ -16,7 +16,7 @@ class ModelResult < ModelUtilities
     Thread.exclusive do 
       reset
       @pathway = { _id: code, choices: set_choices(code) }
-      # sankey_table 
+      sankey_table 
       primary_energy_tables
       electricity_tables
       # heating_choice_table
@@ -31,20 +31,20 @@ class ModelResult < ModelUtilities
       
   def sankey_table
     s = [] 
-    (6..94).each do |row|
-      s << [r("flows_c#{row}"),r("flows_n#{row}"),r("flows_d#{row}")]
+    (6..84).each do |row|
+      s << [r("flows_c#{row}"),r("flows_p#{row}"),r("flows_d#{row}")]
     end
     pathway[:sankey] = s
   end
 
-  
   def primary_energy_tables
+    # CMJ: This seems to be working 140303
     # CMJ: These are on Intermediate Output worksheet in column D
     pathway[:ghg] = table 174,184 # CMJ0228ok
     # CMJ: 
-    pathway[:final_energy_demand, ] = table 13, 24 # CMJ0228ok
+    pathway[:final_energy_demand, ] = table 13, 23 # CMJ0228ok
     # CMJ
-    pathway[:primary_energy_supply] = table 216,226 # CMJ0228ok
+    pathway[:primary_energy_supply] = table 216,225 # CMJ0228ok
     # CMJ - circa O175 (but we don't have this value right now)
     pathway[:ghg][:percent_reduction_from_1990] = (r("intermediate_output_bh155") * 100).round
   end
@@ -52,13 +52,14 @@ class ModelResult < ModelUtilities
   def electricity_tables
     e = {}
     # CMJ: 
-    e[:demand] = table 344, 348
+    e[:demand] = table 236, 241
     # CMJ
-    e[:supply] = table 100, 116
+    e[:supply] = table 100, 114
     # CMJ
-    e[:emissions] = table 292, 295
+    e[:emissions] = table 203,206
     # CMJ
-    e[:capacity] = table 126, 140
+    e[:capacity] = table 126,139
+
     e['automatically_built'] = r("intermediate_output_bh120")
     e['peaking'] = r("intermediate_output_bh131")
     pathway['electricity'] = e
@@ -181,9 +182,9 @@ class ModelResult < ModelUtilities
     #     '2050' => "#{((r("intermediate_output_bh#{row}").to_f / total_2050)*100).round}%"
     #   }
     # end
-    total_2007 = r("intermediate_output_g318").to_f
-    total_2050 = r("intermediate_output_p318").to_f
-    (305..317).each do |row|
+    total_2007 = r("intermediate_output_g226").to_f
+    total_2050 = r("intermediate_output_p226").to_f
+    (216..225).each do |row|
       d[r("intermediate_output_d#{row}")] = { 
         '2007' => "#{((r("intermediate_output_g#{row}").to_f / total_2007)*100).round}%",
         '2050' => "#{((r("intermediate_output_p#{row}").to_f / total_2050)*100).round}%"

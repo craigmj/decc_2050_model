@@ -1,10 +1,20 @@
 begin
   # If the model has already been compiled, we can check it for its version number
   require_relative 'lib/model'
-
+  print "Testing for version\n"
+  ms = ModelStructure.instance
+  # puts ms.inspect
+  rs = ms.reported_calculator_version
+  if nil==rs
+    puts "REPORTED_CALCULATOR_VERSION IS NIL"
+  end
+  puts "RS = " + rs
   version = ModelStructure.instance.reported_calculator_version[/\d+\.\d+\.\d+/]
+  puts "Successfully created version"
+  print "Version = " + version + "\n"
 rescue LoadError => e
   # Otherwise we need to take it from the changes file
+  print "Loading from changes file\n"
   version = IO.readlines(File.join(File.dirname(__FILE__),"CHANGES")).join[/#\s*(\d+\.\d+\.\d+)\b/,1]
 end
 
@@ -13,7 +23,7 @@ if `git status --porcelain | wc -l`.to_i > 0
 end
 
 Gem::Specification.new do |s|
-  s.name = "decc_2050_za_model"
+  s.name = "decc_2050_model"
   s.required_ruby_version = ">1.9.1"
   s.version = version
   s.add_dependency('ffi','>= 1.0.11')
