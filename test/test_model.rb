@@ -2724,36 +2724,36 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_o14; assert_in_delta(0.0, (worksheet.flows_o14||0), 0.002); end
   def test_flows_p14; assert_in_delta(0.0, (worksheet.flows_p14||0), 0.002); end
   def test_flows_v14; assert_equal("Electricity grid", worksheet.flows_v14); end
-  def test_flows_w14; assert_equal(:na, worksheet.flows_w14); end
-  def test_flows_x14; assert_equal(:na, worksheet.flows_x14); end
-  def test_flows_y14; assert_equal(:na, worksheet.flows_y14); end
-  def test_flows_z14; assert_equal(:na, worksheet.flows_z14); end
-  def test_flows_aa14; assert_equal(:na, worksheet.flows_aa14); end
-  def test_flows_ab14; assert_equal(:na, worksheet.flows_ab14); end
-  def test_flows_ac14; assert_equal(:na, worksheet.flows_ac14); end
-  def test_flows_ad14; assert_equal(:na, worksheet.flows_ad14); end
-  def test_flows_ae14; assert_equal(:na, worksheet.flows_ae14); end
-  def test_flows_af14; assert_equal(:na, worksheet.flows_af14); end
-  def test_flows_ah14; assert_equal(:na, worksheet.flows_ah14); end
-  def test_flows_ai14; assert_equal(:na, worksheet.flows_ai14); end
-  def test_flows_aj14; assert_equal(:na, worksheet.flows_aj14); end
-  def test_flows_ak14; assert_equal(:na, worksheet.flows_ak14); end
-  def test_flows_al14; assert_equal(:na, worksheet.flows_al14); end
-  def test_flows_am14; assert_equal(:na, worksheet.flows_am14); end
-  def test_flows_an14; assert_equal(:na, worksheet.flows_an14); end
-  def test_flows_ao14; assert_equal(:na, worksheet.flows_ao14); end
-  def test_flows_ap14; assert_equal(:na, worksheet.flows_ap14); end
-  def test_flows_aq14; assert_equal(:na, worksheet.flows_aq14); end
-  def test_flows_as14; assert_equal(:na, worksheet.flows_as14); end
-  def test_flows_at14; assert_equal(:na, worksheet.flows_at14); end
-  def test_flows_au14; assert_equal(:na, worksheet.flows_au14); end
-  def test_flows_av14; assert_equal(:na, worksheet.flows_av14); end
-  def test_flows_aw14; assert_equal(:na, worksheet.flows_aw14); end
-  def test_flows_ax14; assert_equal(:na, worksheet.flows_ax14); end
-  def test_flows_ay14; assert_equal(:na, worksheet.flows_ay14); end
-  def test_flows_az14; assert_equal(:na, worksheet.flows_az14); end
-  def test_flows_ba14; assert_equal(:na, worksheet.flows_ba14); end
-  def test_flows_bb14; assert_equal(:na, worksheet.flows_bb14); end
+  def test_flows_w14; assert_in_epsilon(2576.108533348446, worksheet.flows_w14, 0.002); end
+  def test_flows_x14; assert_in_epsilon(3129.2934478372617, worksheet.flows_x14, 0.002); end
+  def test_flows_y14; assert_in_epsilon(3525.216821789592, worksheet.flows_y14, 0.002); end
+  def test_flows_z14; assert_in_epsilon(4079.346841097764, worksheet.flows_z14, 0.002); end
+  def test_flows_aa14; assert_in_epsilon(4729.622235463403, worksheet.flows_aa14, 0.002); end
+  def test_flows_ab14; assert_in_epsilon(5540.508932569928, worksheet.flows_ab14, 0.002); end
+  def test_flows_ac14; assert_in_epsilon(6519.156899245352, worksheet.flows_ac14, 0.002); end
+  def test_flows_ad14; assert_in_epsilon(7591.907896514, worksheet.flows_ad14, 0.002); end
+  def test_flows_ae14; assert_in_epsilon(8847.724825281428, worksheet.flows_ae14, 0.002); end
+  def test_flows_af14; assert_in_epsilon(10183.86058875923, worksheet.flows_af14, 0.002); end
+  def test_flows_ah14; assert_in_epsilon(2574.3692088986245, worksheet.flows_ah14, 0.002); end
+  def test_flows_ai14; assert_in_epsilon(3128.0310006755776, worksheet.flows_ai14, 0.002); end
+  def test_flows_aj14; assert_in_epsilon(3537.3235180576607, worksheet.flows_aj14, 0.002); end
+  def test_flows_ak14; assert_in_epsilon(4092.1316785234426, worksheet.flows_ak14, 0.002); end
+  def test_flows_al14; assert_in_epsilon(4741.657579437996, worksheet.flows_al14, 0.002); end
+  def test_flows_am14; assert_in_epsilon(5551.412833618449, worksheet.flows_am14, 0.002); end
+  def test_flows_an14; assert_in_epsilon(6528.997841229119, worksheet.flows_an14, 0.002); end
+  def test_flows_ao14; assert_in_epsilon(7601.7449194775045, worksheet.flows_ao14, 0.002); end
+  def test_flows_ap14; assert_in_epsilon(8855.678317213265, worksheet.flows_ap14, 0.002); end
+  def test_flows_aq14; assert_in_epsilon(10191.809539112923, worksheet.flows_aq14, 0.002); end
+  def test_flows_as14; assert_in_epsilon(1.7393244498216518, worksheet.flows_as14, 0.002); end
+  def test_flows_at14; assert_in_epsilon(1.262447161684122, worksheet.flows_at14, 0.002); end
+  def test_flows_au14; assert_in_epsilon(-12.106696268068845, worksheet.flows_au14, 0.002); end
+  def test_flows_av14; assert_in_epsilon(-12.784837425678688, worksheet.flows_av14, 0.002); end
+  def test_flows_aw14; assert_in_epsilon(-12.035343974593161, worksheet.flows_aw14, 0.002); end
+  def test_flows_ax14; assert_in_epsilon(-10.90390104852122, worksheet.flows_ax14, 0.002); end
+  def test_flows_ay14; assert_in_epsilon(-9.840941983767152, worksheet.flows_ay14, 0.002); end
+  def test_flows_az14; assert_in_epsilon(-9.83702296350475, worksheet.flows_az14, 0.002); end
+  def test_flows_ba14; assert_in_epsilon(-7.953491931837561, worksheet.flows_ba14, 0.002); end
+  def test_flows_bb14; assert_in_epsilon(-7.948950353693363, worksheet.flows_bb14, 0.002); end
   def test_flows_c15; assert_equal("Biofuel imports", worksheet.flows_c15); end
   def test_flows_d15; assert_equal("BIO.SUP", worksheet.flows_d15); end
   def test_flows_e15; assert_equal("Liquid", worksheet.flows_e15); end
@@ -2814,16 +2814,16 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_o16; assert_in_epsilon(722.801431336528, worksheet.flows_o16, 0.002); end
   def test_flows_p16; assert_in_epsilon(722.801431336528, worksheet.flows_p16, 0.002); end
   def test_flows_v16; assert_equal("Gas", worksheet.flows_v16); end
-  def test_flows_w16; assert_equal(:na, worksheet.flows_w16); end
-  def test_flows_x16; assert_equal(:na, worksheet.flows_x16); end
-  def test_flows_y16; assert_equal(:na, worksheet.flows_y16); end
-  def test_flows_z16; assert_equal(:na, worksheet.flows_z16); end
-  def test_flows_aa16; assert_equal(:na, worksheet.flows_aa16); end
-  def test_flows_ab16; assert_equal(:na, worksheet.flows_ab16); end
-  def test_flows_ac16; assert_equal(:na, worksheet.flows_ac16); end
-  def test_flows_ad16; assert_equal(:na, worksheet.flows_ad16); end
-  def test_flows_ae16; assert_equal(:na, worksheet.flows_ae16); end
-  def test_flows_af16; assert_equal(:na, worksheet.flows_af16); end
+  def test_flows_w16; assert_in_epsilon(191.9899115133531, worksheet.flows_w16, 0.002); end
+  def test_flows_x16; assert_in_epsilon(210.20755464144167, worksheet.flows_x16, 0.002); end
+  def test_flows_y16; assert_in_epsilon(238.95084491197363, worksheet.flows_y16, 0.002); end
+  def test_flows_z16; assert_in_epsilon(264.93173902012256, worksheet.flows_z16, 0.002); end
+  def test_flows_aa16; assert_in_epsilon(298.84629360104316, worksheet.flows_aa16, 0.002); end
+  def test_flows_ab16; assert_in_epsilon(332.3896330734211, worksheet.flows_ab16, 0.002); end
+  def test_flows_ac16; assert_in_epsilon(322.2499630926503, worksheet.flows_ac16, 0.002); end
+  def test_flows_ad16; assert_in_epsilon(375.0733083736913, worksheet.flows_ad16, 0.002); end
+  def test_flows_ae16; assert_in_epsilon(432.2016742513369, worksheet.flows_ae16, 0.002); end
+  def test_flows_af16; assert_in_epsilon(477.9239575641581, worksheet.flows_af16, 0.002); end
   def test_flows_ah16; assert_in_epsilon(188.35320749834085, worksheet.flows_ah16, 0.002); end
   def test_flows_ai16; assert_in_epsilon(206.3758086428603, worksheet.flows_ai16, 0.002); end
   def test_flows_aj16; assert_in_epsilon(228.70584631401988, worksheet.flows_aj16, 0.002); end
@@ -2834,16 +2834,16 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_ao16; assert_in_epsilon(344.43557443364165, worksheet.flows_ao16, 0.002); end
   def test_flows_ap16; assert_in_epsilon(395.7234951984109, worksheet.flows_ap16, 0.002); end
   def test_flows_aq16; assert_in_epsilon(440.82223310770314, worksheet.flows_aq16, 0.002); end
-  def test_flows_as16; assert_equal(:na, worksheet.flows_as16); end
-  def test_flows_at16; assert_equal(:na, worksheet.flows_at16); end
-  def test_flows_au16; assert_equal(:na, worksheet.flows_au16); end
-  def test_flows_av16; assert_equal(:na, worksheet.flows_av16); end
-  def test_flows_aw16; assert_equal(:na, worksheet.flows_aw16); end
-  def test_flows_ax16; assert_equal(:na, worksheet.flows_ax16); end
-  def test_flows_ay16; assert_equal(:na, worksheet.flows_ay16); end
-  def test_flows_az16; assert_equal(:na, worksheet.flows_az16); end
-  def test_flows_ba16; assert_equal(:na, worksheet.flows_ba16); end
-  def test_flows_bb16; assert_equal(:na, worksheet.flows_bb16); end
+  def test_flows_as16; assert_in_epsilon(3.636704015012242, worksheet.flows_as16, 0.002); end
+  def test_flows_at16; assert_in_epsilon(3.8317459985813684, worksheet.flows_at16, 0.002); end
+  def test_flows_au16; assert_in_epsilon(10.244998597953753, worksheet.flows_au16, 0.002); end
+  def test_flows_av16; assert_in_epsilon(14.62803064676686, worksheet.flows_av16, 0.002); end
+  def test_flows_aw16; assert_in_epsilon(17.859772462500644, worksheet.flows_aw16, 0.002); end
+  def test_flows_ax16; assert_in_epsilon(21.63581536910658, worksheet.flows_ax16, 0.002); end
+  def test_flows_ay16; assert_in_epsilon(26.048247844253922, worksheet.flows_ay16, 0.002); end
+  def test_flows_az16; assert_in_epsilon(30.637733940049657, worksheet.flows_az16, 0.002); end
+  def test_flows_ba16; assert_in_epsilon(36.47817905292601, worksheet.flows_ba16, 0.002); end
+  def test_flows_bb16; assert_in_epsilon(37.101724456454974, worksheet.flows_bb16, 0.002); end
   def test_flows_c17; assert_equal("Electricity grid", worksheet.flows_c17); end
   def test_flows_d17; assert_equal("FOS.CTL", worksheet.flows_d17); end
   def test_flows_e17; assert_equal("Coal to Liquid", worksheet.flows_e17); end
@@ -2994,16 +2994,16 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_o20; assert_in_delta(0.0, (worksheet.flows_o20||0), 0.002); end
   def test_flows_p20; assert_in_delta(0.0, (worksheet.flows_p20||0), 0.002); end
   def test_flows_v20; assert_equal("Liquid", worksheet.flows_v20); end
-  def test_flows_w20; assert_equal(:na, worksheet.flows_w20); end
-  def test_flows_x20; assert_equal(:na, worksheet.flows_x20); end
-  def test_flows_y20; assert_equal(:na, worksheet.flows_y20); end
-  def test_flows_z20; assert_equal(:na, worksheet.flows_z20); end
-  def test_flows_aa20; assert_equal(:na, worksheet.flows_aa20); end
-  def test_flows_ab20; assert_equal(:na, worksheet.flows_ab20); end
-  def test_flows_ac20; assert_equal(:na, worksheet.flows_ac20); end
-  def test_flows_ad20; assert_equal(:na, worksheet.flows_ad20); end
-  def test_flows_ae20; assert_equal(:na, worksheet.flows_ae20); end
-  def test_flows_af20; assert_equal(:na, worksheet.flows_af20); end
+  def test_flows_w20; assert_in_epsilon(763.255996531064, worksheet.flows_w20, 0.002); end
+  def test_flows_x20; assert_in_epsilon(848.5094418162925, worksheet.flows_x20, 0.002); end
+  def test_flows_y20; assert_in_epsilon(972.1102037156952, worksheet.flows_y20, 0.002); end
+  def test_flows_z20; assert_in_epsilon(1089.8314460279657, worksheet.flows_z20, 0.002); end
+  def test_flows_aa20; assert_in_epsilon(1209.3033541797415, worksheet.flows_aa20, 0.002); end
+  def test_flows_ab20; assert_in_epsilon(1332.3471249359352, worksheet.flows_ab20, 0.002); end
+  def test_flows_ac20; assert_in_epsilon(1460.748581178239, worksheet.flows_ac20, 0.002); end
+  def test_flows_ad20; assert_in_epsilon(1590.7742383376983, worksheet.flows_ad20, 0.002); end
+  def test_flows_ae20; assert_in_epsilon(1736.1579074749006, worksheet.flows_ae20, 0.002); end
+  def test_flows_af20; assert_in_epsilon(1850.4377510670438, worksheet.flows_af20, 0.002); end
   def test_flows_ah20; assert_in_epsilon(254.3187773211306, worksheet.flows_ah20, 0.002); end
   def test_flows_ai20; assert_in_epsilon(254.3187773211306, worksheet.flows_ai20, 0.002); end
   def test_flows_aj20; assert_in_epsilon(254.3187773211306, worksheet.flows_aj20, 0.002); end
@@ -3014,16 +3014,16 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_ao20; assert_in_epsilon(199.51181758596977, worksheet.flows_ao20, 0.002); end
   def test_flows_ap20; assert_in_epsilon(199.51181758596977, worksheet.flows_ap20, 0.002); end
   def test_flows_aq20; assert_in_epsilon(199.51181758596977, worksheet.flows_aq20, 0.002); end
-  def test_flows_as20; assert_equal(:na, worksheet.flows_as20); end
-  def test_flows_at20; assert_equal(:na, worksheet.flows_at20); end
-  def test_flows_au20; assert_equal(:na, worksheet.flows_au20); end
-  def test_flows_av20; assert_equal(:na, worksheet.flows_av20); end
-  def test_flows_aw20; assert_equal(:na, worksheet.flows_aw20); end
-  def test_flows_ax20; assert_equal(:na, worksheet.flows_ax20); end
-  def test_flows_ay20; assert_equal(:na, worksheet.flows_ay20); end
-  def test_flows_az20; assert_equal(:na, worksheet.flows_az20); end
-  def test_flows_ba20; assert_equal(:na, worksheet.flows_ba20); end
-  def test_flows_bb20; assert_equal(:na, worksheet.flows_bb20); end
+  def test_flows_as20; assert_in_epsilon(508.93721920993346, worksheet.flows_as20, 0.002); end
+  def test_flows_at20; assert_in_epsilon(594.1906644951619, worksheet.flows_at20, 0.002); end
+  def test_flows_au20; assert_in_epsilon(717.7914263945646, worksheet.flows_au20, 0.002); end
+  def test_flows_av20; assert_in_epsilon(835.5126687068351, worksheet.flows_av20, 0.002); end
+  def test_flows_aw20; assert_in_epsilon(954.9845768586109, worksheet.flows_aw20, 0.002); end
+  def test_flows_ax20; assert_in_epsilon(1078.0283476148047, worksheet.flows_ax20, 0.002); end
+  def test_flows_ay20; assert_in_epsilon(1261.2367635922692, worksheet.flows_ay20, 0.002); end
+  def test_flows_az20; assert_in_epsilon(1391.2624207517285, worksheet.flows_az20, 0.002); end
+  def test_flows_ba20; assert_in_epsilon(1536.6460898889309, worksheet.flows_ba20, 0.002); end
+  def test_flows_bb20; assert_in_epsilon(1650.925933481074, worksheet.flows_bb20, 0.002); end
   def test_flows_c21; assert_equal("Gas to Liquid", worksheet.flows_c21); end
   def test_flows_d21; assert_equal("FOS.GTL", worksheet.flows_d21); end
   def test_flows_e21; assert_equal("Liquid", worksheet.flows_e21); end
@@ -3127,36 +3127,36 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_o23; assert_in_epsilon(11414.089547146199, worksheet.flows_o23, 0.002); end
   def test_flows_p23; assert_in_epsilon(13308.511072837413, worksheet.flows_p23, 0.002); end
   def test_flows_v23; assert_equal("Thermal generation", worksheet.flows_v23); end
-  def test_flows_w23; assert_equal(:na, worksheet.flows_w23); end
-  def test_flows_x23; assert_equal(:na, worksheet.flows_x23); end
-  def test_flows_y23; assert_equal(:na, worksheet.flows_y23); end
-  def test_flows_z23; assert_equal(:na, worksheet.flows_z23); end
-  def test_flows_aa23; assert_equal(:na, worksheet.flows_aa23); end
-  def test_flows_ab23; assert_equal(:na, worksheet.flows_ab23); end
-  def test_flows_ac23; assert_equal(:na, worksheet.flows_ac23); end
-  def test_flows_ad23; assert_equal(:na, worksheet.flows_ad23); end
-  def test_flows_ae23; assert_equal(:na, worksheet.flows_ae23); end
-  def test_flows_af23; assert_equal(:na, worksheet.flows_af23); end
-  def test_flows_ah23; assert_equal(:na, worksheet.flows_ah23); end
-  def test_flows_ai23; assert_equal(:na, worksheet.flows_ai23); end
-  def test_flows_aj23; assert_equal(:na, worksheet.flows_aj23); end
-  def test_flows_ak23; assert_equal(:na, worksheet.flows_ak23); end
-  def test_flows_al23; assert_equal(:na, worksheet.flows_al23); end
-  def test_flows_am23; assert_equal(:na, worksheet.flows_am23); end
-  def test_flows_an23; assert_equal(:na, worksheet.flows_an23); end
-  def test_flows_ao23; assert_equal(:na, worksheet.flows_ao23); end
-  def test_flows_ap23; assert_equal(:na, worksheet.flows_ap23); end
-  def test_flows_aq23; assert_equal(:na, worksheet.flows_aq23); end
-  def test_flows_as23; assert_equal(:na, worksheet.flows_as23); end
-  def test_flows_at23; assert_equal(:na, worksheet.flows_at23); end
-  def test_flows_au23; assert_equal(:na, worksheet.flows_au23); end
-  def test_flows_av23; assert_equal(:na, worksheet.flows_av23); end
-  def test_flows_aw23; assert_equal(:na, worksheet.flows_aw23); end
-  def test_flows_ax23; assert_equal(:na, worksheet.flows_ax23); end
-  def test_flows_ay23; assert_equal(:na, worksheet.flows_ay23); end
-  def test_flows_az23; assert_equal(:na, worksheet.flows_az23); end
-  def test_flows_ba23; assert_equal(:na, worksheet.flows_ba23); end
-  def test_flows_bb23; assert_equal(:na, worksheet.flows_bb23); end
+  def test_flows_w23; assert_in_epsilon(2544.2388031744645, worksheet.flows_w23, 0.002); end
+  def test_flows_x23; assert_in_epsilon(3097.8579290762173, worksheet.flows_x23, 0.002); end
+  def test_flows_y23; assert_in_epsilon(3489.2563783994215, worksheet.flows_y23, 0.002); end
+  def test_flows_z23; assert_in_epsilon(4029.6528140972023, worksheet.flows_z23, 0.002); end
+  def test_flows_aa23; assert_in_epsilon(4679.730973011757, worksheet.flows_aa23, 0.002); end
+  def test_flows_ab23; assert_in_epsilon(5489.48622719221, worksheet.flows_ab23, 0.002); end
+  def test_flows_ac23; assert_in_epsilon(6467.071234802879, worksheet.flows_ac23, 0.002); end
+  def test_flows_ad23; assert_in_epsilon(7539.818313051264, worksheet.flows_ad23, 0.002); end
+  def test_flows_ae23; assert_in_epsilon(8793.751710787026, worksheet.flows_ae23, 0.002); end
+  def test_flows_af23; assert_in_epsilon(10129.882932686682, worksheet.flows_af23, 0.002); end
+  def test_flows_ah23; assert_in_epsilon(2544.2388031744645, worksheet.flows_ah23, 0.002); end
+  def test_flows_ai23; assert_in_epsilon(3097.8579290762177, worksheet.flows_ai23, 0.002); end
+  def test_flows_aj23; assert_in_epsilon(3489.2563783994215, worksheet.flows_aj23, 0.002); end
+  def test_flows_ak23; assert_in_epsilon(4029.6528140972027, worksheet.flows_ak23, 0.002); end
+  def test_flows_al23; assert_in_epsilon(4679.730973011757, worksheet.flows_al23, 0.002); end
+  def test_flows_am23; assert_in_epsilon(5489.48622719221, worksheet.flows_am23, 0.002); end
+  def test_flows_an23; assert_in_epsilon(6467.07123480288, worksheet.flows_an23, 0.002); end
+  def test_flows_ao23; assert_in_epsilon(7539.818313051264, worksheet.flows_ao23, 0.002); end
+  def test_flows_ap23; assert_in_epsilon(8793.751710787026, worksheet.flows_ap23, 0.002); end
+  def test_flows_aq23; assert_in_epsilon(10129.882932686682, worksheet.flows_aq23, 0.002); end
+  def test_flows_as23; assert_in_delta(0.0, (worksheet.flows_as23||0), 0.002); end
+  def test_flows_at23; assert_in_delta(0.0, (worksheet.flows_at23||0), 0.002); end
+  def test_flows_au23; assert_in_delta(0.0, (worksheet.flows_au23||0), 0.002); end
+  def test_flows_av23; assert_in_delta(0.0, (worksheet.flows_av23||0), 0.002); end
+  def test_flows_aw23; assert_in_delta(0.0, (worksheet.flows_aw23||0), 0.002); end
+  def test_flows_ax23; assert_in_delta(0.0, (worksheet.flows_ax23||0), 0.002); end
+  def test_flows_ay23; assert_in_delta(0.0, (worksheet.flows_ay23||0), 0.002); end
+  def test_flows_az23; assert_in_delta(0.0, (worksheet.flows_az23||0), 0.002); end
+  def test_flows_ba23; assert_in_delta(0.0, (worksheet.flows_ba23||0), 0.002); end
+  def test_flows_bb23; assert_in_delta(0.0, (worksheet.flows_bb23||0), 0.002); end
   def test_flows_c24; assert_equal("Solar", worksheet.flows_c24); end
   def test_flows_d24; assert_equal("Re.d", worksheet.flows_d24); end
   def test_flows_e24; assert_equal("Electricity end use", worksheet.flows_e24); end
@@ -3172,16 +3172,16 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_o24; assert_in_delta(0.02698231738599941, worksheet.flows_o24, 0.002); end
   def test_flows_p24; assert_in_delta(0.031523895529958705, worksheet.flows_p24, 0.002); end
   def test_flows_v24; assert_equal("Electricity imports", worksheet.flows_v24); end
-  def test_flows_w24; assert_equal(:na, worksheet.flows_w24); end
-  def test_flows_x24; assert_equal(:na, worksheet.flows_x24); end
-  def test_flows_y24; assert_equal(:na, worksheet.flows_y24); end
-  def test_flows_z24; assert_equal(:na, worksheet.flows_z24); end
-  def test_flows_aa24; assert_equal(:na, worksheet.flows_aa24); end
-  def test_flows_ab24; assert_equal(:na, worksheet.flows_ab24); end
-  def test_flows_ac24; assert_equal(:na, worksheet.flows_ac24); end
-  def test_flows_ad24; assert_equal(:na, worksheet.flows_ad24); end
-  def test_flows_ae24; assert_equal(:na, worksheet.flows_ae24); end
-  def test_flows_af24; assert_equal(:na, worksheet.flows_af24); end
+  def test_flows_w24; assert_in_epsilon(1708.8442555395634, worksheet.flows_w24, 0.002); end
+  def test_flows_x24; assert_in_epsilon(2096.1030318329895, worksheet.flows_x24, 0.002); end
+  def test_flows_y24; assert_in_epsilon(2325.3959602628647, worksheet.flows_y24, 0.002); end
+  def test_flows_z24; assert_in_epsilon(2665.1381856865946, worksheet.flows_z24, 0.002); end
+  def test_flows_aa24; assert_in_epsilon(3061.4555621378995, worksheet.flows_aa24, 0.002); end
+  def test_flows_ab24; assert_in_epsilon(3557.046837392253, worksheet.flows_ab24, 0.002); end
+  def test_flows_ac24; assert_in_epsilon(4145.740214464073, worksheet.flows_ac24, 0.002); end
+  def test_flows_ad24; assert_in_epsilon(4780.008257460722, worksheet.flows_ad24, 0.002); end
+  def test_flows_ae24; assert_in_epsilon(5570.095856048008, worksheet.flows_ae24, 0.002); end
+  def test_flows_af24; assert_in_epsilon(6394.381561766855, worksheet.flows_af24, 0.002); end
   def test_flows_ah24; assert_in_delta(0.0, (worksheet.flows_ah24||0), 0.002); end
   def test_flows_ai24; assert_in_delta(0.0, (worksheet.flows_ai24||0), 0.002); end
   def test_flows_aj24; assert_in_delta(0.0, (worksheet.flows_aj24||0), 0.002); end
@@ -3192,16 +3192,16 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_ao24; assert_in_delta(0.0, (worksheet.flows_ao24||0), 0.002); end
   def test_flows_ap24; assert_in_delta(0.0, (worksheet.flows_ap24||0), 0.002); end
   def test_flows_aq24; assert_in_delta(0.0, (worksheet.flows_aq24||0), 0.002); end
-  def test_flows_as24; assert_equal(:na, worksheet.flows_as24); end
-  def test_flows_at24; assert_equal(:na, worksheet.flows_at24); end
-  def test_flows_au24; assert_equal(:na, worksheet.flows_au24); end
-  def test_flows_av24; assert_equal(:na, worksheet.flows_av24); end
-  def test_flows_aw24; assert_equal(:na, worksheet.flows_aw24); end
-  def test_flows_ax24; assert_equal(:na, worksheet.flows_ax24); end
-  def test_flows_ay24; assert_equal(:na, worksheet.flows_ay24); end
-  def test_flows_az24; assert_equal(:na, worksheet.flows_az24); end
-  def test_flows_ba24; assert_equal(:na, worksheet.flows_ba24); end
-  def test_flows_bb24; assert_equal(:na, worksheet.flows_bb24); end
+  def test_flows_as24; assert_in_epsilon(1708.8442555395634, worksheet.flows_as24, 0.002); end
+  def test_flows_at24; assert_in_epsilon(2096.1030318329895, worksheet.flows_at24, 0.002); end
+  def test_flows_au24; assert_in_epsilon(2325.3959602628647, worksheet.flows_au24, 0.002); end
+  def test_flows_av24; assert_in_epsilon(2665.1381856865946, worksheet.flows_av24, 0.002); end
+  def test_flows_aw24; assert_in_epsilon(3061.4555621378995, worksheet.flows_aw24, 0.002); end
+  def test_flows_ax24; assert_in_epsilon(3557.046837392253, worksheet.flows_ax24, 0.002); end
+  def test_flows_ay24; assert_in_epsilon(4145.740214464073, worksheet.flows_ay24, 0.002); end
+  def test_flows_az24; assert_in_epsilon(4780.008257460722, worksheet.flows_az24, 0.002); end
+  def test_flows_ba24; assert_in_epsilon(5570.095856048008, worksheet.flows_ba24, 0.002); end
+  def test_flows_bb24; assert_in_epsilon(6394.381561766855, worksheet.flows_bb24, 0.002); end
   def test_flows_c25; assert_equal("Solar", worksheet.flows_c25); end
   def test_flows_d25; assert_equal("Re.e", worksheet.flows_d25); end
   def test_flows_e25; assert_equal("Electricity grid", worksheet.flows_e25); end
@@ -3436,173 +3436,173 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_o30; assert_in_epsilon(8635.880535968327, worksheet.flows_o30, 0.002); end
   def test_flows_p30; assert_in_epsilon(10119.539097466995, worksheet.flows_p30, 0.002); end
   def test_flows_c31; assert_equal("Liquid", worksheet.flows_c31); end
-  def test_flows_d31; assert_equal("Therm.a", worksheet.flows_d31); end
+  def test_flows_d31; assert_equal("Therm.b", worksheet.flows_d31); end
   def test_flows_e31; assert_equal("Thermal generation", worksheet.flows_e31); end
   def test_flows_f31; assert_equal("C.02", worksheet.flows_f31); end
-  def test_flows_g31; assert_equal(:na, worksheet.flows_g31); end
-  def test_flows_h31; assert_equal(:na, worksheet.flows_h31); end
-  def test_flows_i31; assert_equal(:na, worksheet.flows_i31); end
-  def test_flows_j31; assert_equal(:na, worksheet.flows_j31); end
-  def test_flows_k31; assert_equal(:na, worksheet.flows_k31); end
-  def test_flows_l31; assert_equal(:na, worksheet.flows_l31); end
-  def test_flows_m31; assert_equal(:na, worksheet.flows_m31); end
-  def test_flows_n31; assert_equal(:na, worksheet.flows_n31); end
-  def test_flows_o31; assert_equal(:na, worksheet.flows_o31); end
-  def test_flows_p31; assert_equal(:na, worksheet.flows_p31); end
+  def test_flows_g31; assert_in_delta(0.9322597315614619, worksheet.flows_g31, 0.002); end
+  def test_flows_h31; assert_in_delta(0.5352953927492446, worksheet.flows_h31, 0.002); end
+  def test_flows_i31; assert_in_delta(0.7532855221483983, worksheet.flows_i31, 0.002); end
+  def test_flows_j31; assert_in_delta(0.5272998655038788, worksheet.flows_j31, 0.002); end
+  def test_flows_k31; assert_in_delta(0.37664276107419914, worksheet.flows_k31, 0.002); end
+  def test_flows_l31; assert_in_delta(0.1353233833897385, worksheet.flows_l31, 0.002); end
+  def test_flows_m31; assert_in_delta(0.0, (worksheet.flows_m31||0), 0.002); end
+  def test_flows_n31; assert_in_delta(0.0, (worksheet.flows_n31||0), 0.002); end
+  def test_flows_o31; assert_in_delta(0.0, (worksheet.flows_o31||0), 0.002); end
+  def test_flows_p31; assert_in_delta(0.0, (worksheet.flows_p31||0), 0.002); end
   def test_flows_c32; assert_equal("Gas", worksheet.flows_c32); end
-  def test_flows_d32; assert_equal("Therm.a", worksheet.flows_d32); end
+  def test_flows_d32; assert_equal("Therm.b", worksheet.flows_d32); end
   def test_flows_e32; assert_equal("Thermal generation", worksheet.flows_e32); end
   def test_flows_f32; assert_equal("C.03", worksheet.flows_f32); end
-  def test_flows_g32; assert_equal(:na, worksheet.flows_g32); end
-  def test_flows_h32; assert_equal(:na, worksheet.flows_h32); end
-  def test_flows_i32; assert_equal(:na, worksheet.flows_i32); end
-  def test_flows_j32; assert_equal(:na, worksheet.flows_j32); end
-  def test_flows_k32; assert_equal(:na, worksheet.flows_k32); end
-  def test_flows_l32; assert_equal(:na, worksheet.flows_l32); end
-  def test_flows_m32; assert_equal(:na, worksheet.flows_m32); end
-  def test_flows_n32; assert_equal(:na, worksheet.flows_n32); end
-  def test_flows_o32; assert_equal(:na, worksheet.flows_o32); end
-  def test_flows_p32; assert_equal(:na, worksheet.flows_p32); end
-  def test_flows_c33; assert_equal("Gas", worksheet.flows_c33); end
-  def test_flows_d33; assert_equal("Therm.b", worksheet.flows_d33); end
+  def test_flows_g32; assert_in_delta(0.0, (worksheet.flows_g32||0), 0.002); end
+  def test_flows_h32; assert_in_delta(0.0, (worksheet.flows_h32||0), 0.002); end
+  def test_flows_i32; assert_in_epsilon(5.218838100000001, worksheet.flows_i32, 0.002); end
+  def test_flows_j32; assert_in_epsilon(8.102650872450816, worksheet.flows_j32, 0.002); end
+  def test_flows_k32; assert_in_epsilon(8.953796231536266, worksheet.flows_k32, 0.002); end
+  def test_flows_l32; assert_in_epsilon(9.997575382966621, worksheet.flows_l32, 0.002); end
+  def test_flows_m32; assert_in_epsilon(11.283781755976317, worksheet.flows_m32, 0.002); end
+  def test_flows_n32; assert_in_epsilon(12.499062517885834, worksheet.flows_n32, 0.002); end
+  def test_flows_o32; assert_in_epsilon(14.086859818698361, worksheet.flows_o32, 0.002); end
+  def test_flows_p32; assert_in_epsilon(10.343835219685745, worksheet.flows_p32, 0.002); end
+  def test_flows_c33; assert_equal("Nuclear", worksheet.flows_c33); end
+  def test_flows_d33; assert_equal("Nuke", worksheet.flows_d33); end
   def test_flows_e33; assert_equal("Thermal generation", worksheet.flows_e33); end
-  def test_flows_f33; assert_equal("C.03", worksheet.flows_f33); end
-  def test_flows_g33; assert_in_delta(0.0, (worksheet.flows_g33||0), 0.002); end
-  def test_flows_h33; assert_in_delta(0.0, (worksheet.flows_h33||0), 0.002); end
-  def test_flows_i33; assert_in_epsilon(5.218838100000001, worksheet.flows_i33, 0.002); end
-  def test_flows_j33; assert_in_epsilon(8.102650872450816, worksheet.flows_j33, 0.002); end
-  def test_flows_k33; assert_in_epsilon(8.953796231536266, worksheet.flows_k33, 0.002); end
-  def test_flows_l33; assert_in_epsilon(9.997575382966621, worksheet.flows_l33, 0.002); end
-  def test_flows_m33; assert_in_epsilon(11.283781755976317, worksheet.flows_m33, 0.002); end
-  def test_flows_n33; assert_in_epsilon(12.499062517885834, worksheet.flows_n33, 0.002); end
-  def test_flows_o33; assert_in_epsilon(14.086859818698361, worksheet.flows_o33, 0.002); end
-  def test_flows_p33; assert_in_epsilon(10.343835219685745, worksheet.flows_p33, 0.002); end
-  def test_flows_c34; assert_equal("Nuclear", worksheet.flows_c34); end
-  def test_flows_d34; assert_equal("Nuke", worksheet.flows_d34); end
-  def test_flows_e34; assert_equal("Thermal generation", worksheet.flows_e34); end
-  def test_flows_f34; assert_equal("N.01", worksheet.flows_f34); end
-  def test_flows_g34; assert_in_epsilon(110.05713000000002, worksheet.flows_g34, 0.002); end
-  def test_flows_h34; assert_in_epsilon(143.78431500000002, worksheet.flows_h34, 0.002); end
-  def test_flows_i34; assert_in_epsilon(143.78431500000002, worksheet.flows_i34, 0.002); end
-  def test_flows_j34; assert_in_epsilon(143.78431500000002, worksheet.flows_j34, 0.002); end
-  def test_flows_k34; assert_in_epsilon(143.78431500000002, worksheet.flows_k34, 0.002); end
-  def test_flows_l34; assert_in_epsilon(143.78431500000002, worksheet.flows_l34, 0.002); end
-  def test_flows_m34; assert_in_epsilon(143.78431500000002, worksheet.flows_m34, 0.002); end
-  def test_flows_n34; assert_in_epsilon(143.78431500000002, worksheet.flows_n34, 0.002); end
-  def test_flows_o34; assert_in_epsilon(143.78431500000002, worksheet.flows_o34, 0.002); end
-  def test_flows_p34; assert_in_delta(0.0, (worksheet.flows_p34||0), 0.002); end
+  def test_flows_f33; assert_equal("N.01", worksheet.flows_f33); end
+  def test_flows_g33; assert_in_epsilon(110.05713000000002, worksheet.flows_g33, 0.002); end
+  def test_flows_h33; assert_in_epsilon(143.78431500000002, worksheet.flows_h33, 0.002); end
+  def test_flows_i33; assert_in_epsilon(143.78431500000002, worksheet.flows_i33, 0.002); end
+  def test_flows_j33; assert_in_epsilon(143.78431500000002, worksheet.flows_j33, 0.002); end
+  def test_flows_k33; assert_in_epsilon(143.78431500000002, worksheet.flows_k33, 0.002); end
+  def test_flows_l33; assert_in_epsilon(143.78431500000002, worksheet.flows_l33, 0.002); end
+  def test_flows_m33; assert_in_epsilon(143.78431500000002, worksheet.flows_m33, 0.002); end
+  def test_flows_n33; assert_in_epsilon(143.78431500000002, worksheet.flows_n33, 0.002); end
+  def test_flows_o33; assert_in_epsilon(143.78431500000002, worksheet.flows_o33, 0.002); end
+  def test_flows_p33; assert_in_delta(0.0, (worksheet.flows_p33||0), 0.002); end
+  def test_flows_c34; assert_equal("Thermal generation", worksheet.flows_c34); end
+  def test_flows_d34; assert_equal("Therm.a", worksheet.flows_d34); end
+  def test_flows_e34; assert_equal("Electricity grid", worksheet.flows_e34); end
+  def test_flows_f34; assert_equal("V.02", worksheet.flows_f34); end
+  def test_flows_g34; assert_in_epsilon(824.7142358557012, worksheet.flows_g34, 0.002); end
+  def test_flows_h34; assert_in_epsilon(980.3853136682282, worksheet.flows_h34, 0.002); end
+  def test_flows_i34; assert_in_epsilon(1134.2304029242412, worksheet.flows_i34, 0.002); end
+  def test_flows_j34; assert_in_epsilon(1334.084607236435, worksheet.flows_j34, 0.002); end
+  def test_flows_k34; assert_in_epsilon(1587.6345427350327, worksheet.flows_k34, 0.002); end
+  def test_flows_l34; assert_in_epsilon(1901.5595730885907, worksheet.flows_l34, 0.002); end
+  def test_flows_m34; assert_in_epsilon(2290.1047878475647, worksheet.flows_m34, 0.002); end
+  def test_flows_n34; assert_in_epsilon(2728.2180235899664, worksheet.flows_n34, 0.002); end
+  def test_flows_o34; assert_in_epsilon(3191.585895750897, worksheet.flows_o34, 0.002); end
+  def test_flows_p34; assert_in_epsilon(3751.5032151559085, worksheet.flows_p34, 0.002); end
   def test_flows_c35; assert_equal("Thermal generation", worksheet.flows_c35); end
-  def test_flows_d35; assert_equal("Therm.a", worksheet.flows_d35); end
+  def test_flows_d35; assert_equal("Therm.b", worksheet.flows_d35); end
   def test_flows_e35; assert_equal("Electricity grid", worksheet.flows_e35); end
   def test_flows_f35; assert_equal("V.02", worksheet.flows_f35); end
-  def test_flows_g35; assert_in_epsilon(824.7142358557012, worksheet.flows_g35, 0.002); end
-  def test_flows_h35; assert_in_epsilon(980.3853136682282, worksheet.flows_h35, 0.002); end
-  def test_flows_i35; assert_in_epsilon(1134.2304029242412, worksheet.flows_i35, 0.002); end
-  def test_flows_j35; assert_in_epsilon(1334.084607236435, worksheet.flows_j35, 0.002); end
-  def test_flows_k35; assert_in_epsilon(1587.6345427350327, worksheet.flows_k35, 0.002); end
-  def test_flows_l35; assert_in_epsilon(1901.5595730885907, worksheet.flows_l35, 0.002); end
-  def test_flows_m35; assert_in_epsilon(2290.1047878475647, worksheet.flows_m35, 0.002); end
-  def test_flows_n35; assert_in_epsilon(2728.2180235899664, worksheet.flows_n35, 0.002); end
-  def test_flows_o35; assert_in_epsilon(3191.585895750897, worksheet.flows_o35, 0.002); end
-  def test_flows_p35; assert_in_epsilon(3751.5032151559085, worksheet.flows_p35, 0.002); end
+  def test_flows_g35; assert_in_epsilon(35.49889177920001, worksheet.flows_g35, 0.002); end
+  def test_flows_h35; assert_in_epsilon(46.188163575000004, worksheet.flows_h35, 0.002); end
+  def test_flows_i35; assert_in_epsilon(48.768227212315075, worksheet.flows_i35, 0.002); end
+  def test_flows_j35; assert_in_epsilon(49.56823317417277, worksheet.flows_j35, 0.002); end
+  def test_flows_k35; assert_in_epsilon(49.779080138824156, worksheet.flows_k35, 0.002); end
+  def test_flows_l35; assert_in_epsilon(50.018028711366235, worksheet.flows_l35, 0.002); end
+  def test_flows_m35; assert_in_epsilon(50.36444449124184, worksheet.flows_m35, 0.002); end
+  def test_flows_n35; assert_in_epsilon(50.730244000576604, worksheet.flows_n35, 0.002); end
+  def test_flows_o35; assert_in_epsilon(51.208170988121175, worksheet.flows_o35, 0.002); end
+  def test_flows_p35; assert_in_epsilon(3.136367763918374, worksheet.flows_p35, 0.002); end
   def test_flows_c36; assert_equal("Thermal generation", worksheet.flows_c36); end
-  def test_flows_d36; assert_equal("Therm.b", worksheet.flows_d36); end
-  def test_flows_e36; assert_equal("Electricity grid", worksheet.flows_e36); end
-  def test_flows_f36; assert_equal("V.02", worksheet.flows_f36); end
-  def test_flows_g36; assert_in_epsilon(35.49889177920001, worksheet.flows_g36, 0.002); end
-  def test_flows_h36; assert_in_epsilon(46.188163575000004, worksheet.flows_h36, 0.002); end
-  def test_flows_i36; assert_in_epsilon(48.768227212315075, worksheet.flows_i36, 0.002); end
-  def test_flows_j36; assert_in_epsilon(49.56823317417277, worksheet.flows_j36, 0.002); end
-  def test_flows_k36; assert_in_epsilon(49.779080138824156, worksheet.flows_k36, 0.002); end
-  def test_flows_l36; assert_in_epsilon(50.018028711366235, worksheet.flows_l36, 0.002); end
-  def test_flows_m36; assert_in_epsilon(50.36444449124184, worksheet.flows_m36, 0.002); end
-  def test_flows_n36; assert_in_epsilon(50.730244000576604, worksheet.flows_n36, 0.002); end
-  def test_flows_o36; assert_in_epsilon(51.208170988121175, worksheet.flows_o36, 0.002); end
-  def test_flows_p36; assert_in_epsilon(3.136367763918374, worksheet.flows_p36, 0.002); end
-  def test_flows_c37; assert_equal("Thermal generation", worksheet.flows_c37); end
-  def test_flows_e37; assert_equal("Losses", worksheet.flows_e37); end
-  def test_flows_g37; assert_equal(:na, worksheet.flows_g37); end
-  def test_flows_h37; assert_equal(:na, worksheet.flows_h37); end
-  def test_flows_i37; assert_equal(:na, worksheet.flows_i37); end
-  def test_flows_j37; assert_equal(:na, worksheet.flows_j37); end
-  def test_flows_k37; assert_equal(:na, worksheet.flows_k37); end
-  def test_flows_l37; assert_equal(:na, worksheet.flows_l37); end
-  def test_flows_m37; assert_equal(:na, worksheet.flows_m37); end
-  def test_flows_n37; assert_equal(:na, worksheet.flows_n37); end
-  def test_flows_o37; assert_equal(:na, worksheet.flows_o37); end
-  def test_flows_p37; assert_equal(:na, worksheet.flows_p37); end
-  def test_flows_c38; assert_equal("Electricity imports", worksheet.flows_c38); end
-  def test_flows_d38; assert_equal("ElcDSB.i", worksheet.flows_d38); end
+  def test_flows_e36; assert_equal("Losses", worksheet.flows_e36); end
+  def test_flows_g36; assert_in_epsilon(1684.0256755395633, worksheet.flows_g36, 0.002); end
+  def test_flows_h36; assert_in_epsilon(2071.2844518329894, worksheet.flows_h36, 0.002); end
+  def test_flows_i36; assert_in_epsilon(2306.2577482628653, worksheet.flows_i36, 0.002); end
+  def test_flows_j36; assert_in_epsilon(2645.999973686595, worksheet.flows_j36, 0.002); end
+  def test_flows_k36; assert_in_epsilon(3042.3173501378997, worksheet.flows_k36, 0.002); end
+  def test_flows_l36; assert_in_epsilon(3537.9086253922533, worksheet.flows_l36, 0.002); end
+  def test_flows_m36; assert_in_epsilon(4126.602002464073, worksheet.flows_m36, 0.002); end
+  def test_flows_n36; assert_in_epsilon(4760.8700454607215, worksheet.flows_n36, 0.002); end
+  def test_flows_o36; assert_in_epsilon(5550.957644048008, worksheet.flows_o36, 0.002); end
+  def test_flows_p36; assert_in_epsilon(6375.243349766855, worksheet.flows_p36, 0.002); end
+  def test_flows_c37; assert_equal("Electricity imports", worksheet.flows_c37); end
+  def test_flows_d37; assert_equal("ElcDSB.i", worksheet.flows_d37); end
+  def test_flows_e37; assert_equal("Electricity grid", worksheet.flows_e37); end
+  def test_flows_f37; assert_equal("Y.02", worksheet.flows_f37); end
+  def test_flows_g37; assert_in_epsilon(1708.8442555395634, worksheet.flows_g37, 0.002); end
+  def test_flows_h37; assert_in_epsilon(2096.1030318329895, worksheet.flows_h37, 0.002); end
+  def test_flows_i37; assert_in_epsilon(2325.3959602628647, worksheet.flows_i37, 0.002); end
+  def test_flows_j37; assert_in_epsilon(2665.1381856865946, worksheet.flows_j37, 0.002); end
+  def test_flows_k37; assert_in_epsilon(3061.4555621378995, worksheet.flows_k37, 0.002); end
+  def test_flows_l37; assert_in_epsilon(3557.046837392253, worksheet.flows_l37, 0.002); end
+  def test_flows_m37; assert_in_epsilon(4145.740214464073, worksheet.flows_m37, 0.002); end
+  def test_flows_n37; assert_in_epsilon(4780.008257460722, worksheet.flows_n37, 0.002); end
+  def test_flows_o37; assert_in_epsilon(5570.095856048008, worksheet.flows_o37, 0.002); end
+  def test_flows_p37; assert_in_epsilon(6394.381561766855, worksheet.flows_p37, 0.002); end
+  def test_flows_c38; assert_equal("Wind", worksheet.flows_c38); end
+  def test_flows_d38; assert_equal("Re.a", worksheet.flows_d38); end
   def test_flows_e38; assert_equal("Electricity grid", worksheet.flows_e38); end
-  def test_flows_f38; assert_equal("Y.02", worksheet.flows_f38); end
-  def test_flows_g38; assert_equal(:na, worksheet.flows_g38); end
-  def test_flows_h38; assert_equal(:na, worksheet.flows_h38); end
-  def test_flows_i38; assert_equal(:na, worksheet.flows_i38); end
-  def test_flows_j38; assert_equal(:na, worksheet.flows_j38); end
-  def test_flows_k38; assert_equal(:na, worksheet.flows_k38); end
-  def test_flows_l38; assert_equal(:na, worksheet.flows_l38); end
-  def test_flows_m38; assert_equal(:na, worksheet.flows_m38); end
-  def test_flows_n38; assert_equal(:na, worksheet.flows_n38); end
-  def test_flows_o38; assert_equal(:na, worksheet.flows_o38); end
-  def test_flows_p38; assert_equal(:na, worksheet.flows_p38); end
-  def test_flows_c39; assert_equal("Wind", worksheet.flows_c39); end
-  def test_flows_d39; assert_equal("Re.a", worksheet.flows_d39); end
+  def test_flows_f38; assert_equal("V.02", worksheet.flows_f38); end
+  def test_flows_g38; assert_in_delta(0.02592772416, worksheet.flows_g38, 0.002); end
+  def test_flows_h38; assert_in_delta(0.06859359936, worksheet.flows_h38, 0.002); end
+  def test_flows_i38; assert_in_epsilon(11.57035420224, worksheet.flows_i38, 0.002); end
+  def test_flows_j38; assert_in_epsilon(22.589636970240004, worksheet.flows_j38, 0.002); end
+  def test_flows_k38; assert_in_epsilon(22.589636970240004, worksheet.flows_k38, 0.002); end
+  def test_flows_l38; assert_in_epsilon(22.589636970240004, worksheet.flows_l38, 0.002); end
+  def test_flows_m38; assert_in_epsilon(22.589636970240004, worksheet.flows_m38, 0.002); end
+  def test_flows_n38; assert_in_epsilon(22.589636970240004, worksheet.flows_n38, 0.002); end
+  def test_flows_o38; assert_in_epsilon(22.589636970240004, worksheet.flows_o38, 0.002); end
+  def test_flows_p38; assert_in_epsilon(22.589636970240004, worksheet.flows_p38, 0.002); end
+  def test_flows_c39; assert_equal("Hydro", worksheet.flows_c39); end
+  def test_flows_d39; assert_equal("Re.b", worksheet.flows_d39); end
   def test_flows_e39; assert_equal("Electricity grid", worksheet.flows_e39); end
-  def test_flows_f39; assert_equal("V.02", worksheet.flows_f39); end
-  def test_flows_g39; assert_in_delta(0.02592772416, worksheet.flows_g39, 0.002); end
-  def test_flows_h39; assert_in_delta(0.06859359936, worksheet.flows_h39, 0.002); end
-  def test_flows_i39; assert_in_epsilon(11.57035420224, worksheet.flows_i39, 0.002); end
-  def test_flows_j39; assert_in_epsilon(22.589636970240004, worksheet.flows_j39, 0.002); end
-  def test_flows_k39; assert_in_epsilon(22.589636970240004, worksheet.flows_k39, 0.002); end
-  def test_flows_l39; assert_in_epsilon(22.589636970240004, worksheet.flows_l39, 0.002); end
-  def test_flows_m39; assert_in_epsilon(22.589636970240004, worksheet.flows_m39, 0.002); end
-  def test_flows_n39; assert_in_epsilon(22.589636970240004, worksheet.flows_n39, 0.002); end
-  def test_flows_o39; assert_in_epsilon(22.589636970240004, worksheet.flows_o39, 0.002); end
-  def test_flows_p39; assert_in_epsilon(22.589636970240004, worksheet.flows_p39, 0.002); end
-  def test_flows_c40; assert_equal("Hydro", worksheet.flows_c40); end
-  def test_flows_d40; assert_equal("Re.b", worksheet.flows_d40); end
-  def test_flows_e40; assert_equal("Electricity grid", worksheet.flows_e40); end
-  def test_flows_f40; assert_equal("R.06", worksheet.flows_f40); end
-  def test_flows_g40; assert_in_epsilon(5.285898, worksheet.flows_g40, 0.002); end
-  def test_flows_h40; assert_in_epsilon(5.285898, worksheet.flows_h40, 0.002); end
-  def test_flows_i40; assert_in_epsilon(5.317455600000001, worksheet.flows_i40, 0.002); end
-  def test_flows_j40; assert_in_epsilon(5.396349600000001, worksheet.flows_j40, 0.002); end
-  def test_flows_k40; assert_in_epsilon(4.8440916, worksheet.flows_k40, 0.002); end
-  def test_flows_l40; assert_in_epsilon(4.8440916, worksheet.flows_l40, 0.002); end
-  def test_flows_m40; assert_in_epsilon(4.8440916, worksheet.flows_m40, 0.002); end
-  def test_flows_n40; assert_in_epsilon(4.8440916, worksheet.flows_n40, 0.002); end
-  def test_flows_o40; assert_in_epsilon(4.8440916, worksheet.flows_o40, 0.002); end
-  def test_flows_p40; assert_in_epsilon(4.8440916, worksheet.flows_p40, 0.002); end
+  def test_flows_f39; assert_equal("R.06", worksheet.flows_f39); end
+  def test_flows_g39; assert_in_epsilon(5.285898, worksheet.flows_g39, 0.002); end
+  def test_flows_h39; assert_in_epsilon(5.285898, worksheet.flows_h39, 0.002); end
+  def test_flows_i39; assert_in_epsilon(5.317455600000001, worksheet.flows_i39, 0.002); end
+  def test_flows_j39; assert_in_epsilon(5.396349600000001, worksheet.flows_j39, 0.002); end
+  def test_flows_k39; assert_in_epsilon(4.8440916, worksheet.flows_k39, 0.002); end
+  def test_flows_l39; assert_in_epsilon(4.8440916, worksheet.flows_l39, 0.002); end
+  def test_flows_m39; assert_in_epsilon(4.8440916, worksheet.flows_m39, 0.002); end
+  def test_flows_n39; assert_in_epsilon(4.8440916, worksheet.flows_n39, 0.002); end
+  def test_flows_o39; assert_in_epsilon(4.8440916, worksheet.flows_o39, 0.002); end
+  def test_flows_p39; assert_in_epsilon(4.8440916, worksheet.flows_p39, 0.002); end
+  def test_flows_c40; assert_equal("Electricity grid", worksheet.flows_c40); end
+  def test_flows_e40; assert_equal("Over generation / exports", worksheet.flows_e40); end
+  def test_flows_g40; assert_in_epsilon(1733.6628355395635, worksheet.flows_g40, 0.002); end
+  def test_flows_h40; assert_in_epsilon(2120.9216118329896, worksheet.flows_h40, 0.002); end
+  def test_flows_i40; assert_in_epsilon(2344.534172262864, worksheet.flows_i40, 0.002); end
+  def test_flows_j40; assert_in_epsilon(2684.2763976865945, worksheet.flows_j40, 0.002); end
+  def test_flows_k40; assert_in_epsilon(3080.5937741378993, worksheet.flows_k40, 0.002); end
+  def test_flows_l40; assert_in_epsilon(3576.185049392253, worksheet.flows_l40, 0.002); end
+  def test_flows_m40; assert_in_epsilon(4164.878426464073, worksheet.flows_m40, 0.002); end
+  def test_flows_n40; assert_in_epsilon(4799.146469460723, worksheet.flows_n40, 0.002); end
+  def test_flows_o40; assert_in_epsilon(5589.234068048007, worksheet.flows_o40, 0.002); end
+  def test_flows_p40; assert_in_epsilon(6413.519773766855, worksheet.flows_p40, 0.002); end
   def test_flows_c41; assert_equal("Electricity grid", worksheet.flows_c41); end
-  def test_flows_e41; assert_equal("Over generation / exports", worksheet.flows_e41); end
-  def test_flows_g41; assert_equal(:na, worksheet.flows_g41); end
-  def test_flows_h41; assert_equal(:na, worksheet.flows_h41); end
-  def test_flows_i41; assert_equal(:na, worksheet.flows_i41); end
-  def test_flows_j41; assert_equal(:na, worksheet.flows_j41); end
-  def test_flows_k41; assert_equal(:na, worksheet.flows_k41); end
-  def test_flows_l41; assert_equal(:na, worksheet.flows_l41); end
-  def test_flows_m41; assert_equal(:na, worksheet.flows_m41); end
-  def test_flows_n41; assert_equal(:na, worksheet.flows_n41); end
-  def test_flows_o41; assert_equal(:na, worksheet.flows_o41); end
-  def test_flows_p41; assert_equal(:na, worksheet.flows_p41); end
-  def test_flows_c42; assert_equal("Electricity grid", worksheet.flows_c42); end
-  def test_flows_d42; assert_equal("ElcDSB.d", worksheet.flows_d42); end
-  def test_flows_e42; assert_equal("Losses", worksheet.flows_e42); end
-  def test_flows_f42; assert_equal("X.02", worksheet.flows_f42); end
-  def test_flows_g42; assert_in_epsilon(90.84932115895033, worksheet.flows_g42, 0.002); end
-  def test_flows_h42; assert_in_epsilon(158.9995858643287, worksheet.flows_h42, 0.002); end
-  def test_flows_i42; assert_in_epsilon(186.76808786958173, worksheet.flows_i42, 0.002); end
-  def test_flows_j42; assert_in_epsilon(220.76120365327574, worksheet.flows_j42, 0.002); end
-  def test_flows_k42; assert_in_epsilon(260.78309851830403, worksheet.flows_k42, 0.002); end
-  def test_flows_l42; assert_in_epsilon(310.43954119358096, worksheet.flows_l42, 0.002); end
-  def test_flows_m42; assert_in_epsilon(371.9073720572961, worksheet.flows_m42, 0.002); end
-  def test_flows_n42; assert_in_epsilon(441.2129354504381, worksheet.flows_n42, 0.002); end
-  def test_flows_o42; assert_in_epsilon(514.5279511341514, worksheet.flows_o42, 0.002); end
-  def test_flows_p42; assert_in_epsilon(595.4297428233928, worksheet.flows_p42, 0.002); end
-  def test_flows_c43; assert_equal("Gas", worksheet.flows_c43); end
+  def test_flows_d41; assert_equal("ElcDSB.d", worksheet.flows_d41); end
+  def test_flows_e41; assert_equal("Losses", worksheet.flows_e41); end
+  def test_flows_f41; assert_equal("X.02", worksheet.flows_f41); end
+  def test_flows_g41; assert_in_epsilon(90.84932115895033, worksheet.flows_g41, 0.002); end
+  def test_flows_h41; assert_in_epsilon(158.9995858643287, worksheet.flows_h41, 0.002); end
+  def test_flows_i41; assert_in_epsilon(186.76808786958173, worksheet.flows_i41, 0.002); end
+  def test_flows_j41; assert_in_epsilon(220.76120365327574, worksheet.flows_j41, 0.002); end
+  def test_flows_k41; assert_in_epsilon(260.78309851830403, worksheet.flows_k41, 0.002); end
+  def test_flows_l41; assert_in_epsilon(310.43954119358096, worksheet.flows_l41, 0.002); end
+  def test_flows_m41; assert_in_epsilon(371.9073720572961, worksheet.flows_m41, 0.002); end
+  def test_flows_n41; assert_in_epsilon(441.2129354504381, worksheet.flows_n41, 0.002); end
+  def test_flows_o41; assert_in_epsilon(514.5279511341514, worksheet.flows_o41, 0.002); end
+  def test_flows_p41; assert_in_epsilon(595.4297428233928, worksheet.flows_p41, 0.002); end
+  def test_flows_c42; assert_equal("Gas", worksheet.flows_c42); end
+  def test_flows_d42; assert_equal("H2prod", worksheet.flows_d42); end
+  def test_flows_e42; assert_equal("H2 conversion", worksheet.flows_e42); end
+  def test_flows_f42; assert_equal("V.05", worksheet.flows_f42); end
+  def test_flows_g42; assert_in_delta(0.0, (worksheet.flows_g42||0), 0.002); end
+  def test_flows_h42; assert_in_delta(0.0, (worksheet.flows_h42||0), 0.002); end
+  def test_flows_i42; assert_in_delta(0.0, (worksheet.flows_i42||0), 0.002); end
+  def test_flows_j42; assert_in_delta(0.0, (worksheet.flows_j42||0), 0.002); end
+  def test_flows_k42; assert_in_delta(0.0, (worksheet.flows_k42||0), 0.002); end
+  def test_flows_l42; assert_in_delta(0.0, (worksheet.flows_l42||0), 0.002); end
+  def test_flows_m42; assert_in_delta(0.0, (worksheet.flows_m42||0), 0.002); end
+  def test_flows_n42; assert_in_delta(0.0, (worksheet.flows_n42||0), 0.002); end
+  def test_flows_o42; assert_in_delta(0.0, (worksheet.flows_o42||0), 0.002); end
+  def test_flows_p42; assert_in_delta(0.0, (worksheet.flows_p42||0), 0.002); end
+  def test_flows_c43; assert_equal("Electricity grid", worksheet.flows_c43); end
   def test_flows_d43; assert_equal("H2prod", worksheet.flows_d43); end
   def test_flows_e43; assert_equal("H2 conversion", worksheet.flows_e43); end
-  def test_flows_f43; assert_equal("V.05", worksheet.flows_f43); end
+  def test_flows_f43; assert_equal("V.01", worksheet.flows_f43); end
   def test_flows_g43; assert_in_delta(0.0, (worksheet.flows_g43||0), 0.002); end
   def test_flows_h43; assert_in_delta(0.0, (worksheet.flows_h43||0), 0.002); end
   def test_flows_i43; assert_in_delta(0.0, (worksheet.flows_i43||0), 0.002); end
@@ -3613,10 +3613,10 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_n43; assert_in_delta(0.0, (worksheet.flows_n43||0), 0.002); end
   def test_flows_o43; assert_in_delta(0.0, (worksheet.flows_o43||0), 0.002); end
   def test_flows_p43; assert_in_delta(0.0, (worksheet.flows_p43||0), 0.002); end
-  def test_flows_c44; assert_equal("Electricity grid", worksheet.flows_c44); end
+  def test_flows_c44; assert_equal("H2 conversion", worksheet.flows_c44); end
   def test_flows_d44; assert_equal("H2prod", worksheet.flows_d44); end
-  def test_flows_e44; assert_equal("H2 conversion", worksheet.flows_e44); end
-  def test_flows_f44; assert_equal("V.01", worksheet.flows_f44); end
+  def test_flows_e44; assert_equal("H2", worksheet.flows_e44); end
+  def test_flows_f44; assert_equal("V.12", worksheet.flows_f44); end
   def test_flows_g44; assert_in_delta(0.0, (worksheet.flows_g44||0), 0.002); end
   def test_flows_h44; assert_in_delta(0.0, (worksheet.flows_h44||0), 0.002); end
   def test_flows_i44; assert_in_delta(0.0, (worksheet.flows_i44||0), 0.002); end
@@ -3629,8 +3629,8 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_p44; assert_in_delta(0.0, (worksheet.flows_p44||0), 0.002); end
   def test_flows_c45; assert_equal("H2 conversion", worksheet.flows_c45); end
   def test_flows_d45; assert_equal("H2prod", worksheet.flows_d45); end
-  def test_flows_e45; assert_equal("H2", worksheet.flows_e45); end
-  def test_flows_f45; assert_equal("V.12", worksheet.flows_f45); end
+  def test_flows_e45; assert_equal("Losses", worksheet.flows_e45); end
+  def test_flows_f45; assert_equal("X.01", worksheet.flows_f45); end
   def test_flows_g45; assert_in_delta(0.0, (worksheet.flows_g45||0), 0.002); end
   def test_flows_h45; assert_in_delta(0.0, (worksheet.flows_h45||0), 0.002); end
   def test_flows_i45; assert_in_delta(0.0, (worksheet.flows_i45||0), 0.002); end
@@ -3641,10 +3641,10 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_n45; assert_in_delta(0.0, (worksheet.flows_n45||0), 0.002); end
   def test_flows_o45; assert_in_delta(0.0, (worksheet.flows_o45||0), 0.002); end
   def test_flows_p45; assert_in_delta(0.0, (worksheet.flows_p45||0), 0.002); end
-  def test_flows_c46; assert_equal("H2 conversion", worksheet.flows_c46); end
-  def test_flows_d46; assert_equal("H2prod", worksheet.flows_d46); end
-  def test_flows_e46; assert_equal("Losses", worksheet.flows_e46); end
-  def test_flows_f46; assert_equal("X.01", worksheet.flows_f46); end
+  def test_flows_c46; assert_equal("H2", worksheet.flows_c46); end
+  def test_flows_d46; assert_equal("TRA.a", worksheet.flows_d46); end
+  def test_flows_e46; assert_equal("Road transport", worksheet.flows_e46); end
+  def test_flows_f46; assert_equal("V.12", worksheet.flows_f46); end
   def test_flows_g46; assert_in_delta(0.0, (worksheet.flows_g46||0), 0.002); end
   def test_flows_h46; assert_in_delta(0.0, (worksheet.flows_h46||0), 0.002); end
   def test_flows_i46; assert_in_delta(0.0, (worksheet.flows_i46||0), 0.002); end
@@ -3655,529 +3655,515 @@ class TestModel < Minitest::Unit::TestCase
   def test_flows_n46; assert_in_delta(0.0, (worksheet.flows_n46||0), 0.002); end
   def test_flows_o46; assert_in_delta(0.0, (worksheet.flows_o46||0), 0.002); end
   def test_flows_p46; assert_in_delta(0.0, (worksheet.flows_p46||0), 0.002); end
-  def test_flows_c47; assert_equal("H2", worksheet.flows_c47); end
-  def test_flows_d47; assert_equal("TRA.a", worksheet.flows_d47); end
-  def test_flows_e47; assert_equal("Road transport", worksheet.flows_e47); end
-  def test_flows_f47; assert_equal("V.12", worksheet.flows_f47); end
-  def test_flows_g47; assert_in_delta(0.0, (worksheet.flows_g47||0), 0.002); end
-  def test_flows_h47; assert_in_delta(0.0, (worksheet.flows_h47||0), 0.002); end
-  def test_flows_i47; assert_in_delta(0.0, (worksheet.flows_i47||0), 0.002); end
-  def test_flows_j47; assert_in_delta(0.0, (worksheet.flows_j47||0), 0.002); end
-  def test_flows_k47; assert_in_delta(0.0, (worksheet.flows_k47||0), 0.002); end
-  def test_flows_l47; assert_in_delta(0.0, (worksheet.flows_l47||0), 0.002); end
-  def test_flows_m47; assert_in_delta(0.0, (worksheet.flows_m47||0), 0.002); end
-  def test_flows_n47; assert_in_delta(0.0, (worksheet.flows_n47||0), 0.002); end
-  def test_flows_o47; assert_in_delta(0.0, (worksheet.flows_o47||0), 0.002); end
-  def test_flows_p47; assert_in_delta(0.0, (worksheet.flows_p47||0), 0.002); end
-  def test_flows_c48; assert_equal("Electricity grid", worksheet.flows_c48); end
+  def test_flows_c47; assert_equal("Electricity grid", worksheet.flows_c47); end
+  def test_flows_e47; assert_equal("Heating - homes", worksheet.flows_e47); end
+  def test_flows_f47; assert_equal("V.01", worksheet.flows_f47); end
+  def test_flows_g47; assert_in_epsilon(18.278014600654977, worksheet.flows_g47, 0.002); end
+  def test_flows_h47; assert_in_epsilon(20.443606211346424, worksheet.flows_h47, 0.002); end
+  def test_flows_i47; assert_in_epsilon(23.17406759376472, worksheet.flows_i47, 0.002); end
+  def test_flows_j47; assert_in_epsilon(25.964592711263727, worksheet.flows_j47, 0.002); end
+  def test_flows_k47; assert_in_epsilon(28.772210690549997, worksheet.flows_k47, 0.002); end
+  def test_flows_l47; assert_in_epsilon(31.508300263582537, worksheet.flows_l47, 0.002); end
+  def test_flows_m47; assert_in_epsilon(34.59353444729231, worksheet.flows_m47, 0.002); end
+  def test_flows_n47; assert_in_epsilon(37.64426158470966, worksheet.flows_n47, 0.002); end
+  def test_flows_o47; assert_in_epsilon(41.225484013215876, worksheet.flows_o47, 0.002); end
+  def test_flows_p47; assert_in_epsilon(44.72029362447997, worksheet.flows_p47, 0.002); end
+  def test_flows_c48; assert_equal("Solid", worksheet.flows_c48); end
   def test_flows_e48; assert_equal("Heating - homes", worksheet.flows_e48); end
-  def test_flows_f48; assert_equal("V.01", worksheet.flows_f48); end
-  def test_flows_g48; assert_in_epsilon(18.278014600654977, worksheet.flows_g48, 0.002); end
-  def test_flows_h48; assert_in_epsilon(20.443606211346424, worksheet.flows_h48, 0.002); end
-  def test_flows_i48; assert_in_epsilon(23.17406759376472, worksheet.flows_i48, 0.002); end
-  def test_flows_j48; assert_in_epsilon(25.964592711263727, worksheet.flows_j48, 0.002); end
-  def test_flows_k48; assert_in_epsilon(28.772210690549997, worksheet.flows_k48, 0.002); end
-  def test_flows_l48; assert_in_epsilon(31.508300263582537, worksheet.flows_l48, 0.002); end
-  def test_flows_m48; assert_in_epsilon(34.59353444729231, worksheet.flows_m48, 0.002); end
-  def test_flows_n48; assert_in_epsilon(37.64426158470966, worksheet.flows_n48, 0.002); end
-  def test_flows_o48; assert_in_epsilon(41.225484013215876, worksheet.flows_o48, 0.002); end
-  def test_flows_p48; assert_in_epsilon(44.72029362447997, worksheet.flows_p48, 0.002); end
-  def test_flows_c49; assert_equal("Solid", worksheet.flows_c49); end
+  def test_flows_f48; assert_equal("V.03", worksheet.flows_f48); end
+  def test_flows_g48; assert_in_epsilon(21.32467675301719, worksheet.flows_g48, 0.002); end
+  def test_flows_h48; assert_in_epsilon(22.145699101366496, worksheet.flows_h48, 0.002); end
+  def test_flows_i48; assert_in_epsilon(23.299658471439724, worksheet.flows_i48, 0.002); end
+  def test_flows_j48; assert_in_epsilon(24.37399126921341, worksheet.flows_j48, 0.002); end
+  def test_flows_k48; assert_in_epsilon(25.351911192696033, worksheet.flows_k48, 0.002); end
+  def test_flows_l48; assert_in_epsilon(26.182475259720988, worksheet.flows_l48, 0.002); end
+  def test_flows_m48; assert_in_epsilon(24.440349856320147, worksheet.flows_m48, 0.002); end
+  def test_flows_n48; assert_in_epsilon(22.62257453811536, worksheet.flows_n48, 0.002); end
+  def test_flows_o48; assert_in_epsilon(20.073036727201576, worksheet.flows_o48, 0.002); end
+  def test_flows_p48; assert_in_epsilon(17.514287536624373, worksheet.flows_p48, 0.002); end
+  def test_flows_s48; assert_equal("For referencing", worksheet.flows_s48); end
+  def test_flows_c49; assert_equal("Liquid", worksheet.flows_c49); end
   def test_flows_e49; assert_equal("Heating - homes", worksheet.flows_e49); end
-  def test_flows_f49; assert_equal("V.03", worksheet.flows_f49); end
-  def test_flows_g49; assert_in_epsilon(21.32467675301719, worksheet.flows_g49, 0.002); end
-  def test_flows_h49; assert_in_epsilon(22.145699101366496, worksheet.flows_h49, 0.002); end
-  def test_flows_i49; assert_in_epsilon(23.299658471439724, worksheet.flows_i49, 0.002); end
-  def test_flows_j49; assert_in_epsilon(24.37399126921341, worksheet.flows_j49, 0.002); end
-  def test_flows_k49; assert_in_epsilon(25.351911192696033, worksheet.flows_k49, 0.002); end
-  def test_flows_l49; assert_in_epsilon(26.182475259720988, worksheet.flows_l49, 0.002); end
-  def test_flows_m49; assert_in_epsilon(24.440349856320147, worksheet.flows_m49, 0.002); end
-  def test_flows_n49; assert_in_epsilon(22.62257453811536, worksheet.flows_n49, 0.002); end
-  def test_flows_o49; assert_in_epsilon(20.073036727201576, worksheet.flows_o49, 0.002); end
-  def test_flows_p49; assert_in_epsilon(17.514287536624373, worksheet.flows_p49, 0.002); end
-  def test_flows_s49; assert_equal("For referencing", worksheet.flows_s49); end
-  def test_flows_c50; assert_equal("Liquid", worksheet.flows_c50); end
+  def test_flows_f49; assert_equal("V.04", worksheet.flows_f49); end
+  def test_flows_g49; assert_in_epsilon(5.3342914487858675, worksheet.flows_g49, 0.002); end
+  def test_flows_h49; assert_in_epsilon(5.358170678566345, worksheet.flows_h49, 0.002); end
+  def test_flows_i49; assert_in_epsilon(5.428703537355805, worksheet.flows_i49, 0.002); end
+  def test_flows_j49; assert_in_epsilon(5.4606820467496275, worksheet.flows_j49, 0.002); end
+  def test_flows_k49; assert_in_epsilon(5.453295885140176, worksheet.flows_k49, 0.002); end
+  def test_flows_l49; assert_in_epsilon(5.399359158334526, worksheet.flows_l49, 0.002); end
+  def test_flows_m49; assert_in_epsilon(5.004554464813791, worksheet.flows_m49, 0.002); end
+  def test_flows_n49; assert_in_epsilon(4.627484595515089, worksheet.flows_n49, 0.002); end
+  def test_flows_o49; assert_in_epsilon(4.195337238597847, worksheet.flows_o49, 0.002); end
+  def test_flows_p49; assert_in_epsilon(3.809312551429139, worksheet.flows_p49, 0.002); end
+  def test_flows_s49; assert_equal("RES.L", worksheet.flows_s49); end
+  def test_flows_t49; assert_equal("RES.W", worksheet.flows_t49); end
+  def test_flows_c50; assert_equal("Gas", worksheet.flows_c50); end
   def test_flows_e50; assert_equal("Heating - homes", worksheet.flows_e50); end
-  def test_flows_f50; assert_equal("V.04", worksheet.flows_f50); end
-  def test_flows_g50; assert_in_epsilon(5.3342914487858675, worksheet.flows_g50, 0.002); end
-  def test_flows_h50; assert_in_epsilon(5.358170678566345, worksheet.flows_h50, 0.002); end
-  def test_flows_i50; assert_in_epsilon(5.428703537355805, worksheet.flows_i50, 0.002); end
-  def test_flows_j50; assert_in_epsilon(5.4606820467496275, worksheet.flows_j50, 0.002); end
-  def test_flows_k50; assert_in_epsilon(5.453295885140176, worksheet.flows_k50, 0.002); end
-  def test_flows_l50; assert_in_epsilon(5.399359158334526, worksheet.flows_l50, 0.002); end
-  def test_flows_m50; assert_in_epsilon(5.004554464813791, worksheet.flows_m50, 0.002); end
-  def test_flows_n50; assert_in_epsilon(4.627484595515089, worksheet.flows_n50, 0.002); end
-  def test_flows_o50; assert_in_epsilon(4.195337238597847, worksheet.flows_o50, 0.002); end
-  def test_flows_p50; assert_in_epsilon(3.809312551429139, worksheet.flows_p50, 0.002); end
-  def test_flows_s50; assert_equal("RES.L", worksheet.flows_s50); end
-  def test_flows_t50; assert_equal("RES.W", worksheet.flows_t50); end
-  def test_flows_c51; assert_equal("Gas", worksheet.flows_c51); end
+  def test_flows_f50; assert_equal("V.05", worksheet.flows_f50); end
+  def test_flows_g50; assert_in_delta(0.015068956280176871, worksheet.flows_g50, 0.002); end
+  def test_flows_h50; assert_in_delta(0.014386689741063219, worksheet.flows_h50, 0.002); end
+  def test_flows_i50; assert_in_delta(0.013127949088388866, worksheet.flows_i50, 0.002); end
+  def test_flows_j50; assert_in_delta(0.01147314941568747, worksheet.flows_j50, 0.002); end
+  def test_flows_k50; assert_in_delta(0.009427891121885067, worksheet.flows_k50, 0.002); end
+  def test_flows_l50; assert_in_delta(0.007000887302485457, worksheet.flows_l50, 0.002); end
+  def test_flows_m50; assert_in_delta(0.005891673284144599, worksheet.flows_m50, 0.002); end
+  def test_flows_n50; assert_in_delta(0.004638897568401214, worksheet.flows_n50, 0.002); end
+  def test_flows_o50; assert_in_delta(0.002896073900201351, worksheet.flows_o50, 0.002); end
+  def test_flows_p50; assert_in_delta(0.0010107417237876924, worksheet.flows_p50, 0.002); end
+  def test_flows_s50; assert_equal("RES.R", worksheet.flows_s50); end
+  def test_flows_t50; assert_equal("RES.H", worksheet.flows_t50); end
+  def test_flows_c51; assert_equal("Biomass", worksheet.flows_c51); end
   def test_flows_e51; assert_equal("Heating - homes", worksheet.flows_e51); end
-  def test_flows_f51; assert_equal("V.05", worksheet.flows_f51); end
-  def test_flows_g51; assert_in_delta(0.015068956280176871, worksheet.flows_g51, 0.002); end
-  def test_flows_h51; assert_in_delta(0.014386689741063219, worksheet.flows_h51, 0.002); end
-  def test_flows_i51; assert_in_delta(0.013127949088388866, worksheet.flows_i51, 0.002); end
-  def test_flows_j51; assert_in_delta(0.01147314941568747, worksheet.flows_j51, 0.002); end
-  def test_flows_k51; assert_in_delta(0.009427891121885067, worksheet.flows_k51, 0.002); end
-  def test_flows_l51; assert_in_delta(0.007000887302485457, worksheet.flows_l51, 0.002); end
-  def test_flows_m51; assert_in_delta(0.005891673284144599, worksheet.flows_m51, 0.002); end
-  def test_flows_n51; assert_in_delta(0.004638897568401214, worksheet.flows_n51, 0.002); end
-  def test_flows_o51; assert_in_delta(0.002896073900201351, worksheet.flows_o51, 0.002); end
-  def test_flows_p51; assert_in_delta(0.0010107417237876924, worksheet.flows_p51, 0.002); end
-  def test_flows_s51; assert_equal("RES.R", worksheet.flows_s51); end
-  def test_flows_t51; assert_equal("RES.H", worksheet.flows_t51); end
-  def test_flows_c52; assert_equal("Biomass", worksheet.flows_c52); end
-  def test_flows_e52; assert_equal("Heating - homes", worksheet.flows_e52); end
-  def test_flows_f52; assert_equal("V.09", worksheet.flows_f52); end
-  def test_flows_g52; assert_in_epsilon(16.266345503722842, worksheet.flows_g52, 0.002); end
-  def test_flows_h52; assert_in_epsilon(15.58958607998778, worksheet.flows_h52, 0.002); end
-  def test_flows_i52; assert_in_epsilon(14.894940505817708, worksheet.flows_i52, 0.002); end
-  def test_flows_j52; assert_in_epsilon(14.06956899348285, worksheet.flows_j52, 0.002); end
-  def test_flows_k52; assert_in_epsilon(13.131051287420403, worksheet.flows_k52, 0.002); end
-  def test_flows_l52; assert_in_epsilon(12.083649399995991, worksheet.flows_l52, 0.002); end
-  def test_flows_m52; assert_in_epsilon(10.468906059672689, worksheet.flows_m52, 0.002); end
-  def test_flows_n52; assert_in_epsilon(8.936512238393204, worksheet.flows_n52, 0.002); end
-  def test_flows_o52; assert_in_epsilon(7.231605011555197, worksheet.flows_o52, 0.002); end
-  def test_flows_p52; assert_in_epsilon(5.708576313928643, worksheet.flows_p52, 0.002); end
-  def test_flows_s52; assert_equal("RES.N", worksheet.flows_s52); end
-  def test_flows_t52; assert_equal("RES.K", worksheet.flows_t52); end
-  def test_flows_c53; assert_equal("Electricity grid", worksheet.flows_c53); end
+  def test_flows_f51; assert_equal("V.09", worksheet.flows_f51); end
+  def test_flows_g51; assert_in_epsilon(16.266345503722842, worksheet.flows_g51, 0.002); end
+  def test_flows_h51; assert_in_epsilon(15.58958607998778, worksheet.flows_h51, 0.002); end
+  def test_flows_i51; assert_in_epsilon(14.894940505817708, worksheet.flows_i51, 0.002); end
+  def test_flows_j51; assert_in_epsilon(14.06956899348285, worksheet.flows_j51, 0.002); end
+  def test_flows_k51; assert_in_epsilon(13.131051287420403, worksheet.flows_k51, 0.002); end
+  def test_flows_l51; assert_in_epsilon(12.083649399995991, worksheet.flows_l51, 0.002); end
+  def test_flows_m51; assert_in_epsilon(10.468906059672689, worksheet.flows_m51, 0.002); end
+  def test_flows_n51; assert_in_epsilon(8.936512238393204, worksheet.flows_n51, 0.002); end
+  def test_flows_o51; assert_in_epsilon(7.231605011555197, worksheet.flows_o51, 0.002); end
+  def test_flows_p51; assert_in_epsilon(5.708576313928643, worksheet.flows_p51, 0.002); end
+  def test_flows_s51; assert_equal("RES.N", worksheet.flows_s51); end
+  def test_flows_t51; assert_equal("RES.K", worksheet.flows_t51); end
+  def test_flows_c52; assert_equal("Electricity grid", worksheet.flows_c52); end
+  def test_flows_e52; assert_equal("Cooking and appliances - homes", worksheet.flows_e52); end
+  def test_flows_f52; assert_equal("V.01", worksheet.flows_f52); end
+  def test_flows_g52; assert_in_epsilon(79.26102235893828, worksheet.flows_g52, 0.002); end
+  def test_flows_h52; assert_in_epsilon(89.16183296764322, worksheet.flows_h52, 0.002); end
+  def test_flows_i52; assert_in_epsilon(101.82336579955468, worksheet.flows_i52, 0.002); end
+  def test_flows_j52; assert_in_epsilon(114.83023537819896, worksheet.flows_j52, 0.002); end
+  def test_flows_k52; assert_in_epsilon(127.98401319022592, worksheet.flows_k52, 0.002); end
+  def test_flows_l52; assert_in_epsilon(140.8796783052747, worksheet.flows_l52, 0.002); end
+  def test_flows_m52; assert_in_epsilon(154.44751851667368, worksheet.flows_m52, 0.002); end
+  def test_flows_n52; assert_in_epsilon(167.72542419446054, worksheet.flows_n52, 0.002); end
+  def test_flows_o52; assert_in_epsilon(183.15376441971847, worksheet.flows_o52, 0.002); end
+  def test_flows_p52; assert_in_epsilon(198.00795846995516, worksheet.flows_p52, 0.002); end
+  def test_flows_s52; assert_equal("RES.O", worksheet.flows_s52); end
+  def test_flows_c53; assert_equal("Solid", worksheet.flows_c53); end
   def test_flows_e53; assert_equal("Cooking and appliances - homes", worksheet.flows_e53); end
-  def test_flows_f53; assert_equal("V.01", worksheet.flows_f53); end
-  def test_flows_g53; assert_in_epsilon(79.26102235893828, worksheet.flows_g53, 0.002); end
-  def test_flows_h53; assert_in_epsilon(89.16183296764322, worksheet.flows_h53, 0.002); end
-  def test_flows_i53; assert_in_epsilon(101.82336579955468, worksheet.flows_i53, 0.002); end
-  def test_flows_j53; assert_in_epsilon(114.83023537819896, worksheet.flows_j53, 0.002); end
-  def test_flows_k53; assert_in_epsilon(127.98401319022592, worksheet.flows_k53, 0.002); end
-  def test_flows_l53; assert_in_epsilon(140.8796783052747, worksheet.flows_l53, 0.002); end
-  def test_flows_m53; assert_in_epsilon(154.44751851667368, worksheet.flows_m53, 0.002); end
-  def test_flows_n53; assert_in_epsilon(167.72542419446054, worksheet.flows_n53, 0.002); end
-  def test_flows_o53; assert_in_epsilon(183.15376441971847, worksheet.flows_o53, 0.002); end
-  def test_flows_p53; assert_in_epsilon(198.00795846995516, worksheet.flows_p53, 0.002); end
-  def test_flows_s53; assert_equal("RES.O", worksheet.flows_s53); end
-  def test_flows_c54; assert_equal("Solid", worksheet.flows_c54); end
+  def test_flows_f53; assert_equal("V.03", worksheet.flows_f53); end
+  def test_flows_g53; assert_in_epsilon(15.100491858366102, worksheet.flows_g53, 0.002); end
+  def test_flows_h53; assert_in_epsilon(13.052335372611548, worksheet.flows_h53, 0.002); end
+  def test_flows_i53; assert_in_epsilon(10.88372808003203, worksheet.flows_i53, 0.002); end
+  def test_flows_j53; assert_in_epsilon(8.720652454072175, worksheet.flows_j53, 0.002); end
+  def test_flows_k53; assert_in_epsilon(6.626708937591596, worksheet.flows_k53, 0.002); end
+  def test_flows_l53; assert_in_epsilon(4.65693925995718, worksheet.flows_l53, 0.002); end
+  def test_flows_m53; assert_in_epsilon(3.174382263600136, worksheet.flows_m53, 0.002); end
+  def test_flows_n53; assert_in_epsilon(1.9011172762556503, worksheet.flows_n53, 0.002); end
+  def test_flows_o53; assert_in_delta(0.7863965403610562, worksheet.flows_o53, 0.002); end
+  def test_flows_p53; assert_in_delta(0.0, (worksheet.flows_p53||0), 0.002); end
+  def test_flows_c54; assert_equal("Liquid", worksheet.flows_c54); end
   def test_flows_e54; assert_equal("Cooking and appliances - homes", worksheet.flows_e54); end
-  def test_flows_f54; assert_equal("V.03", worksheet.flows_f54); end
-  def test_flows_g54; assert_in_epsilon(15.100491858366102, worksheet.flows_g54, 0.002); end
-  def test_flows_h54; assert_in_epsilon(13.052335372611548, worksheet.flows_h54, 0.002); end
-  def test_flows_i54; assert_in_epsilon(10.88372808003203, worksheet.flows_i54, 0.002); end
-  def test_flows_j54; assert_in_epsilon(8.720652454072175, worksheet.flows_j54, 0.002); end
-  def test_flows_k54; assert_in_epsilon(6.626708937591596, worksheet.flows_k54, 0.002); end
-  def test_flows_l54; assert_in_epsilon(4.65693925995718, worksheet.flows_l54, 0.002); end
-  def test_flows_m54; assert_in_epsilon(3.174382263600136, worksheet.flows_m54, 0.002); end
-  def test_flows_n54; assert_in_epsilon(1.9011172762556503, worksheet.flows_n54, 0.002); end
-  def test_flows_o54; assert_in_delta(0.7863965403610562, worksheet.flows_o54, 0.002); end
-  def test_flows_p54; assert_in_delta(0.0, (worksheet.flows_p54||0), 0.002); end
-  def test_flows_c55; assert_equal("Liquid", worksheet.flows_c55); end
+  def test_flows_f54; assert_equal("V.04", worksheet.flows_f54); end
+  def test_flows_g54; assert_in_epsilon(3.4511677094739746, worksheet.flows_g54, 0.002); end
+  def test_flows_h54; assert_in_epsilon(3.4798161996520305, worksheet.flows_h54, 0.002); end
+  def test_flows_i54; assert_in_epsilon(3.521730295180215, worksheet.flows_i54, 0.002); end
+  def test_flows_j54; assert_in_epsilon(3.548776171765986, worksheet.flows_j54, 0.002); end
+  def test_flows_k54; assert_in_epsilon(3.561452632411384, worksheet.flows_k54, 0.002); end
+  def test_flows_l54; assert_in_epsilon(3.5556785954963654, worksheet.flows_l54, 0.002); end
+  def test_flows_m54; assert_in_epsilon(3.3173770930263062, worksheet.flows_m54, 0.002); end
+  def test_flows_n54; assert_in_epsilon(3.056749307015346, worksheet.flows_n54, 0.002); end
+  def test_flows_o54; assert_in_epsilon(2.666014727721953, worksheet.flows_o54, 0.002); end
+  def test_flows_p54; assert_in_epsilon(2.256719705100393, worksheet.flows_p54, 0.002); end
+  def test_flows_c55; assert_equal("Gas", worksheet.flows_c55); end
   def test_flows_e55; assert_equal("Cooking and appliances - homes", worksheet.flows_e55); end
-  def test_flows_f55; assert_equal("V.04", worksheet.flows_f55); end
-  def test_flows_g55; assert_in_epsilon(3.4511677094739746, worksheet.flows_g55, 0.002); end
-  def test_flows_h55; assert_in_epsilon(3.4798161996520305, worksheet.flows_h55, 0.002); end
-  def test_flows_i55; assert_in_epsilon(3.521730295180215, worksheet.flows_i55, 0.002); end
-  def test_flows_j55; assert_in_epsilon(3.548776171765986, worksheet.flows_j55, 0.002); end
-  def test_flows_k55; assert_in_epsilon(3.561452632411384, worksheet.flows_k55, 0.002); end
-  def test_flows_l55; assert_in_epsilon(3.5556785954963654, worksheet.flows_l55, 0.002); end
-  def test_flows_m55; assert_in_epsilon(3.3173770930263062, worksheet.flows_m55, 0.002); end
-  def test_flows_n55; assert_in_epsilon(3.056749307015346, worksheet.flows_n55, 0.002); end
-  def test_flows_o55; assert_in_epsilon(2.666014727721953, worksheet.flows_o55, 0.002); end
-  def test_flows_p55; assert_in_epsilon(2.256719705100393, worksheet.flows_p55, 0.002); end
-  def test_flows_c56; assert_equal("Gas", worksheet.flows_c56); end
+  def test_flows_f55; assert_equal("V.05", worksheet.flows_f55); end
+  def test_flows_g55; assert_in_epsilon(2.4633649553347055, worksheet.flows_g55, 0.002); end
+  def test_flows_h55; assert_in_epsilon(2.5137752989703186, worksheet.flows_h55, 0.002); end
+  def test_flows_i55; assert_in_epsilon(2.5974927341070035, worksheet.flows_i55, 0.002); end
+  def test_flows_j55; assert_in_epsilon(2.6758840620915763, worksheet.flows_j55, 0.002); end
+  def test_flows_k55; assert_in_epsilon(2.748522930975043, worksheet.flows_k55, 0.002); end
+  def test_flows_l55; assert_in_epsilon(2.8111697221347667, worksheet.flows_l55, 0.002); end
+  def test_flows_m55; assert_in_epsilon(2.8447971148211133, worksheet.flows_m55, 0.002); end
+  def test_flows_n55; assert_in_epsilon(2.8779691876578735, worksheet.flows_n55, 0.002); end
+  def test_flows_o55; assert_in_epsilon(2.9180932601088565, worksheet.flows_o55, 0.002); end
+  def test_flows_p55; assert_in_epsilon(2.960900363107184, worksheet.flows_p55, 0.002); end
+  def test_flows_c56; assert_equal("Biomass", worksheet.flows_c56); end
   def test_flows_e56; assert_equal("Cooking and appliances - homes", worksheet.flows_e56); end
-  def test_flows_f56; assert_equal("V.05", worksheet.flows_f56); end
-  def test_flows_g56; assert_in_epsilon(2.4633649553347055, worksheet.flows_g56, 0.002); end
-  def test_flows_h56; assert_in_epsilon(2.5137752989703186, worksheet.flows_h56, 0.002); end
-  def test_flows_i56; assert_in_epsilon(2.5974927341070035, worksheet.flows_i56, 0.002); end
-  def test_flows_j56; assert_in_epsilon(2.6758840620915763, worksheet.flows_j56, 0.002); end
-  def test_flows_k56; assert_in_epsilon(2.748522930975043, worksheet.flows_k56, 0.002); end
-  def test_flows_l56; assert_in_epsilon(2.8111697221347667, worksheet.flows_l56, 0.002); end
-  def test_flows_m56; assert_in_epsilon(2.8447971148211133, worksheet.flows_m56, 0.002); end
-  def test_flows_n56; assert_in_epsilon(2.8779691876578735, worksheet.flows_n56, 0.002); end
-  def test_flows_o56; assert_in_epsilon(2.9180932601088565, worksheet.flows_o56, 0.002); end
-  def test_flows_p56; assert_in_epsilon(2.960900363107184, worksheet.flows_p56, 0.002); end
-  def test_flows_c57; assert_equal("Biomass", worksheet.flows_c57); end
-  def test_flows_e57; assert_equal("Cooking and appliances - homes", worksheet.flows_e57); end
-  def test_flows_f57; assert_equal("V.09", worksheet.flows_f57); end
-  def test_flows_g57; assert_in_epsilon(47.457671511457704, worksheet.flows_g57, 0.002); end
-  def test_flows_h57; assert_in_epsilon(50.0527522376054, worksheet.flows_h57, 0.002); end
-  def test_flows_i57; assert_in_epsilon(52.897024468055974, worksheet.flows_i57, 0.002); end
-  def test_flows_j57; assert_in_epsilon(54.664715353633504, worksheet.flows_j57, 0.002); end
-  def test_flows_k57; assert_in_epsilon(55.2291122942373, worksheet.flows_k57, 0.002); end
-  def test_flows_l57; assert_in_epsilon(54.425451988779976, worksheet.flows_l57, 0.002); end
-  def test_flows_m57; assert_in_epsilon(47.371637838405945, worksheet.flows_m57, 0.002); end
-  def test_flows_n57; assert_in_epsilon(40.28965286496314, worksheet.flows_n57, 0.002); end
-  def test_flows_o57; assert_in_epsilon(31.716023401114626, worksheet.flows_o57, 0.002); end
-  def test_flows_p57; assert_in_epsilon(23.465518541594438, worksheet.flows_p57, 0.002); end
-  def test_flows_c58; assert_equal("Electricity grid", worksheet.flows_c58); end
+  def test_flows_f56; assert_equal("V.09", worksheet.flows_f56); end
+  def test_flows_g56; assert_in_epsilon(47.457671511457704, worksheet.flows_g56, 0.002); end
+  def test_flows_h56; assert_in_epsilon(50.0527522376054, worksheet.flows_h56, 0.002); end
+  def test_flows_i56; assert_in_epsilon(52.897024468055974, worksheet.flows_i56, 0.002); end
+  def test_flows_j56; assert_in_epsilon(54.664715353633504, worksheet.flows_j56, 0.002); end
+  def test_flows_k56; assert_in_epsilon(55.2291122942373, worksheet.flows_k56, 0.002); end
+  def test_flows_l56; assert_in_epsilon(54.425451988779976, worksheet.flows_l56, 0.002); end
+  def test_flows_m56; assert_in_epsilon(47.371637838405945, worksheet.flows_m56, 0.002); end
+  def test_flows_n56; assert_in_epsilon(40.28965286496314, worksheet.flows_n56, 0.002); end
+  def test_flows_o56; assert_in_epsilon(31.716023401114626, worksheet.flows_o56, 0.002); end
+  def test_flows_p56; assert_in_epsilon(23.465518541594438, worksheet.flows_p56, 0.002); end
+  def test_flows_c57; assert_equal("Electricity grid", worksheet.flows_c57); end
+  def test_flows_e57; assert_equal("Water Heating - homes", worksheet.flows_e57); end
+  def test_flows_f57; assert_equal("V.01", worksheet.flows_f57); end
+  def test_flows_g57; assert_in_epsilon(53.82287433271977, worksheet.flows_g57, 0.002); end
+  def test_flows_h57; assert_in_epsilon(58.482355904786985, worksheet.flows_h57, 0.002); end
+  def test_flows_i57; assert_in_epsilon(66.64333764692498, worksheet.flows_i57, 0.002); end
+  def test_flows_j57; assert_in_epsilon(74.98419985153545, worksheet.flows_j57, 0.002); end
+  def test_flows_k57; assert_in_epsilon(83.37340054585337, worksheet.flows_k57, 0.002); end
+  def test_flows_l57; assert_in_epsilon(91.54663437096207, worksheet.flows_l57, 0.002); end
+  def test_flows_m57; assert_in_epsilon(102.87691825956753, worksheet.flows_m57, 0.002); end
+  def test_flows_n57; assert_in_epsilon(113.96586044897447, worksheet.flows_n57, 0.002); end
+  def test_flows_o57; assert_in_epsilon(127.36236166595938, worksheet.flows_o57, 0.002); end
+  def test_flows_p57; assert_in_epsilon(140.23729509677128, worksheet.flows_p57, 0.002); end
+  def test_flows_c58; assert_equal("Solid", worksheet.flows_c58); end
   def test_flows_e58; assert_equal("Water Heating - homes", worksheet.flows_e58); end
-  def test_flows_f58; assert_equal("V.01", worksheet.flows_f58); end
-  def test_flows_g58; assert_in_epsilon(53.82287433271977, worksheet.flows_g58, 0.002); end
-  def test_flows_h58; assert_in_epsilon(58.482355904786985, worksheet.flows_h58, 0.002); end
-  def test_flows_i58; assert_in_epsilon(66.64333764692498, worksheet.flows_i58, 0.002); end
-  def test_flows_j58; assert_in_epsilon(74.98419985153545, worksheet.flows_j58, 0.002); end
-  def test_flows_k58; assert_in_epsilon(83.37340054585337, worksheet.flows_k58, 0.002); end
-  def test_flows_l58; assert_in_epsilon(91.54663437096207, worksheet.flows_l58, 0.002); end
-  def test_flows_m58; assert_in_epsilon(102.87691825956753, worksheet.flows_m58, 0.002); end
-  def test_flows_n58; assert_in_epsilon(113.96586044897447, worksheet.flows_n58, 0.002); end
-  def test_flows_o58; assert_in_epsilon(127.36236166595938, worksheet.flows_o58, 0.002); end
-  def test_flows_p58; assert_in_epsilon(140.23729509677128, worksheet.flows_p58, 0.002); end
-  def test_flows_c59; assert_equal("Solid", worksheet.flows_c59); end
+  def test_flows_f58; assert_equal("V.03", worksheet.flows_f58); end
+  def test_flows_g58; assert_in_delta(0.0, (worksheet.flows_g58||0), 0.002); end
+  def test_flows_h58; assert_in_delta(0.0, (worksheet.flows_h58||0), 0.002); end
+  def test_flows_i58; assert_in_delta(0.0, (worksheet.flows_i58||0), 0.002); end
+  def test_flows_j58; assert_in_delta(0.0, (worksheet.flows_j58||0), 0.002); end
+  def test_flows_k58; assert_in_delta(0.0, (worksheet.flows_k58||0), 0.002); end
+  def test_flows_l58; assert_in_delta(0.0, (worksheet.flows_l58||0), 0.002); end
+  def test_flows_m58; assert_in_delta(0.0, (worksheet.flows_m58||0), 0.002); end
+  def test_flows_n58; assert_in_delta(0.0, (worksheet.flows_n58||0), 0.002); end
+  def test_flows_o58; assert_in_delta(0.0, (worksheet.flows_o58||0), 0.002); end
+  def test_flows_p58; assert_in_delta(0.0, (worksheet.flows_p58||0), 0.002); end
+  def test_flows_c59; assert_equal("Liquid", worksheet.flows_c59); end
   def test_flows_e59; assert_equal("Water Heating - homes", worksheet.flows_e59); end
-  def test_flows_f59; assert_equal("V.03", worksheet.flows_f59); end
-  def test_flows_g59; assert_in_delta(0.0, (worksheet.flows_g59||0), 0.002); end
-  def test_flows_h59; assert_in_delta(0.0, (worksheet.flows_h59||0), 0.002); end
-  def test_flows_i59; assert_in_delta(0.0, (worksheet.flows_i59||0), 0.002); end
-  def test_flows_j59; assert_in_delta(0.0, (worksheet.flows_j59||0), 0.002); end
-  def test_flows_k59; assert_in_delta(0.0, (worksheet.flows_k59||0), 0.002); end
-  def test_flows_l59; assert_in_delta(0.0, (worksheet.flows_l59||0), 0.002); end
-  def test_flows_m59; assert_in_delta(0.0, (worksheet.flows_m59||0), 0.002); end
-  def test_flows_n59; assert_in_delta(0.0, (worksheet.flows_n59||0), 0.002); end
-  def test_flows_o59; assert_in_delta(0.0, (worksheet.flows_o59||0), 0.002); end
-  def test_flows_p59; assert_in_delta(0.0, (worksheet.flows_p59||0), 0.002); end
-  def test_flows_c60; assert_equal("Liquid", worksheet.flows_c60); end
+  def test_flows_f59; assert_equal("V.04", worksheet.flows_f59); end
+  def test_flows_g59; assert_in_epsilon(5.644927673044796, worksheet.flows_g59, 0.002); end
+  def test_flows_h59; assert_in_epsilon(4.929798226715382, worksheet.flows_h59, 0.002); end
+  def test_flows_i59; assert_in_epsilon(4.636912281430522, worksheet.flows_i59, 0.002); end
+  def test_flows_j59; assert_in_epsilon(4.300666103926695, worksheet.flows_j59, 0.002); end
+  def test_flows_k59; assert_in_epsilon(3.9281921175097665, worksheet.flows_k59, 0.002); end
+  def test_flows_l59; assert_in_epsilon(3.5228599374014946, worksheet.flows_l59, 0.002); end
+  def test_flows_m59; assert_in_epsilon(2.9269535797251782, worksheet.flows_m59, 0.002); end
+  def test_flows_n59; assert_in_epsilon(2.371564865839861, worksheet.flows_n59, 0.002); end
+  def test_flows_o59; assert_in_epsilon(1.78287817925808, worksheet.flows_o59, 0.002); end
+  def test_flows_p59; assert_in_epsilon(1.2737664576625272, worksheet.flows_p59, 0.002); end
+  def test_flows_c60; assert_equal("Gas", worksheet.flows_c60); end
   def test_flows_e60; assert_equal("Water Heating - homes", worksheet.flows_e60); end
-  def test_flows_f60; assert_equal("V.04", worksheet.flows_f60); end
-  def test_flows_g60; assert_in_epsilon(5.644927673044796, worksheet.flows_g60, 0.002); end
-  def test_flows_h60; assert_in_epsilon(4.929798226715382, worksheet.flows_h60, 0.002); end
-  def test_flows_i60; assert_in_epsilon(4.636912281430522, worksheet.flows_i60, 0.002); end
-  def test_flows_j60; assert_in_epsilon(4.300666103926695, worksheet.flows_j60, 0.002); end
-  def test_flows_k60; assert_in_epsilon(3.9281921175097665, worksheet.flows_k60, 0.002); end
-  def test_flows_l60; assert_in_epsilon(3.5228599374014946, worksheet.flows_l60, 0.002); end
-  def test_flows_m60; assert_in_epsilon(2.9269535797251782, worksheet.flows_m60, 0.002); end
-  def test_flows_n60; assert_in_epsilon(2.371564865839861, worksheet.flows_n60, 0.002); end
-  def test_flows_o60; assert_in_epsilon(1.78287817925808, worksheet.flows_o60, 0.002); end
-  def test_flows_p60; assert_in_epsilon(1.2737664576625272, worksheet.flows_p60, 0.002); end
-  def test_flows_c61; assert_equal("Gas", worksheet.flows_c61); end
+  def test_flows_f60; assert_equal("V.05", worksheet.flows_f60); end
+  def test_flows_g60; assert_in_delta(0.6349425066792579, worksheet.flows_g60, 0.002); end
+  def test_flows_h60; assert_in_delta(0.6507114506982068, worksheet.flows_h60, 0.002); end
+  def test_flows_i60; assert_in_delta(0.6721165687913535, worksheet.flows_i60, 0.002); end
+  def test_flows_j60; assert_in_delta(0.6892764109593555, worksheet.flows_j60, 0.002); end
+  def test_flows_k60; assert_in_delta(0.7018216426120365, worksheet.flows_k60, 0.002); end
+  def test_flows_l60; assert_in_delta(0.7085260153714574, worksheet.flows_l60, 0.002); end
+  def test_flows_m60; assert_in_delta(0.7105691737703769, worksheet.flows_m60, 0.002); end
+  def test_flows_n60; assert_in_delta(0.7127420622845735, worksheet.flows_n60, 0.002); end
+  def test_flows_o60; assert_in_delta(0.717455285275314, worksheet.flows_o60, 0.002); end
+  def test_flows_p60; assert_in_delta(0.7235615077015787, worksheet.flows_p60, 0.002); end
+  def test_flows_c61; assert_equal("Biomass", worksheet.flows_c61); end
   def test_flows_e61; assert_equal("Water Heating - homes", worksheet.flows_e61); end
-  def test_flows_f61; assert_equal("V.05", worksheet.flows_f61); end
-  def test_flows_g61; assert_in_delta(0.6349425066792579, worksheet.flows_g61, 0.002); end
-  def test_flows_h61; assert_in_delta(0.6507114506982068, worksheet.flows_h61, 0.002); end
-  def test_flows_i61; assert_in_delta(0.6721165687913535, worksheet.flows_i61, 0.002); end
-  def test_flows_j61; assert_in_delta(0.6892764109593555, worksheet.flows_j61, 0.002); end
-  def test_flows_k61; assert_in_delta(0.7018216426120365, worksheet.flows_k61, 0.002); end
-  def test_flows_l61; assert_in_delta(0.7085260153714574, worksheet.flows_l61, 0.002); end
-  def test_flows_m61; assert_in_delta(0.7105691737703769, worksheet.flows_m61, 0.002); end
-  def test_flows_n61; assert_in_delta(0.7127420622845735, worksheet.flows_n61, 0.002); end
-  def test_flows_o61; assert_in_delta(0.717455285275314, worksheet.flows_o61, 0.002); end
-  def test_flows_p61; assert_in_delta(0.7235615077015787, worksheet.flows_p61, 0.002); end
-  def test_flows_c62; assert_equal("Biomass", worksheet.flows_c62); end
-  def test_flows_e62; assert_equal("Water Heating - homes", worksheet.flows_e62); end
-  def test_flows_f62; assert_equal("V.09", worksheet.flows_f62); end
-  def test_flows_g62; assert_in_epsilon(22.876873050465257, worksheet.flows_g62, 0.002); end
-  def test_flows_h62; assert_in_epsilon(18.03286473348595, worksheet.flows_h62, 0.002); end
-  def test_flows_i62; assert_in_epsilon(17.544490627103755, worksheet.flows_i62, 0.002); end
-  def test_flows_j62; assert_in_epsilon(16.990304040416728, worksheet.flows_j62, 0.002); end
-  def test_flows_k62; assert_in_epsilon(16.39093519490917, worksheet.flows_k62, 0.002); end
-  def test_flows_l62; assert_in_epsilon(15.74622663044358, worksheet.flows_l62, 0.002); end
-  def test_flows_m62; assert_in_epsilon(13.743640602363831, worksheet.flows_m62, 0.002); end
-  def test_flows_n62; assert_in_epsilon(11.878072407390926, worksheet.flows_n62, 0.002); end
-  def test_flows_o62; assert_in_epsilon(9.844298615891867, worksheet.flows_o62, 0.002); end
-  def test_flows_p62; assert_in_epsilon(8.082138116236152, worksheet.flows_p62, 0.002); end
-  def test_flows_c63; assert_equal("Electricity grid", worksheet.flows_c63); end
+  def test_flows_f61; assert_equal("V.09", worksheet.flows_f61); end
+  def test_flows_g61; assert_in_epsilon(22.876873050465257, worksheet.flows_g61, 0.002); end
+  def test_flows_h61; assert_in_epsilon(18.03286473348595, worksheet.flows_h61, 0.002); end
+  def test_flows_i61; assert_in_epsilon(17.544490627103755, worksheet.flows_i61, 0.002); end
+  def test_flows_j61; assert_in_epsilon(16.990304040416728, worksheet.flows_j61, 0.002); end
+  def test_flows_k61; assert_in_epsilon(16.39093519490917, worksheet.flows_k61, 0.002); end
+  def test_flows_l61; assert_in_epsilon(15.74622663044358, worksheet.flows_l61, 0.002); end
+  def test_flows_m61; assert_in_epsilon(13.743640602363831, worksheet.flows_m61, 0.002); end
+  def test_flows_n61; assert_in_epsilon(11.878072407390926, worksheet.flows_n61, 0.002); end
+  def test_flows_o61; assert_in_epsilon(9.844298615891867, worksheet.flows_o61, 0.002); end
+  def test_flows_p61; assert_in_epsilon(8.082138116236152, worksheet.flows_p61, 0.002); end
+  def test_flows_c62; assert_equal("Electricity grid", worksheet.flows_c62); end
+  def test_flows_d62; assert_equal("COM.A.Info.Coolingandheating", worksheet.flows_d62); end
+  def test_flows_e62; assert_equal("Commercial cooling and heating", worksheet.flows_e62); end
+  def test_flows_f62; assert_equal("V.01", worksheet.flows_f62); end
+  def test_flows_g62; assert_in_epsilon(41.27443955742615, worksheet.flows_g62, 0.002); end
+  def test_flows_h62; assert_in_epsilon(45.43290967520784, worksheet.flows_h62, 0.002); end
+  def test_flows_i62; assert_in_epsilon(49.97541766824158, worksheet.flows_i62, 0.002); end
+  def test_flows_j62; assert_in_epsilon(55.25611670132003, worksheet.flows_j62, 0.002); end
+  def test_flows_k62; assert_in_epsilon(61.109684944358335, worksheet.flows_k62, 0.002); end
+  def test_flows_l62; assert_in_epsilon(67.97364535851872, worksheet.flows_l62, 0.002); end
+  def test_flows_m62; assert_in_epsilon(76.59416238418046, worksheet.flows_m62, 0.002); end
+  def test_flows_n62; assert_in_epsilon(85.53516990573578, worksheet.flows_n62, 0.002); end
+  def test_flows_o62; assert_in_epsilon(94.22808352877422, worksheet.flows_o62, 0.002); end
+  def test_flows_p62; assert_in_epsilon(103.50680730946596, worksheet.flows_p62, 0.002); end
+  def test_flows_c63; assert_equal("Solid", worksheet.flows_c63); end
   def test_flows_d63; assert_equal("COM.A.Info.Coolingandheating", worksheet.flows_d63); end
   def test_flows_e63; assert_equal("Commercial cooling and heating", worksheet.flows_e63); end
-  def test_flows_f63; assert_equal("V.01", worksheet.flows_f63); end
-  def test_flows_g63; assert_in_epsilon(41.27443955742615, worksheet.flows_g63, 0.002); end
-  def test_flows_h63; assert_in_epsilon(45.43290967520784, worksheet.flows_h63, 0.002); end
-  def test_flows_i63; assert_in_epsilon(49.97541766824158, worksheet.flows_i63, 0.002); end
-  def test_flows_j63; assert_in_epsilon(55.25611670132003, worksheet.flows_j63, 0.002); end
-  def test_flows_k63; assert_in_epsilon(61.109684944358335, worksheet.flows_k63, 0.002); end
-  def test_flows_l63; assert_in_epsilon(67.97364535851872, worksheet.flows_l63, 0.002); end
-  def test_flows_m63; assert_in_epsilon(76.59416238418046, worksheet.flows_m63, 0.002); end
-  def test_flows_n63; assert_in_epsilon(85.53516990573578, worksheet.flows_n63, 0.002); end
-  def test_flows_o63; assert_in_epsilon(94.22808352877422, worksheet.flows_o63, 0.002); end
-  def test_flows_p63; assert_in_epsilon(103.50680730946596, worksheet.flows_p63, 0.002); end
-  def test_flows_c64; assert_equal("Solid", worksheet.flows_c64); end
-  def test_flows_d64; assert_equal("COM.A.Info.Coolingandheating", worksheet.flows_d64); end
-  def test_flows_e64; assert_equal("Commercial cooling and heating", worksheet.flows_e64); end
-  def test_flows_f64; assert_equal("V.03", worksheet.flows_f64); end
-  def test_flows_g64; assert_in_epsilon(37.609830101872745, worksheet.flows_g64, 0.002); end
-  def test_flows_h64; assert_in_epsilon(41.39908457244845, worksheet.flows_h64, 0.002); end
-  def test_flows_i64; assert_in_epsilon(44.23597169492584, worksheet.flows_i64, 0.002); end
-  def test_flows_j64; assert_in_epsilon(46.22153983693279, worksheet.flows_j64, 0.002); end
-  def test_flows_k64; assert_in_epsilon(47.041617557984424, worksheet.flows_k64, 0.002); end
-  def test_flows_l64; assert_in_epsilon(46.75378831454535, worksheet.flows_l64, 0.002); end
-  def test_flows_m64; assert_in_epsilon(45.36349022922884, worksheet.flows_m64, 0.002); end
-  def test_flows_n64; assert_in_epsilon(41.920469625922834, worksheet.flows_n64, 0.002); end
-  def test_flows_o64; assert_in_epsilon(36.229295558067896, worksheet.flows_o64, 0.002); end
-  def test_flows_p64; assert_in_epsilon(20.429659711337262, worksheet.flows_p64, 0.002); end
-  def test_flows_c65; assert_equal("Electricity grid", worksheet.flows_c65); end
+  def test_flows_f63; assert_equal("V.03", worksheet.flows_f63); end
+  def test_flows_g63; assert_in_epsilon(37.609830101872745, worksheet.flows_g63, 0.002); end
+  def test_flows_h63; assert_in_epsilon(41.39908457244845, worksheet.flows_h63, 0.002); end
+  def test_flows_i63; assert_in_epsilon(44.23597169492584, worksheet.flows_i63, 0.002); end
+  def test_flows_j63; assert_in_epsilon(46.22153983693279, worksheet.flows_j63, 0.002); end
+  def test_flows_k63; assert_in_epsilon(47.041617557984424, worksheet.flows_k63, 0.002); end
+  def test_flows_l63; assert_in_epsilon(46.75378831454535, worksheet.flows_l63, 0.002); end
+  def test_flows_m63; assert_in_epsilon(45.36349022922884, worksheet.flows_m63, 0.002); end
+  def test_flows_n63; assert_in_epsilon(41.920469625922834, worksheet.flows_n63, 0.002); end
+  def test_flows_o63; assert_in_epsilon(36.229295558067896, worksheet.flows_o63, 0.002); end
+  def test_flows_p63; assert_in_epsilon(20.429659711337262, worksheet.flows_p63, 0.002); end
+  def test_flows_c64; assert_equal("Electricity grid", worksheet.flows_c64); end
+  def test_flows_d64; assert_equal("COM.A.Info.Lightingandappliances", worksheet.flows_d64); end
+  def test_flows_e64; assert_equal("Commercial Lighting and appliances", worksheet.flows_e64); end
+  def test_flows_f64; assert_equal("V.01", worksheet.flows_f64); end
+  def test_flows_g64; assert_in_epsilon(66.31882649948713, worksheet.flows_g64, 0.002); end
+  def test_flows_h64; assert_in_epsilon(73.27534381707133, worksheet.flows_h64, 0.002); end
+  def test_flows_i64; assert_in_epsilon(83.032821642558, worksheet.flows_i64, 0.002); end
+  def test_flows_j64; assert_in_epsilon(95.83492552697079, worksheet.flows_j64, 0.002); end
+  def test_flows_k64; assert_in_epsilon(111.60863101589538, worksheet.flows_k64, 0.002); end
+  def test_flows_l64; assert_in_epsilon(131.53649868322344, worksheet.flows_l64, 0.002); end
+  def test_flows_m64; assert_in_epsilon(157.73626432352526, worksheet.flows_m64, 0.002); end
+  def test_flows_n64; assert_in_epsilon(187.33628986791524, worksheet.flows_n64, 0.002); end
+  def test_flows_o64; assert_in_epsilon(219.0020838638601, worksheet.flows_o64, 0.002); end
+  def test_flows_p64; assert_in_epsilon(262.85719659410455, worksheet.flows_p64, 0.002); end
+  def test_flows_c65; assert_equal("Solid", worksheet.flows_c65); end
   def test_flows_d65; assert_equal("COM.A.Info.Lightingandappliances", worksheet.flows_d65); end
   def test_flows_e65; assert_equal("Commercial Lighting and appliances", worksheet.flows_e65); end
-  def test_flows_f65; assert_equal("V.01", worksheet.flows_f65); end
-  def test_flows_g65; assert_in_epsilon(66.31882649948713, worksheet.flows_g65, 0.002); end
-  def test_flows_h65; assert_in_epsilon(73.27534381707133, worksheet.flows_h65, 0.002); end
-  def test_flows_i65; assert_in_epsilon(83.032821642558, worksheet.flows_i65, 0.002); end
-  def test_flows_j65; assert_in_epsilon(95.83492552697079, worksheet.flows_j65, 0.002); end
-  def test_flows_k65; assert_in_epsilon(111.60863101589538, worksheet.flows_k65, 0.002); end
-  def test_flows_l65; assert_in_epsilon(131.53649868322344, worksheet.flows_l65, 0.002); end
-  def test_flows_m65; assert_in_epsilon(157.73626432352526, worksheet.flows_m65, 0.002); end
-  def test_flows_n65; assert_in_epsilon(187.33628986791524, worksheet.flows_n65, 0.002); end
-  def test_flows_o65; assert_in_epsilon(219.0020838638601, worksheet.flows_o65, 0.002); end
-  def test_flows_p65; assert_in_epsilon(262.85719659410455, worksheet.flows_p65, 0.002); end
-  def test_flows_c66; assert_equal("Solid", worksheet.flows_c66); end
+  def test_flows_f65; assert_equal("V.03", worksheet.flows_f65); end
+  def test_flows_g65; assert_in_epsilon(34.802490336309795, worksheet.flows_g65, 0.002); end
+  def test_flows_h65; assert_in_epsilon(38.45309966549429, worksheet.flows_h65, 0.002); end
+  def test_flows_i65; assert_in_epsilon(42.14171264491727, worksheet.flows_i65, 0.002); end
+  def test_flows_j65; assert_in_epsilon(44.91788848604287, worksheet.flows_j65, 0.002); end
+  def test_flows_k65; assert_in_epsilon(46.42397334865243, worksheet.flows_k65, 0.002); end
+  def test_flows_l65; assert_in_epsilon(46.70929203131664, worksheet.flows_l65, 0.002); end
+  def test_flows_m65; assert_in_epsilon(45.76585130281139, worksheet.flows_m65, 0.002); end
+  def test_flows_n65; assert_in_epsilon(42.51706952498352, worksheet.flows_n65, 0.002); end
+  def test_flows_o65; assert_in_epsilon(36.716872633092365, worksheet.flows_o65, 0.002); end
+  def test_flows_p65; assert_in_epsilon(19.48939458833347, worksheet.flows_p65, 0.002); end
+  def test_flows_c66; assert_equal("Liquid", worksheet.flows_c66); end
   def test_flows_d66; assert_equal("COM.A.Info.Lightingandappliances", worksheet.flows_d66); end
   def test_flows_e66; assert_equal("Commercial Lighting and appliances", worksheet.flows_e66); end
-  def test_flows_f66; assert_equal("V.03", worksheet.flows_f66); end
-  def test_flows_g66; assert_in_epsilon(34.802490336309795, worksheet.flows_g66, 0.002); end
-  def test_flows_h66; assert_in_epsilon(38.45309966549429, worksheet.flows_h66, 0.002); end
-  def test_flows_i66; assert_in_epsilon(42.14171264491727, worksheet.flows_i66, 0.002); end
-  def test_flows_j66; assert_in_epsilon(44.91788848604287, worksheet.flows_j66, 0.002); end
-  def test_flows_k66; assert_in_epsilon(46.42397334865243, worksheet.flows_k66, 0.002); end
-  def test_flows_l66; assert_in_epsilon(46.70929203131664, worksheet.flows_l66, 0.002); end
-  def test_flows_m66; assert_in_epsilon(45.76585130281139, worksheet.flows_m66, 0.002); end
-  def test_flows_n66; assert_in_epsilon(42.51706952498352, worksheet.flows_n66, 0.002); end
-  def test_flows_o66; assert_in_epsilon(36.716872633092365, worksheet.flows_o66, 0.002); end
-  def test_flows_p66; assert_in_epsilon(19.48939458833347, worksheet.flows_p66, 0.002); end
-  def test_flows_c67; assert_equal("Liquid", worksheet.flows_c67); end
+  def test_flows_f66; assert_equal("V.04", worksheet.flows_f66); end
+  def test_flows_g66; assert_in_epsilon(3.3138531529945108, worksheet.flows_g66, 0.002); end
+  def test_flows_h66; assert_in_epsilon(3.6614599799475727, worksheet.flows_h66, 0.002); end
+  def test_flows_i66; assert_in_epsilon(4.012685470822414, worksheet.flows_i66, 0.002); end
+  def test_flows_j66; assert_in_epsilon(4.277029745484361, worksheet.flows_j66, 0.002); end
+  def test_flows_k66; assert_in_epsilon(4.420437416096624, worksheet.flows_k66, 0.002); end
+  def test_flows_l66; assert_in_epsilon(4.44760513332083, worksheet.flows_l66, 0.002); end
+  def test_flows_m66; assert_in_epsilon(4.357771790861463, worksheet.flows_m66, 0.002); end
+  def test_flows_n66; assert_in_epsilon(4.048426521778412, worksheet.flows_n66, 0.002); end
+  def test_flows_o66; assert_in_epsilon(3.4961384362867536, worksheet.flows_o66, 0.002); end
+  def test_flows_p66; assert_in_epsilon(1.8557577656769244, worksheet.flows_p66, 0.002); end
+  def test_flows_c67; assert_equal("Gas", worksheet.flows_c67); end
   def test_flows_d67; assert_equal("COM.A.Info.Lightingandappliances", worksheet.flows_d67); end
   def test_flows_e67; assert_equal("Commercial Lighting and appliances", worksheet.flows_e67); end
-  def test_flows_f67; assert_equal("V.04", worksheet.flows_f67); end
-  def test_flows_g67; assert_in_epsilon(3.3138531529945108, worksheet.flows_g67, 0.002); end
-  def test_flows_h67; assert_in_epsilon(3.6614599799475727, worksheet.flows_h67, 0.002); end
-  def test_flows_i67; assert_in_epsilon(4.012685470822414, worksheet.flows_i67, 0.002); end
-  def test_flows_j67; assert_in_epsilon(4.277029745484361, worksheet.flows_j67, 0.002); end
-  def test_flows_k67; assert_in_epsilon(4.420437416096624, worksheet.flows_k67, 0.002); end
-  def test_flows_l67; assert_in_epsilon(4.44760513332083, worksheet.flows_l67, 0.002); end
-  def test_flows_m67; assert_in_epsilon(4.357771790861463, worksheet.flows_m67, 0.002); end
-  def test_flows_n67; assert_in_epsilon(4.048426521778412, worksheet.flows_n67, 0.002); end
-  def test_flows_o67; assert_in_epsilon(3.4961384362867536, worksheet.flows_o67, 0.002); end
-  def test_flows_p67; assert_in_epsilon(1.8557577656769244, worksheet.flows_p67, 0.002); end
-  def test_flows_c68; assert_equal("Gas", worksheet.flows_c68); end
-  def test_flows_d68; assert_equal("COM.A.Info.Lightingandappliances", worksheet.flows_d68); end
-  def test_flows_e68; assert_equal("Commercial Lighting and appliances", worksheet.flows_e68); end
-  def test_flows_f68; assert_equal("V.05", worksheet.flows_f68); end
-  def test_flows_g68; assert_in_epsilon(21.953965566336375, worksheet.flows_g68, 0.002); end
-  def test_flows_h68; assert_in_epsilon(24.25682811251016, worksheet.flows_h68, 0.002); end
-  def test_flows_i68; assert_in_epsilon(26.712122207235183, worksheet.flows_i68, 0.002); end
-  def test_flows_j68; assert_in_epsilon(28.755175603985855, worksheet.flows_j68, 0.002); end
-  def test_flows_k68; assert_in_epsilon(30.17972090238496, worksheet.flows_k68, 0.002); end
-  def test_flows_l68; assert_in_epsilon(31.055568968973702, worksheet.flows_l68, 0.002); end
-  def test_flows_m68; assert_in_epsilon(31.45287879141929, worksheet.flows_m68, 0.002); end
-  def test_flows_n68; assert_in_epsilon(30.657206988956716, worksheet.flows_n68, 0.002); end
-  def test_flows_o68; assert_in_epsilon(28.481330014006495, worksheet.flows_o68, 0.002); end
-  def test_flows_p68; assert_in_epsilon(20.227407792680506, worksheet.flows_p68, 0.002); end
-  def test_flows_c69; assert_equal("Electricity grid", worksheet.flows_c69); end
+  def test_flows_f67; assert_equal("V.05", worksheet.flows_f67); end
+  def test_flows_g67; assert_in_epsilon(21.953965566336375, worksheet.flows_g67, 0.002); end
+  def test_flows_h67; assert_in_epsilon(24.25682811251016, worksheet.flows_h67, 0.002); end
+  def test_flows_i67; assert_in_epsilon(26.712122207235183, worksheet.flows_i67, 0.002); end
+  def test_flows_j67; assert_in_epsilon(28.755175603985855, worksheet.flows_j67, 0.002); end
+  def test_flows_k67; assert_in_epsilon(30.17972090238496, worksheet.flows_k67, 0.002); end
+  def test_flows_l67; assert_in_epsilon(31.055568968973702, worksheet.flows_l67, 0.002); end
+  def test_flows_m67; assert_in_epsilon(31.45287879141929, worksheet.flows_m67, 0.002); end
+  def test_flows_n67; assert_in_epsilon(30.657206988956716, worksheet.flows_n67, 0.002); end
+  def test_flows_o67; assert_in_epsilon(28.481330014006495, worksheet.flows_o67, 0.002); end
+  def test_flows_p67; assert_in_epsilon(20.227407792680506, worksheet.flows_p67, 0.002); end
+  def test_flows_c68; assert_equal("Electricity grid", worksheet.flows_c68); end
+  def test_flows_d68; assert_equal("IND.a", worksheet.flows_d68); end
+  def test_flows_e68; assert_equal("Industry", worksheet.flows_e68); end
+  def test_flows_f68; assert_equal("V.01", worksheet.flows_f68); end
+  def test_flows_g68; assert_in_epsilon(420.195789614721, worksheet.flows_g68, 0.002); end
+  def test_flows_h68; assert_in_epsilon(490.24315031241656, worksheet.flows_h68, 0.002); end
+  def test_flows_i68; assert_in_epsilon(596.3425470061676, worksheet.flows_i68, 0.002); end
+  def test_flows_j68; assert_in_epsilon(733.829151378504, worksheet.flows_j68, 0.002); end
+  def test_flows_k68; assert_in_epsilon(900.9026774158084, worksheet.flows_k68, 0.002); end
+  def test_flows_l68; assert_in_epsilon(1114.8558375058033, worksheet.flows_l68, 0.002); end
+  def test_flows_m68; assert_in_epsilon(1383.4784848808067, worksheet.flows_m68, 0.002); end
+  def test_flows_n68; assert_in_epsilon(1685.4158194265008, worksheet.flows_n68, 0.002); end
+  def test_flows_o68; assert_in_epsilon(2003.7065605365333, worksheet.flows_o68, 0.002); end
+  def test_flows_p68; assert_in_epsilon(2348.810650048444, worksheet.flows_p68, 0.002); end
+  def test_flows_c69; assert_equal("Solid", worksheet.flows_c69); end
   def test_flows_d69; assert_equal("IND.a", worksheet.flows_d69); end
   def test_flows_e69; assert_equal("Industry", worksheet.flows_e69); end
-  def test_flows_f69; assert_equal("V.01", worksheet.flows_f69); end
-  def test_flows_g69; assert_in_epsilon(420.195789614721, worksheet.flows_g69, 0.002); end
-  def test_flows_h69; assert_in_epsilon(490.24315031241656, worksheet.flows_h69, 0.002); end
-  def test_flows_i69; assert_in_epsilon(596.3425470061676, worksheet.flows_i69, 0.002); end
-  def test_flows_j69; assert_in_epsilon(733.829151378504, worksheet.flows_j69, 0.002); end
-  def test_flows_k69; assert_in_epsilon(900.9026774158084, worksheet.flows_k69, 0.002); end
-  def test_flows_l69; assert_in_epsilon(1114.8558375058033, worksheet.flows_l69, 0.002); end
-  def test_flows_m69; assert_in_epsilon(1383.4784848808067, worksheet.flows_m69, 0.002); end
-  def test_flows_n69; assert_in_epsilon(1685.4158194265008, worksheet.flows_n69, 0.002); end
-  def test_flows_o69; assert_in_epsilon(2003.7065605365333, worksheet.flows_o69, 0.002); end
-  def test_flows_p69; assert_in_epsilon(2348.810650048444, worksheet.flows_p69, 0.002); end
-  def test_flows_c70; assert_equal("Solid", worksheet.flows_c70); end
+  def test_flows_f69; assert_equal("V.03", worksheet.flows_f69); end
+  def test_flows_g69; assert_in_epsilon(563.1529939635911, worksheet.flows_g69, 0.002); end
+  def test_flows_h69; assert_in_epsilon(658.5973341825863, worksheet.flows_h69, 0.002); end
+  def test_flows_i69; assert_in_epsilon(816.9866852007149, worksheet.flows_i69, 0.002); end
+  def test_flows_j69; assert_in_epsilon(979.7334807860495, worksheet.flows_j69, 0.002); end
+  def test_flows_k69; assert_in_epsilon(1227.7978953517913, worksheet.flows_k69, 0.002); end
+  def test_flows_l69; assert_in_epsilon(1481.9462286838393, worksheet.flows_l69, 0.002); end
+  def test_flows_m69; assert_in_epsilon(1862.980794341287, worksheet.flows_m69, 0.002); end
+  def test_flows_n69; assert_in_epsilon(2247.8601342995416, worksheet.flows_n69, 0.002); end
+  def test_flows_o69; assert_in_epsilon(2691.3210123863496, worksheet.flows_o69, 0.002); end
+  def test_flows_p69; assert_in_epsilon(3139.7026822170346, worksheet.flows_p69, 0.002); end
+  def test_flows_c70; assert_equal("Liquid", worksheet.flows_c70); end
   def test_flows_d70; assert_equal("IND.a", worksheet.flows_d70); end
   def test_flows_e70; assert_equal("Industry", worksheet.flows_e70); end
-  def test_flows_f70; assert_equal("V.03", worksheet.flows_f70); end
-  def test_flows_g70; assert_in_epsilon(563.1529939635911, worksheet.flows_g70, 0.002); end
-  def test_flows_h70; assert_in_epsilon(658.5973341825863, worksheet.flows_h70, 0.002); end
-  def test_flows_i70; assert_in_epsilon(816.9866852007149, worksheet.flows_i70, 0.002); end
-  def test_flows_j70; assert_in_epsilon(979.7334807860495, worksheet.flows_j70, 0.002); end
-  def test_flows_k70; assert_in_epsilon(1227.7978953517913, worksheet.flows_k70, 0.002); end
-  def test_flows_l70; assert_in_epsilon(1481.9462286838393, worksheet.flows_l70, 0.002); end
-  def test_flows_m70; assert_in_epsilon(1862.980794341287, worksheet.flows_m70, 0.002); end
-  def test_flows_n70; assert_in_epsilon(2247.8601342995416, worksheet.flows_n70, 0.002); end
-  def test_flows_o70; assert_in_epsilon(2691.3210123863496, worksheet.flows_o70, 0.002); end
-  def test_flows_p70; assert_in_epsilon(3139.7026822170346, worksheet.flows_p70, 0.002); end
-  def test_flows_c71; assert_equal("Liquid", worksheet.flows_c71); end
+  def test_flows_f70; assert_equal("V.04", worksheet.flows_f70); end
+  def test_flows_g70; assert_in_epsilon(40.045856161100005, worksheet.flows_g70, 0.002); end
+  def test_flows_h70; assert_in_epsilon(46.941163250667834, worksheet.flows_h70, 0.002); end
+  def test_flows_i70; assert_in_epsilon(57.559459584101035, worksheet.flows_i70, 0.002); end
+  def test_flows_j70; assert_in_epsilon(70.9694629407787, worksheet.flows_j70, 0.002); end
+  def test_flows_k70; assert_in_epsilon(88.64215735762144, worksheet.flows_k70, 0.002); end
+  def test_flows_l70; assert_in_epsilon(111.03921669809255, worksheet.flows_l70, 0.002); end
+  def test_flows_m70; assert_in_epsilon(140.04263246009776, worksheet.flows_m70, 0.002); end
+  def test_flows_n70; assert_in_epsilon(172.83134911723067, worksheet.flows_n70, 0.002); end
+  def test_flows_o70; assert_in_epsilon(208.13531091969085, worksheet.flows_o70, 0.002); end
+  def test_flows_p70; assert_in_epsilon(246.6614811881929, worksheet.flows_p70, 0.002); end
+  def test_flows_c71; assert_equal("Gas", worksheet.flows_c71); end
   def test_flows_d71; assert_equal("IND.a", worksheet.flows_d71); end
   def test_flows_e71; assert_equal("Industry", worksheet.flows_e71); end
-  def test_flows_f71; assert_equal("V.04", worksheet.flows_f71); end
-  def test_flows_g71; assert_in_epsilon(40.045856161100005, worksheet.flows_g71, 0.002); end
-  def test_flows_h71; assert_in_epsilon(46.941163250667834, worksheet.flows_h71, 0.002); end
-  def test_flows_i71; assert_in_epsilon(57.559459584101035, worksheet.flows_i71, 0.002); end
-  def test_flows_j71; assert_in_epsilon(70.9694629407787, worksheet.flows_j71, 0.002); end
-  def test_flows_k71; assert_in_epsilon(88.64215735762144, worksheet.flows_k71, 0.002); end
-  def test_flows_l71; assert_in_epsilon(111.03921669809255, worksheet.flows_l71, 0.002); end
-  def test_flows_m71; assert_in_epsilon(140.04263246009776, worksheet.flows_m71, 0.002); end
-  def test_flows_n71; assert_in_epsilon(172.83134911723067, worksheet.flows_n71, 0.002); end
-  def test_flows_o71; assert_in_epsilon(208.13531091969085, worksheet.flows_o71, 0.002); end
-  def test_flows_p71; assert_in_epsilon(246.6614811881929, worksheet.flows_p71, 0.002); end
-  def test_flows_c72; assert_equal("Gas", worksheet.flows_c72); end
+  def test_flows_f71; assert_equal("V.05", worksheet.flows_f71); end
+  def test_flows_g71; assert_in_epsilon(102.69422191550348, worksheet.flows_g71, 0.002); end
+  def test_flows_h71; assert_in_epsilon(118.54350547630284, worksheet.flows_h71, 0.002); end
+  def test_flows_i71; assert_in_epsilon(139.48684361055598, worksheet.flows_i71, 0.002); end
+  def test_flows_j71; assert_in_epsilon(160.4301817448091, worksheet.flows_j71, 0.002); end
+  def test_flows_k71; assert_in_epsilon(191.9663244874638, worksheet.flows_k71, 0.002); end
+  def test_flows_l71; assert_in_epsilon(223.50246723011853, worksheet.flows_l71, 0.002); end
+  def test_flows_m71; assert_in_epsilon(275.8572098560213, worksheet.flows_m71, 0.002); end
+  def test_flows_n71; assert_in_epsilon(328.2119524819242, worksheet.flows_n71, 0.002); end
+  def test_flows_o71; assert_in_epsilon(385.8732416468778, worksheet.flows_o71, 0.002); end
+  def test_flows_p71; assert_in_epsilon(443.5345308118313, worksheet.flows_p71, 0.002); end
+  def test_flows_c72; assert_equal("Biomass", worksheet.flows_c72); end
   def test_flows_d72; assert_equal("IND.a", worksheet.flows_d72); end
   def test_flows_e72; assert_equal("Industry", worksheet.flows_e72); end
-  def test_flows_f72; assert_equal("V.05", worksheet.flows_f72); end
-  def test_flows_g72; assert_in_epsilon(102.69422191550348, worksheet.flows_g72, 0.002); end
-  def test_flows_h72; assert_in_epsilon(118.54350547630284, worksheet.flows_h72, 0.002); end
-  def test_flows_i72; assert_in_epsilon(139.48684361055598, worksheet.flows_i72, 0.002); end
-  def test_flows_j72; assert_in_epsilon(160.4301817448091, worksheet.flows_j72, 0.002); end
-  def test_flows_k72; assert_in_epsilon(191.9663244874638, worksheet.flows_k72, 0.002); end
-  def test_flows_l72; assert_in_epsilon(223.50246723011853, worksheet.flows_l72, 0.002); end
-  def test_flows_m72; assert_in_epsilon(275.8572098560213, worksheet.flows_m72, 0.002); end
-  def test_flows_n72; assert_in_epsilon(328.2119524819242, worksheet.flows_n72, 0.002); end
-  def test_flows_o72; assert_in_epsilon(385.8732416468778, worksheet.flows_o72, 0.002); end
-  def test_flows_p72; assert_in_epsilon(443.5345308118313, worksheet.flows_p72, 0.002); end
-  def test_flows_c73; assert_equal("Biomass", worksheet.flows_c73); end
-  def test_flows_d73; assert_equal("IND.a", worksheet.flows_d73); end
-  def test_flows_e73; assert_equal("Industry", worksheet.flows_e73); end
-  def test_flows_f73; assert_equal("V.09", worksheet.flows_f73); end
-  def test_flows_g73; assert_in_epsilon(76.61901057888659, worksheet.flows_g73, 0.002); end
-  def test_flows_h73; assert_in_epsilon(84.84855815595202, worksheet.flows_h73, 0.002); end
-  def test_flows_i73; assert_in_epsilon(97.4281555422585, worksheet.flows_i73, 0.002); end
-  def test_flows_j73; assert_in_epsilon(110.00775292856498, worksheet.flows_j73, 0.002); end
-  def test_flows_k73; assert_in_epsilon(128.69409181497122, worksheet.flows_k73, 0.002); end
-  def test_flows_l73; assert_in_epsilon(147.3804307013774, worksheet.flows_l73, 0.002); end
-  def test_flows_m73; assert_in_epsilon(176.59613133527193, worksheet.flows_m73, 0.002); end
-  def test_flows_n73; assert_in_epsilon(205.81183196916646, worksheet.flows_n73, 0.002); end
-  def test_flows_o73; assert_in_epsilon(238.86128180707001, worksheet.flows_o73, 0.002); end
-  def test_flows_p73; assert_in_epsilon(271.9107316449735, worksheet.flows_p73, 0.002); end
-  def test_flows_c74; assert_equal("Electricity grid", worksheet.flows_c74); end
+  def test_flows_f72; assert_equal("V.09", worksheet.flows_f72); end
+  def test_flows_g72; assert_in_epsilon(76.61901057888659, worksheet.flows_g72, 0.002); end
+  def test_flows_h72; assert_in_epsilon(84.84855815595202, worksheet.flows_h72, 0.002); end
+  def test_flows_i72; assert_in_epsilon(97.4281555422585, worksheet.flows_i72, 0.002); end
+  def test_flows_j72; assert_in_epsilon(110.00775292856498, worksheet.flows_j72, 0.002); end
+  def test_flows_k72; assert_in_epsilon(128.69409181497122, worksheet.flows_k72, 0.002); end
+  def test_flows_l72; assert_in_epsilon(147.3804307013774, worksheet.flows_l72, 0.002); end
+  def test_flows_m72; assert_in_epsilon(176.59613133527193, worksheet.flows_m72, 0.002); end
+  def test_flows_n72; assert_in_epsilon(205.81183196916646, worksheet.flows_n72, 0.002); end
+  def test_flows_o72; assert_in_epsilon(238.86128180707001, worksheet.flows_o72, 0.002); end
+  def test_flows_p72; assert_in_epsilon(271.9107316449735, worksheet.flows_p72, 0.002); end
+  def test_flows_c73; assert_equal("Electricity grid", worksheet.flows_c73); end
+  def test_flows_d73; assert_equal("AGL", worksheet.flows_d73); end
+  def test_flows_e73; assert_equal("Agriculture", worksheet.flows_e73); end
+  def test_flows_f73; assert_equal("V.01", worksheet.flows_f73); end
+  def test_flows_g73; assert_in_epsilon(20.760772499999998, worksheet.flows_g73, 0.002); end
+  def test_flows_h73; assert_in_epsilon(20.760772499999998, worksheet.flows_h73, 0.002); end
+  def test_flows_i73; assert_in_epsilon(20.760772499999998, worksheet.flows_i73, 0.002); end
+  def test_flows_j73; assert_in_epsilon(20.760772499999998, worksheet.flows_j73, 0.002); end
+  def test_flows_k73; assert_in_epsilon(20.760772499999998, worksheet.flows_k73, 0.002); end
+  def test_flows_l73; assert_in_epsilon(20.760772499999998, worksheet.flows_l73, 0.002); end
+  def test_flows_m73; assert_in_epsilon(20.760772499999998, worksheet.flows_m73, 0.002); end
+  def test_flows_n73; assert_in_epsilon(20.760772499999998, worksheet.flows_n73, 0.002); end
+  def test_flows_o73; assert_in_epsilon(20.760772499999998, worksheet.flows_o73, 0.002); end
+  def test_flows_p73; assert_in_epsilon(20.760772499999998, worksheet.flows_p73, 0.002); end
+  def test_flows_c74; assert_equal("Solid", worksheet.flows_c74); end
   def test_flows_d74; assert_equal("AGL", worksheet.flows_d74); end
   def test_flows_e74; assert_equal("Agriculture", worksheet.flows_e74); end
-  def test_flows_f74; assert_equal("V.01", worksheet.flows_f74); end
-  def test_flows_g74; assert_in_epsilon(20.760772499999998, worksheet.flows_g74, 0.002); end
-  def test_flows_h74; assert_in_epsilon(20.760772499999998, worksheet.flows_h74, 0.002); end
-  def test_flows_i74; assert_in_epsilon(20.760772499999998, worksheet.flows_i74, 0.002); end
-  def test_flows_j74; assert_in_epsilon(20.760772499999998, worksheet.flows_j74, 0.002); end
-  def test_flows_k74; assert_in_epsilon(20.760772499999998, worksheet.flows_k74, 0.002); end
-  def test_flows_l74; assert_in_epsilon(20.760772499999998, worksheet.flows_l74, 0.002); end
-  def test_flows_m74; assert_in_epsilon(20.760772499999998, worksheet.flows_m74, 0.002); end
-  def test_flows_n74; assert_in_epsilon(20.760772499999998, worksheet.flows_n74, 0.002); end
-  def test_flows_o74; assert_in_epsilon(20.760772499999998, worksheet.flows_o74, 0.002); end
-  def test_flows_p74; assert_in_epsilon(20.760772499999998, worksheet.flows_p74, 0.002); end
-  def test_flows_c75; assert_equal("Solid", worksheet.flows_c75); end
+  def test_flows_f74; assert_equal("V.03", worksheet.flows_f74); end
+  def test_flows_g74; assert_in_delta(0.52781625, worksheet.flows_g74, 0.002); end
+  def test_flows_h74; assert_in_delta(0.52781625, worksheet.flows_h74, 0.002); end
+  def test_flows_i74; assert_in_delta(0.52781625, worksheet.flows_i74, 0.002); end
+  def test_flows_j74; assert_in_delta(0.52781625, worksheet.flows_j74, 0.002); end
+  def test_flows_k74; assert_in_delta(0.52781625, worksheet.flows_k74, 0.002); end
+  def test_flows_l74; assert_in_delta(0.52781625, worksheet.flows_l74, 0.002); end
+  def test_flows_m74; assert_in_delta(0.52781625, worksheet.flows_m74, 0.002); end
+  def test_flows_n74; assert_in_delta(0.52781625, worksheet.flows_n74, 0.002); end
+  def test_flows_o74; assert_in_delta(0.52781625, worksheet.flows_o74, 0.002); end
+  def test_flows_p74; assert_in_delta(0.52781625, worksheet.flows_p74, 0.002); end
+  def test_flows_c75; assert_equal("Liquid", worksheet.flows_c75); end
   def test_flows_d75; assert_equal("AGL", worksheet.flows_d75); end
   def test_flows_e75; assert_equal("Agriculture", worksheet.flows_e75); end
-  def test_flows_f75; assert_equal("V.03", worksheet.flows_f75); end
-  def test_flows_g75; assert_in_delta(0.52781625, worksheet.flows_g75, 0.002); end
-  def test_flows_h75; assert_in_delta(0.52781625, worksheet.flows_h75, 0.002); end
-  def test_flows_i75; assert_in_delta(0.52781625, worksheet.flows_i75, 0.002); end
-  def test_flows_j75; assert_in_delta(0.52781625, worksheet.flows_j75, 0.002); end
-  def test_flows_k75; assert_in_delta(0.52781625, worksheet.flows_k75, 0.002); end
-  def test_flows_l75; assert_in_delta(0.52781625, worksheet.flows_l75, 0.002); end
-  def test_flows_m75; assert_in_delta(0.52781625, worksheet.flows_m75, 0.002); end
-  def test_flows_n75; assert_in_delta(0.52781625, worksheet.flows_n75, 0.002); end
-  def test_flows_o75; assert_in_delta(0.52781625, worksheet.flows_o75, 0.002); end
-  def test_flows_p75; assert_in_delta(0.52781625, worksheet.flows_p75, 0.002); end
-  def test_flows_c76; assert_equal("Liquid", worksheet.flows_c76); end
+  def test_flows_f75; assert_equal("V.04", worksheet.flows_f75); end
+  def test_flows_g75; assert_in_epsilon(49.08691125, worksheet.flows_g75, 0.002); end
+  def test_flows_h75; assert_in_epsilon(49.08691125, worksheet.flows_h75, 0.002); end
+  def test_flows_i75; assert_in_epsilon(49.08691125, worksheet.flows_i75, 0.002); end
+  def test_flows_j75; assert_in_epsilon(49.08691125, worksheet.flows_j75, 0.002); end
+  def test_flows_k75; assert_in_epsilon(49.08691125, worksheet.flows_k75, 0.002); end
+  def test_flows_l75; assert_in_epsilon(49.08691125, worksheet.flows_l75, 0.002); end
+  def test_flows_m75; assert_in_epsilon(49.08691125, worksheet.flows_m75, 0.002); end
+  def test_flows_n75; assert_in_epsilon(49.08691125, worksheet.flows_n75, 0.002); end
+  def test_flows_o75; assert_in_epsilon(49.08691125, worksheet.flows_o75, 0.002); end
+  def test_flows_p75; assert_in_epsilon(49.08691125, worksheet.flows_p75, 0.002); end
+  def test_flows_c76; assert_equal("Gas", worksheet.flows_c76); end
   def test_flows_d76; assert_equal("AGL", worksheet.flows_d76); end
   def test_flows_e76; assert_equal("Agriculture", worksheet.flows_e76); end
-  def test_flows_f76; assert_equal("V.04", worksheet.flows_f76); end
-  def test_flows_g76; assert_in_epsilon(49.08691125, worksheet.flows_g76, 0.002); end
-  def test_flows_h76; assert_in_epsilon(49.08691125, worksheet.flows_h76, 0.002); end
-  def test_flows_i76; assert_in_epsilon(49.08691125, worksheet.flows_i76, 0.002); end
-  def test_flows_j76; assert_in_epsilon(49.08691125, worksheet.flows_j76, 0.002); end
-  def test_flows_k76; assert_in_epsilon(49.08691125, worksheet.flows_k76, 0.002); end
-  def test_flows_l76; assert_in_epsilon(49.08691125, worksheet.flows_l76, 0.002); end
-  def test_flows_m76; assert_in_epsilon(49.08691125, worksheet.flows_m76, 0.002); end
-  def test_flows_n76; assert_in_epsilon(49.08691125, worksheet.flows_n76, 0.002); end
-  def test_flows_o76; assert_in_epsilon(49.08691125, worksheet.flows_o76, 0.002); end
-  def test_flows_p76; assert_in_epsilon(49.08691125, worksheet.flows_p76, 0.002); end
-  def test_flows_c77; assert_equal("Gas", worksheet.flows_c77); end
-  def test_flows_d77; assert_equal("AGL", worksheet.flows_d77); end
-  def test_flows_e77; assert_equal("Agriculture", worksheet.flows_e77); end
-  def test_flows_f77; assert_equal("V.05", worksheet.flows_f77); end
-  def test_flows_g77; assert_in_delta(0.0, (worksheet.flows_g77||0), 0.002); end
-  def test_flows_h77; assert_in_delta(0.0, (worksheet.flows_h77||0), 0.002); end
-  def test_flows_i77; assert_in_delta(0.0, (worksheet.flows_i77||0), 0.002); end
-  def test_flows_j77; assert_in_delta(0.0, (worksheet.flows_j77||0), 0.002); end
-  def test_flows_k77; assert_in_delta(0.0, (worksheet.flows_k77||0), 0.002); end
-  def test_flows_l77; assert_in_delta(0.0, (worksheet.flows_l77||0), 0.002); end
-  def test_flows_m77; assert_in_delta(0.0, (worksheet.flows_m77||0), 0.002); end
-  def test_flows_n77; assert_in_delta(0.0, (worksheet.flows_n77||0), 0.002); end
-  def test_flows_o77; assert_in_delta(0.0, (worksheet.flows_o77||0), 0.002); end
-  def test_flows_p77; assert_in_delta(0.0, (worksheet.flows_p77||0), 0.002); end
-  def test_flows_c78; assert_equal("Electricity grid", worksheet.flows_c78); end
+  def test_flows_f76; assert_equal("V.05", worksheet.flows_f76); end
+  def test_flows_g76; assert_in_delta(0.0, (worksheet.flows_g76||0), 0.002); end
+  def test_flows_h76; assert_in_delta(0.0, (worksheet.flows_h76||0), 0.002); end
+  def test_flows_i76; assert_in_delta(0.0, (worksheet.flows_i76||0), 0.002); end
+  def test_flows_j76; assert_in_delta(0.0, (worksheet.flows_j76||0), 0.002); end
+  def test_flows_k76; assert_in_delta(0.0, (worksheet.flows_k76||0), 0.002); end
+  def test_flows_l76; assert_in_delta(0.0, (worksheet.flows_l76||0), 0.002); end
+  def test_flows_m76; assert_in_delta(0.0, (worksheet.flows_m76||0), 0.002); end
+  def test_flows_n76; assert_in_delta(0.0, (worksheet.flows_n76||0), 0.002); end
+  def test_flows_o76; assert_in_delta(0.0, (worksheet.flows_o76||0), 0.002); end
+  def test_flows_p76; assert_in_delta(0.0, (worksheet.flows_p76||0), 0.002); end
+  def test_flows_c77; assert_equal("Electricity grid", worksheet.flows_c77); end
+  def test_flows_d77; assert_equal("TRA.a", worksheet.flows_d77); end
+  def test_flows_e77; assert_equal("Passenger transport", worksheet.flows_e77); end
+  def test_flows_f77; assert_equal("V.01", worksheet.flows_f77); end
+  def test_flows_g77; assert_in_epsilon(2.3417856574208473, worksheet.flows_g77, 0.002); end
+  def test_flows_h77; assert_in_epsilon(2.309235036045927, worksheet.flows_h77, 0.002); end
+  def test_flows_i77; assert_in_epsilon(3.0250038673040685, worksheet.flows_i77, 0.002); end
+  def test_flows_j77; assert_in_epsilon(3.833323721650289, worksheet.flows_j77, 0.002); end
+  def test_flows_k77; assert_in_epsilon(4.840822479646932, worksheet.flows_k77, 0.002); end
+  def test_flows_l77; assert_in_epsilon(6.041979224770328, worksheet.flows_l77, 0.002); end
+  def test_flows_m77; assert_in_epsilon(7.3024514575625, worksheet.flows_m77, 0.002); end
+  def test_flows_n77; assert_in_epsilon(8.706924156218129, worksheet.flows_n77, 0.002); end
+  def test_flows_o77; assert_in_epsilon(10.207205273228853, worksheet.flows_o77, 0.002); end
+  def test_flows_p77; assert_in_epsilon(11.844406440498357, worksheet.flows_p77, 0.002); end
+  def test_flows_c78; assert_equal("Liquid", worksheet.flows_c78); end
   def test_flows_d78; assert_equal("TRA.a", worksheet.flows_d78); end
   def test_flows_e78; assert_equal("Passenger transport", worksheet.flows_e78); end
-  def test_flows_f78; assert_equal("V.01", worksheet.flows_f78); end
-  def test_flows_g78; assert_in_epsilon(2.3417856574208473, worksheet.flows_g78, 0.002); end
-  def test_flows_h78; assert_in_epsilon(2.309235036045927, worksheet.flows_h78, 0.002); end
-  def test_flows_i78; assert_in_epsilon(3.0250038673040685, worksheet.flows_i78, 0.002); end
-  def test_flows_j78; assert_in_epsilon(3.833323721650289, worksheet.flows_j78, 0.002); end
-  def test_flows_k78; assert_in_epsilon(4.840822479646932, worksheet.flows_k78, 0.002); end
-  def test_flows_l78; assert_in_epsilon(6.041979224770328, worksheet.flows_l78, 0.002); end
-  def test_flows_m78; assert_in_epsilon(7.3024514575625, worksheet.flows_m78, 0.002); end
-  def test_flows_n78; assert_in_epsilon(8.706924156218129, worksheet.flows_n78, 0.002); end
-  def test_flows_o78; assert_in_epsilon(10.207205273228853, worksheet.flows_o78, 0.002); end
-  def test_flows_p78; assert_in_epsilon(11.844406440498357, worksheet.flows_p78, 0.002); end
-  def test_flows_c79; assert_equal("Liquid", worksheet.flows_c79); end
+  def test_flows_f78; assert_equal("V.04", worksheet.flows_f78); end
+  def test_flows_g78; assert_in_epsilon(354.3107275713987, worksheet.flows_g78, 0.002); end
+  def test_flows_h78; assert_in_epsilon(419.2848449013526, worksheet.flows_h78, 0.002); end
+  def test_flows_i78; assert_in_epsilon(515.8795003494731, worksheet.flows_i78, 0.002); end
+  def test_flows_j78; assert_in_epsilon(603.4737386131837, worksheet.flows_j78, 0.002); end
+  def test_flows_k78; assert_in_epsilon(688.0592354302449, worksheet.flows_k78, 0.002); end
+  def test_flows_l78; assert_in_epsilon(770.2905362739511, worksheet.flows_l78, 0.002); end
+  def test_flows_m78; assert_in_epsilon(850.890597058647, worksheet.flows_m78, 0.002); end
+  def test_flows_n78; assert_in_epsilon(929.6689919736149, worksheet.flows_n78, 0.002); end
+  def test_flows_o78; assert_in_epsilon(1022.6351421486141, worksheet.flows_o78, 0.002); end
+  def test_flows_p78; assert_in_epsilon(1082.6219502755273, worksheet.flows_p78, 0.002); end
+  def test_flows_c79; assert_equal("Gas", worksheet.flows_c79); end
   def test_flows_d79; assert_equal("TRA.a", worksheet.flows_d79); end
   def test_flows_e79; assert_equal("Passenger transport", worksheet.flows_e79); end
-  def test_flows_f79; assert_equal("V.04", worksheet.flows_f79); end
-  def test_flows_g79; assert_in_epsilon(354.3107275713987, worksheet.flows_g79, 0.002); end
-  def test_flows_h79; assert_in_epsilon(419.2848449013526, worksheet.flows_h79, 0.002); end
-  def test_flows_i79; assert_in_epsilon(515.8795003494731, worksheet.flows_i79, 0.002); end
-  def test_flows_j79; assert_in_epsilon(603.4737386131837, worksheet.flows_j79, 0.002); end
-  def test_flows_k79; assert_in_epsilon(688.0592354302449, worksheet.flows_k79, 0.002); end
-  def test_flows_l79; assert_in_epsilon(770.2905362739511, worksheet.flows_l79, 0.002); end
-  def test_flows_m79; assert_in_epsilon(850.890597058647, worksheet.flows_m79, 0.002); end
-  def test_flows_n79; assert_in_epsilon(929.6689919736149, worksheet.flows_n79, 0.002); end
-  def test_flows_o79; assert_in_epsilon(1022.6351421486141, worksheet.flows_o79, 0.002); end
-  def test_flows_p79; assert_in_epsilon(1082.6219502755273, worksheet.flows_p79, 0.002); end
-  def test_flows_c80; assert_equal("Gas", worksheet.flows_c80); end
+  def test_flows_f79; assert_equal("C.03", worksheet.flows_f79); end
+  def test_flows_g79; assert_in_delta(0.0, (worksheet.flows_g79||0), 0.002); end
+  def test_flows_h79; assert_in_delta(0.0, (worksheet.flows_h79||0), 0.002); end
+  def test_flows_i79; assert_in_delta(0.021956128976644503, worksheet.flows_i79, 0.002); end
+  def test_flows_j79; assert_in_delta(0.038749563191097, worksheet.flows_j79, 0.002); end
+  def test_flows_k79; assert_in_delta(0.058331901730078746, worksheet.flows_k79, 0.002); end
+  def test_flows_l79; assert_in_delta(0.07897725333448978, worksheet.flows_l79, 0.002); end
+  def test_flows_m79; assert_in_delta(0.09483472735775825, worksheet.flows_m79, 0.002); end
+  def test_flows_n79; assert_in_delta(0.10973623741372204, worksheet.flows_n79, 0.002); end
+  def test_flows_o79; assert_in_delta(0.12179815246991614, worksheet.flows_o79, 0.002); end
+  def test_flows_p79; assert_in_delta(0.13271112742800026, worksheet.flows_p79, 0.002); end
+  def test_flows_c80; assert_equal("H2", worksheet.flows_c80); end
   def test_flows_d80; assert_equal("TRA.a", worksheet.flows_d80); end
   def test_flows_e80; assert_equal("Passenger transport", worksheet.flows_e80); end
-  def test_flows_f80; assert_equal("C.03", worksheet.flows_f80); end
+  def test_flows_f80; assert_equal("V.12", worksheet.flows_f80); end
   def test_flows_g80; assert_in_delta(0.0, (worksheet.flows_g80||0), 0.002); end
   def test_flows_h80; assert_in_delta(0.0, (worksheet.flows_h80||0), 0.002); end
-  def test_flows_i80; assert_in_delta(0.021956128976644503, worksheet.flows_i80, 0.002); end
-  def test_flows_j80; assert_in_delta(0.038749563191097, worksheet.flows_j80, 0.002); end
-  def test_flows_k80; assert_in_delta(0.058331901730078746, worksheet.flows_k80, 0.002); end
-  def test_flows_l80; assert_in_delta(0.07897725333448978, worksheet.flows_l80, 0.002); end
-  def test_flows_m80; assert_in_delta(0.09483472735775825, worksheet.flows_m80, 0.002); end
-  def test_flows_n80; assert_in_delta(0.10973623741372204, worksheet.flows_n80, 0.002); end
-  def test_flows_o80; assert_in_delta(0.12179815246991614, worksheet.flows_o80, 0.002); end
-  def test_flows_p80; assert_in_delta(0.13271112742800026, worksheet.flows_p80, 0.002); end
-  def test_flows_c81; assert_equal("H2", worksheet.flows_c81); end
-  def test_flows_d81; assert_equal("TRA.a", worksheet.flows_d81); end
-  def test_flows_e81; assert_equal("Passenger transport", worksheet.flows_e81); end
-  def test_flows_f81; assert_equal("V.12", worksheet.flows_f81); end
-  def test_flows_g81; assert_in_delta(0.0, (worksheet.flows_g81||0), 0.002); end
-  def test_flows_h81; assert_in_delta(0.0, (worksheet.flows_h81||0), 0.002); end
-  def test_flows_i81; assert_in_delta(0.0, (worksheet.flows_i81||0), 0.002); end
-  def test_flows_j81; assert_in_delta(0.0, (worksheet.flows_j81||0), 0.002); end
-  def test_flows_k81; assert_in_delta(0.0, (worksheet.flows_k81||0), 0.002); end
-  def test_flows_l81; assert_in_delta(0.0, (worksheet.flows_l81||0), 0.002); end
-  def test_flows_m81; assert_in_delta(0.0, (worksheet.flows_m81||0), 0.002); end
-  def test_flows_n81; assert_in_delta(0.0, (worksheet.flows_n81||0), 0.002); end
-  def test_flows_o81; assert_in_delta(0.0, (worksheet.flows_o81||0), 0.002); end
-  def test_flows_p81; assert_in_delta(0.0, (worksheet.flows_p81||0), 0.002); end
-  def test_flows_c82; assert_equal("Electricity grid", worksheet.flows_c82); end
+  def test_flows_i80; assert_in_delta(0.0, (worksheet.flows_i80||0), 0.002); end
+  def test_flows_j80; assert_in_delta(0.0, (worksheet.flows_j80||0), 0.002); end
+  def test_flows_k80; assert_in_delta(0.0, (worksheet.flows_k80||0), 0.002); end
+  def test_flows_l80; assert_in_delta(0.0, (worksheet.flows_l80||0), 0.002); end
+  def test_flows_m80; assert_in_delta(0.0, (worksheet.flows_m80||0), 0.002); end
+  def test_flows_n80; assert_in_delta(0.0, (worksheet.flows_n80||0), 0.002); end
+  def test_flows_o80; assert_in_delta(0.0, (worksheet.flows_o80||0), 0.002); end
+  def test_flows_p80; assert_in_delta(0.0, (worksheet.flows_p80||0), 0.002); end
+  def test_flows_c81; assert_equal("Electricity grid", worksheet.flows_c81); end
+  def test_flows_d81; assert_equal("TRA.b", worksheet.flows_d81); end
+  def test_flows_e81; assert_equal("Freight transport", worksheet.flows_e81); end
+  def test_flows_f81; assert_equal("V.01", worksheet.flows_f81); end
+  def test_flows_g81; assert_in_epsilon(5.860912329999998, worksheet.flows_g81, 0.002); end
+  def test_flows_h81; assert_in_epsilon(5.781104516861402, worksheet.flows_h81, 0.002); end
+  def test_flows_i81; assert_in_epsilon(5.6552887340658256, worksheet.flows_i81, 0.002); end
+  def test_flows_j81; assert_in_epsilon(5.533982789885913, worksheet.flows_j81, 0.002); end
+  def test_flows_k81; assert_in_epsilon(5.41121082629705, worksheet.flows_k81, 0.002); end
+  def test_flows_l81; assert_in_epsilon(5.299056573394613, worksheet.flows_l81, 0.002); end
+  def test_flows_m81; assert_in_epsilon(5.190646452819455, worksheet.flows_m81, 0.002); end
+  def test_flows_n81; assert_in_epsilon(5.0676220167697394, worksheet.flows_n81, 0.002); end
+  def test_flows_o81; assert_in_epsilon(4.926142796425652, worksheet.flows_o81, 0.002); end
+  def test_flows_p81; assert_in_epsilon(4.775344583707167, worksheet.flows_p81, 0.002); end
+  def test_flows_c82; assert_equal("Liquid", worksheet.flows_c82); end
   def test_flows_d82; assert_equal("TRA.b", worksheet.flows_d82); end
   def test_flows_e82; assert_equal("Freight transport", worksheet.flows_e82); end
-  def test_flows_f82; assert_equal("V.01", worksheet.flows_f82); end
-  def test_flows_g82; assert_in_epsilon(5.860912329999998, worksheet.flows_g82, 0.002); end
-  def test_flows_h82; assert_in_epsilon(5.781104516861402, worksheet.flows_h82, 0.002); end
-  def test_flows_i82; assert_in_epsilon(5.6552887340658256, worksheet.flows_i82, 0.002); end
-  def test_flows_j82; assert_in_epsilon(5.533982789885913, worksheet.flows_j82, 0.002); end
-  def test_flows_k82; assert_in_epsilon(5.41121082629705, worksheet.flows_k82, 0.002); end
-  def test_flows_l82; assert_in_epsilon(5.299056573394613, worksheet.flows_l82, 0.002); end
-  def test_flows_m82; assert_in_epsilon(5.190646452819455, worksheet.flows_m82, 0.002); end
-  def test_flows_n82; assert_in_epsilon(5.0676220167697394, worksheet.flows_n82, 0.002); end
-  def test_flows_o82; assert_in_epsilon(4.926142796425652, worksheet.flows_o82, 0.002); end
-  def test_flows_p82; assert_in_epsilon(4.775344583707167, worksheet.flows_p82, 0.002); end
-  def test_flows_c83; assert_equal("Liquid", worksheet.flows_c83); end
+  def test_flows_f82; assert_equal("V.04", worksheet.flows_f82); end
+  def test_flows_g82; assert_in_epsilon(301.1360018327048, worksheet.flows_g82, 0.002); end
+  def test_flows_h82; assert_in_epsilon(315.23198193664143, worksheet.flows_h82, 0.002); end
+  def test_flows_i82; assert_in_epsilon(331.2310154251837, worksheet.flows_i82, 0.002); end
+  def test_flows_j82; assert_in_epsilon(348.1868792905727, worksheet.flows_j82, 0.002); end
+  def test_flows_k82; assert_in_epsilon(365.7750293296429, worksheet.flows_k82, 0.002); end
+  def test_flows_l82; assert_in_epsilon(384.86963450594857, worksheet.flows_l82, 0.002); end
+  def test_flows_m82; assert_in_epsilon(405.12178348106755, worksheet.flows_m82, 0.002); end
+  def test_flows_n82; assert_in_epsilon(425.082760706704, worksheet.flows_n82, 0.002); end
+  def test_flows_o82; assert_in_epsilon(444.16017457473083, worksheet.flows_o82, 0.002); end
+  def test_flows_p82; assert_in_epsilon(462.8718518734546, worksheet.flows_p82, 0.002); end
+  def test_flows_c83; assert_equal("Gas", worksheet.flows_c83); end
   def test_flows_d83; assert_equal("TRA.b", worksheet.flows_d83); end
   def test_flows_e83; assert_equal("Freight transport", worksheet.flows_e83); end
-  def test_flows_f83; assert_equal("V.04", worksheet.flows_f83); end
-  def test_flows_g83; assert_in_epsilon(301.1360018327048, worksheet.flows_g83, 0.002); end
-  def test_flows_h83; assert_in_epsilon(315.23198193664143, worksheet.flows_h83, 0.002); end
-  def test_flows_i83; assert_in_epsilon(331.2310154251837, worksheet.flows_i83, 0.002); end
-  def test_flows_j83; assert_in_epsilon(348.1868792905727, worksheet.flows_j83, 0.002); end
-  def test_flows_k83; assert_in_epsilon(365.7750293296429, worksheet.flows_k83, 0.002); end
-  def test_flows_l83; assert_in_epsilon(384.86963450594857, worksheet.flows_l83, 0.002); end
-  def test_flows_m83; assert_in_epsilon(405.12178348106755, worksheet.flows_m83, 0.002); end
-  def test_flows_n83; assert_in_epsilon(425.082760706704, worksheet.flows_n83, 0.002); end
-  def test_flows_o83; assert_in_epsilon(444.16017457473083, worksheet.flows_o83, 0.002); end
-  def test_flows_p83; assert_in_epsilon(462.8718518734546, worksheet.flows_p83, 0.002); end
-  def test_flows_c84; assert_equal("Gas", worksheet.flows_c84); end
-  def test_flows_d84; assert_equal("TRA.b", worksheet.flows_d84); end
-  def test_flows_e84; assert_equal("Freight transport", worksheet.flows_e84); end
-  def test_flows_f84; assert_equal("V.05", worksheet.flows_f84); end
-  def test_flows_g84; assert_in_delta(0.0, (worksheet.flows_g84||0), 0.002); end
-  def test_flows_h84; assert_in_delta(0.0, (worksheet.flows_h84||0), 0.002); end
-  def test_flows_i84; assert_in_delta(0.0, (worksheet.flows_i84||0), 0.002); end
-  def test_flows_j84; assert_in_delta(0.0, (worksheet.flows_j84||0), 0.002); end
-  def test_flows_k84; assert_in_delta(0.0, (worksheet.flows_k84||0), 0.002); end
-  def test_flows_l84; assert_in_delta(0.0, (worksheet.flows_l84||0), 0.002); end
-  def test_flows_m84; assert_in_delta(0.0, (worksheet.flows_m84||0), 0.002); end
-  def test_flows_n84; assert_in_delta(0.0, (worksheet.flows_n84||0), 0.002); end
-  def test_flows_o84; assert_in_delta(0.0, (worksheet.flows_o84||0), 0.002); end
-  def test_flows_p84; assert_in_delta(0.0, (worksheet.flows_p84||0), 0.002); end
+  def test_flows_f83; assert_equal("V.05", worksheet.flows_f83); end
+  def test_flows_g83; assert_in_delta(0.0, (worksheet.flows_g83||0), 0.002); end
+  def test_flows_h83; assert_in_delta(0.0, (worksheet.flows_h83||0), 0.002); end
+  def test_flows_i83; assert_in_delta(0.0, (worksheet.flows_i83||0), 0.002); end
+  def test_flows_j83; assert_in_delta(0.0, (worksheet.flows_j83||0), 0.002); end
+  def test_flows_k83; assert_in_delta(0.0, (worksheet.flows_k83||0), 0.002); end
+  def test_flows_l83; assert_in_delta(0.0, (worksheet.flows_l83||0), 0.002); end
+  def test_flows_m83; assert_in_delta(0.0, (worksheet.flows_m83||0), 0.002); end
+  def test_flows_n83; assert_in_delta(0.0, (worksheet.flows_n83||0), 0.002); end
+  def test_flows_o83; assert_in_delta(0.0, (worksheet.flows_o83||0), 0.002); end
+  def test_flows_p83; assert_in_delta(0.0, (worksheet.flows_p83||0), 0.002); end
 end
