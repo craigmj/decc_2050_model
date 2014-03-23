@@ -42,24 +42,32 @@ class ModelStructure < ModelUtilities
 
   def descriptions
     # CMJ: Short descriptions
-    @descriptions ||= @control_rows.map { |row| [r("control_h#{row}"),
-      r("control_i#{row}"),r("control_j#{row}"),r("control_k#{row}")] }
+    @descriptions ||= @control_rows.map { |row| [
+      r("control_h#{row}"),
+      r("control_i#{row}"),
+      r("control_j#{row}"),
+      r("control_k#{row}")] 
+    }
   end
 
   def long_descriptions
     # CMJ: Long descriptions
     @long_descriptions ||=  @control_rows.map  { |row| [
-      r("control_az#{row}"), r("control_ba#{row}"),r("control_bb#{row}"),r("control_bc#{row}")] }
+      r("control_h#{row}"), 
+      r("control_i#{row}"),
+      r("control_j#{row}"),
+      r("control_k#{row}")] 
+    }
   end
     
   def demand_choices
     # CMJ: Subset of choices that are demand
-    choices[18...choices.length]
+    choices[21...choices.length]
   end
   
   def supply_choices
     # CMJ: Subset of choices that are supply
-    choices[0..17]
+    choices[0..19]
   end
   
   def geosequestration_choice

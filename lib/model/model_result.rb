@@ -19,7 +19,7 @@ class ModelResult < ModelUtilities
       sankey_table 
       primary_energy_tables
       electricity_tables
-      # heating_choice_table
+      heating_choice_table
       # cost_components_table
       # map_table
       energy_imports 
@@ -52,13 +52,15 @@ class ModelResult < ModelUtilities
   def electricity_tables
     e = {}
     # CMJ: 
-    e[:demand] = table 236, 241
+    e[:demand] = table 240, 245  #236, 241
     # CMJ
-    e[:supply] = table 100, 114
+    e[:supply] = table 101,115  # 100, 114
+    # CMJ Introduced new graph!
+    e[:capacity] = table 128, 135  # 
     # CMJ
-    e[:emissions] = table 203,206
+    e[:emissions] = table 207, 209  #203,206
     # CMJ
-    e[:capacity] = table 126,139
+    e[:capacity] = table 128, 135
 
     e['automatically_built'] = r("intermediate_output_bh120")
     e['peaking'] = r("intermediate_output_bh131")
@@ -149,22 +151,22 @@ class ModelResult < ModelUtilities
   def energy_imports
     i = {}
     [
-      ["Coal",37,39],
-      ["Oil",41,43],
-      ["Gas",44,46],
-      ["Bioenergy",35,36],
-      ["Uranium",23,23],
-      ["Electricity",110,111],
-      ["Primary energy",297,296]
+      ["Coal",41,43], #CMJ 37,39],
+      ["Oil",45,47],  #CMJ 41,43],
+      ["Gas",48,50],  #CMJ 44,46],
+      ["Bioenergy",39,40],  #CMJ 35,36],
+      ["Uranium",29,29],    #CMJ 23,23],
+      ["Electricity",113,116], #CMJ 110,111],
+      ["Primary energy",227,226] #CMJ 297,296]
     ].each do |vector|
-      imported = r("intermediate_output_bh#{vector[1]}").to_f
+      imported = r("intermediate_output_p#{vector[1]}").to_f
       imported = imported > 0 ? imported.round : 0
-      total = r("intermediate_output_bh#{vector[2]}").to_f
+      total = r("intermediate_output_p#{vector[2]}").to_f
       proportion = total > 0 ? "#{((imported/total) * 100).round}%" : "0%"
       i[vector[0]] = { '2050' => {quantity: imported, proportion: proportion} }
-      imported = r("intermediate_output_f#{vector[1]}").to_f
+      imported = r("intermediate_output_g#{vector[1]}").to_f
       imported = imported > 0 ? imported.round : 0
-      total = r("intermediate_output_f#{vector[2]}").to_f
+      total = r("intermediate_output_g#{vector[2]}").to_f
       proportion = total > 0 ? "#{((imported/total) * 100).round}%" : "0%"
       i[vector[0]]['2007'] = { quantity: imported, proportion: proportion }
     end
