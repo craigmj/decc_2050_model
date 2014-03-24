@@ -31,7 +31,7 @@ class ModelResult < ModelUtilities
       
   def sankey_table
     s = [] 
-    (6..83).each do |row|
+    (6..86).each do |row|
       s << [r("flows_c#{row}"),r("flows_p#{row}"),r("flows_e#{row}")]
     end
     pathway[:sankey] = s
@@ -151,13 +151,13 @@ class ModelResult < ModelUtilities
   def energy_imports
     i = {}
     [
-      ["Coal",41,43], #CMJ 37,39],
-      ["Oil",45,47],  #CMJ 41,43],
-      ["Gas",48,50],  #CMJ 44,46],
-      ["Bioenergy",39,40],  #CMJ 35,36],
-      ["Uranium",29,29],    #CMJ 23,23],
-      ["Electricity",113,116], #CMJ 110,111],
-      ["Primary energy",227,226] #CMJ 297,296]
+      ["Coal",42,44], #CMJ 37,39],
+      ["Oil",46, 48],  #CMJ 41,43],
+      ["Gas",49,51],  #CMJ 44,46],
+      ["Bioenergy",40,41], #???  #CMJ 35,36],
+      ["Uranium",30,30],    #CMJ 23,23],
+      ["Electricity",115,118], #CMJ 110,111],
+      ["Primary energy",231,230] #CMJ 297,296]
     ].each do |vector|
       imported = r("intermediate_output_p#{vector[1]}").to_f
       imported = imported > 0 ? imported.round : 0
@@ -184,9 +184,9 @@ class ModelResult < ModelUtilities
     #     '2050' => "#{((r("intermediate_output_bh#{row}").to_f / total_2050)*100).round}%"
     #   }
     # end
-    total_2007 = r("intermediate_output_g226").to_f
-    total_2050 = r("intermediate_output_p226").to_f
-    (216..225).each do |row|
+    total_2007 = r("intermediate_output_g230").to_f
+    total_2050 = r("intermediate_output_p230").to_f
+    (220..229).each do |row|
       d[r("intermediate_output_d#{row}")] = { 
         '2007' => "#{((r("intermediate_output_g#{row}").to_f / total_2007)*100).round}%",
         '2050' => "#{((r("intermediate_output_p#{row}").to_f / total_2050)*100).round}%"
