@@ -40,8 +40,8 @@ class ModelResult < ModelUtilities
       
   def sankey_table
     s = [] 
-    (6..86).each do |row|
-      s << [r("flows_c#{row}"),r("flows_p#{row}"),r("flows_e#{row}")]
+    (250..299).each do |row|
+      s << [r("flows_c#{row}"),r("flows_e#{row}"),r("flows_d#{row}")]
     end
     pathway[:sankey] = s
   end
