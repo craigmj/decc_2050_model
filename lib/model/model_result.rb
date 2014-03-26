@@ -24,9 +24,18 @@ class ModelResult < ModelUtilities
       # map_table
       energy_imports 
       energy_diversity
+      story_components
       # air_quality
     end
     return pathway
+  end
+
+  def story_components
+    s = []
+    (451..498).each do |row|
+      s << [r("intermediate_output_b#{row}"), r("intermediate_output_c#{row}"), r("intermediate_output_d#{row}")]
+    end
+    pathway[:story] = s
   end
       
   def sankey_table
