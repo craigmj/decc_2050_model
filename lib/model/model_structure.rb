@@ -71,20 +71,30 @@ class ModelStructure < ModelUtilities
   end
   
   def geosequestration_choice
-    # CMJ: Single choice that is geosequestration - pure 'suck CO2 out of atmosphere'
+    # CMJ: Single choice that is geosequestration - 
+    # pure 'suck CO2 out of atmosphere'
     # choices[40]
+    # AM140904 - This doesn't apply to RSA
+    # Should this be choices[8]???
+    # @TODO
     choices[8]
   end
   
   def balancing_choice
     # CMJ: Lever for interconnections in storage
     # choices[41]
+    # AM140904 - This doesn't apply to RSA
+    # Should this be choices[8]???
+    # @TODO    
     choices[8]
   end
 
   def indigenous_fossil_fuel_production
     # @TODO CMJ: All iffp - might be split in our case 
     # choices[42]
+    # AM140904 - This doesn't apply to RSA
+    # Should this be choices[8]???
+    # @TODO    
     choices[8]
   end
   
@@ -93,6 +103,7 @@ class ModelStructure < ModelUtilities
   end
   
   def generate_example_pathways
+    # AM140904 - This doesn't apply to RSA
     # CMJ: These are example pathways pre-configured. We don't have any.
     ('m'..'z').to_a.push('aa','ab').map do |column|
       {

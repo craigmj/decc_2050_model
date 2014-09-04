@@ -33,7 +33,11 @@ class ModelResult < ModelUtilities
   def story_components
     s = []
     (451..498).each do |row|
-      s << [r("intermediate_output_b#{row}"), r("intermediate_output_c#{row}"), r("intermediate_output_d#{row}")]
+      s << [
+          r("intermediate_output_b#{row}"), 
+          r("intermediate_output_c#{row}"), 
+          r("intermediate_output_d#{row}")
+        ]
     end
     pathway[:story] = s
   end
@@ -48,35 +52,35 @@ class ModelResult < ModelUtilities
 
   def primary_energy_tables
     # CMJ: This seems to be working 140303
-    # CMJ: These are on Intermediate Output worksheet in column D
-    pathway[:ghg] = table 178,184 # CMJ0228ok
+    # CMJ: These are on Intermediate Output worksheet in column G
+    pathway[:ghg] = table 176,187 # -TOTAL AM140904
     # CMJ: 
-    pathway[:final_energy_demand, ] = table 13, 23 # CMJ0228ok
+    pathway[:final_energy_demand, ] = table 13, 22 # -TOTAL AM140904
     # CMJ
-    pathway[:primary_energy_supply] = table 220, 229 # CMJ0228ok
+    pathway[:primary_energy_supply] = table 220, 229 # -TOTAL AM140904
     # CMJ - circa O175 (but we don't have this value right now)
+    # AM140904 - Not required for RSA model
     pathway[:ghg][:percent_reduction_from_1990] = (r("intermediate_output_bh155") * 100).round
   end
   
   def electricity_tables
     e = {}
-    # CMJ: 
-    e[:demand] = table 240, 245  #236, 241
-    # CMJ
-    e[:supply] = table 101,115  # 100, 114
-    # CMJ Introduced new graph!
-    e[:capacity] = table 128, 135  # 
-    # CMJ
-    e[:emissions] = table 207, 209  #203,206
-    # CMJ
-    e[:capacity] = table 128, 135
+    # Electricity use by sector
+    e[:demand] = table 240, 245  # AM140904
+    e[:supply] = table 101,115  # AM140904
+    e[:capacity] = table 128, 135 # AM140904
+    e[:emissions] = table 207, 209  # AM140904
 
+    # AM140904 - neither of these apply to RSA model
     e['automatically_built'] = r("intermediate_output_bh120")
     e['peaking'] = r("intermediate_output_bh131")
+
     pathway['electricity'] = e
   end
   
   def heating_choice_table
+    # AM140904 - HEATING CHOICE DOESN'T APPLY TO RSA MODEL
+    # This is a UK thing
     h = {'residential' => {}, 'commercial' => {}}
 
     (332..344).each do |row|
@@ -88,6 +92,7 @@ class ModelResult < ModelUtilities
   end
   
   def cost_components_table
+    #AM140904 - THIS DOESN'T APPLY TO THE RSA MODEL
     t = {}
     low_start_row = 3
     point_start_row = 57
@@ -160,13 +165,13 @@ class ModelResult < ModelUtilities
   def energy_imports
     i = {}
     [
-      ["Coal",42,44], #CMJ 37,39],
-      ["Oil",46, 48],  #CMJ 41,43],
-      ["Gas",49,51],  #CMJ 44,46],
-      ["Bioenergy",40,41], #???  #CMJ 35,36],
-      ["Uranium",30,30],    #CMJ 23,23],
-      ["Electricity",115,118], #CMJ 110,111],
-      ["Primary energy",231,230] #CMJ 297,296]
+      ["Coal",42,44], # +TOTAL AM140904
+      ["Oil",46, 48],  # +TOTAL AM140904
+      ["Gas",49,51],  # +TOTAL AM140904
+      ["Bioenergy",40,41], # +TOTAL AM140904
+      ["Uranium",30,30],    # +TOTAL AM140904
+      ["Electricity",115,118], # +TOTAL AM140904
+      ["Primary energy",231,230] # +TOTAL AM140904
     ].each do |vector|
       imported = r("intermediate_output_p#{vector[1]}").to_f
       imported = imported > 0 ? imported.round : 0
@@ -193,6 +198,7 @@ class ModelResult < ModelUtilities
     #     '2050' => "#{((r("intermediate_output_bh#{row}").to_f / total_2050)*100).round}%"
     #   }
     # end
+    # AM140904 - Seems ok??
     total_2007 = r("intermediate_output_g230").to_f
     total_2050 = r("intermediate_output_p230").to_f
     (220..229).each do |row|
@@ -206,6 +212,7 @@ class ModelResult < ModelUtilities
   end
 
   def air_quality
+    # AM140904 Not applicable to RSA model
     pathway['air_quality'] = {}
     pathway['air_quality']['low'] = r("aq_outputs_f6")
     pathway['air_quality']['high'] = r("aq_outputs_f5")
