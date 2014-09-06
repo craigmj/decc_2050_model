@@ -1,5 +1,7 @@
 begin
   # If the model has already been compiled, we can check it for its version number
+  # This is problematic since it always looks to the installed library to determine
+  # the version number.
   require_relative 'lib/model'
   print "Testing for version\n"
   ms = ModelStructure.instance
@@ -28,9 +30,9 @@ Gem::Specification.new do |s|
   s.version = version
   s.add_dependency('ffi','>= 1.0.11')
   s.add_development_dependency('excel_to_code')
-  s.author = "Thomas Counsell, Department of Energy and Climate Change, Her Majesty's Government, UK"
-  s.email = "tom.counsell@decc.gsi.gov.uk"
-  s.homepage = "http://github.com/decc/decc_2050_model"
+  s.author = "Craig Mason-Jones, Lateral Alternative, ERC and DEA"
+  s.email = "craig@lateral.co.za"
+  s.homepage = "http://github.com/craigmj/decc_2050_model"
   s.platform = Gem::Platform::RUBY
   s.summary = "A C version of DECC's 2050 Pathway Excel Spreadsheet"
   s.description = File.read(File.join(File.dirname(__FILE__), 'README.markdown'))
