@@ -47,7 +47,8 @@ class ModelStructure < ModelUtilities
     if (-1==i) 
       "-no group-"
     else
-      g = excel.send("control_a#{i}")
+      row = @control_rows[i]
+      g = excel.send("control_a#{row}")
       if ""==g or 0==g or nil==g
         getGroup(i-1)
       else
@@ -56,16 +57,12 @@ class ModelStructure < ModelUtilities
     end
   end
 
-  def group
-    # CMJ: Main group of levers
-    @group ||= @control_rows.map { |row| excel.send("control_a#{row}") }
-  end
-
   def getSubgroup(i)
     if (-1==i)
       return "-no subgroup-"
     end
-    s = excel.send("control_b#{i}")
+    row = @control_rows[i]
+    s = excel.send("control_b#{row}")
     if ""==s or 0==s or nil==s
       return getSubgroup(i-1)
     else

@@ -17,7 +17,11 @@ else
 fi
 rvm use 2.1-head
 
+pushd /opt/decc/decc_2050_model
 rm -f *.gem
 gem build model.gemspec
 gem uninstall -a decc_2050_model
 gem install `ls -Rt decc_2050_model*.gem | head -1`
+popd
+
+/opt/decc/twenty-fifty/restart.sh
