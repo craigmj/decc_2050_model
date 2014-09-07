@@ -18,11 +18,13 @@ file 'ext/model.c' do
 
   command.cells_to_keep = {
     # CMJ: The names, limits, 10 worders, long descriptions
+    # a and b columns contain group and subgroup for display purposes.
     # d#{r} are the LEVER DESCRIPTIONS
     # f#{r} are the LIMITS
     # h..k#{r} are the trajectory descriptions
     # az..bc#{r} are the longer trajectory descriptions used in the Story 
     "Control" => (5.upto(46).to_a.map { |r| [
+        "a#{r}", "b#{r}",
         "d#{r}","f#{r}","h#{r}","i#{r}","j#{r}","k#{r}",
         "az#{r}","ba#{r}","bb#{r}","bc#{r}"] }).flatten, 
     "Intermediate output" => :all, 

@@ -12,17 +12,20 @@ class ModelStructure < ModelUtilities
     @excel = ModelShim.new
     @choices = []
     types.each_with_index do |choice_type,i|
+      grp = getGroup(i)
+      sub = getSubgroup(i)
+      puts "#{i} - group = #{grp}, subgroup = #{sub}"
       case choice_type
       when nil, 0.0; next
-      when /[abcd]/i; choices << ModelAlternative.new(i,names[i],choice_type,descriptions[i],long_descriptions[i])
-      else; choices << ModelChoice.new(i,names[i],choice_type,descriptions[i],long_descriptions[i])
+      when /[abcd]/i; choices << ModelAlternative.new(i,grp,sub,names[i],choice_type,descriptions[i],long_descriptions[i])
+      else; choices << ModelChoice.new(i,grp,sub,names[i],choice_type,descriptions[i],long_descriptions[i])
       end
     end
 
     puts "--- SUPPLY CHOICES ---"
-    supply_choices.each { |c| puts c.name }
+    supply_choices.each { |c| puts "#{c.group}:#{c.subgroup}:#{c.name}" }
     puts "---"
-
+    # exit
   end
   
   def reported_calculator_version
@@ -38,6 +41,41 @@ class ModelStructure < ModelUtilities
   def names
     # CMJ: Map to the names of each option
     @names ||= @control_rows.map { |row| excel.send("control_d#{row}") }
+  end
+
+  def getGroup(i)
+    if (-1==i) 
+      "-no group-"
+    else
+      g = excel.send("control_a#{i}")
+      if ""==g or 0==g or nil==g
+        getGroup(i-1)
+      else
+        g
+      end
+    end
+  end
+
+  def group
+    # CMJ: Main group of levers
+    @group ||= @control_rows.map { |row| excel.send("control_a#{row}") }
+  end
+
+  def getSubgroup(i)
+    if (-1==i)
+      return "-no subgroup-"
+    end
+    s = excel.send("control_b#{i}")
+    if ""==s or 0==s or nil==s
+      return getSubgroup(i-1)
+    else
+      s
+    end
+  end
+
+  def subgroup
+    # CMJ: Sub grouping of levers
+    @subgroup ||= @control_rows.map { |row| excel.send("control_c#{row}") }
   end
 
   def descriptions
