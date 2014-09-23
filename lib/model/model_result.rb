@@ -67,7 +67,7 @@ class ModelResult < ModelUtilities
     e = {}
     # Electricity use by sector
     e[:demand] = table 240, 245  # AM140904
-    e[:supply] = table 101,115  # AM140904
+    e[:supply] = table 264, 273  # CMJ140922
     e[:capacity] = table 128, 135 # AM140904
     e[:emissions] = table 207, 209  # AM140904
 
@@ -170,7 +170,8 @@ class ModelResult < ModelUtilities
       ["Gas",49,51],  # +TOTAL AM140904
       ["Bioenergy",40,41], # +TOTAL AM140904
       ["Uranium",30,30],    # +TOTAL AM140904
-      ["Electricity",115,118], # +TOTAL AM140904
+      #["Electricity",115,118], # +TOTAL AM140904
+      ["Electricity",121,120], # +TOTAL CMJ140922
       ["Primary energy",231,230] # +TOTAL AM140904
     ].each do |vector|
       imported = r("intermediate_output_p#{vector[1]}").to_f
