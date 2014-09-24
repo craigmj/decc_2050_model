@@ -171,7 +171,7 @@ class ModelResult < ModelUtilities
       ["Bioenergy",40,41], # +TOTAL AM140904
       ["Uranium",30,30],    # +TOTAL AM140904
       #["Electricity",115,118], # +TOTAL AM140904
-      ["Electricity",121,120], # +TOTAL CMJ140922
+      ["Electricity",273,275], # +TOTAL CMJ140924
       ["Primary energy",231,230] # +TOTAL AM140904
     ].each do |vector|
       imported = r("intermediate_output_p#{vector[1]}").to_f
