@@ -19,6 +19,8 @@ rvm use 2.1.2
 
 pushd /opt/decc/decc_2050_model
 rm -f *.gem
+bundle install
+bundle exec rake
 gem build model.gemspec
 gem uninstall -a decc_2050_model
 gem install `ls -Rt decc_2050_model*.gem | head -1`
