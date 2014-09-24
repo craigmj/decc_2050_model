@@ -67,7 +67,7 @@ class ModelResult < ModelUtilities
     e = {}
     # Electricity use by sector
     e[:demand] = table 240, 245  # AM140904
-    e[:supply] = table 264, 273  # CMJ140922
+    e[:supply] = table 265, 273  # CMJ140924
     e[:capacity] = table 128, 135 # AM140904
     e[:emissions] = table 207, 209  # AM140904
 
