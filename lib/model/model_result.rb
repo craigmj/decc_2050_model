@@ -20,7 +20,7 @@ class ModelResult < ModelUtilities
       primary_energy_tables
       electricity_tables
       heating_choice_table
-      # cost_components_table
+      cost_components_table
       # map_table
       energy_imports 
       energy_diversity
@@ -97,11 +97,11 @@ class ModelResult < ModelUtilities
     low_start_row = 3
     point_start_row = 57
     high_start_row = 112
-    number_of_components = 49
+    number_of_components = 27
     
     # Normal cost components
     (0..number_of_components).to_a.each do |i|
-            
+      puts "Component #{i}"
       name          = r("costpercapita_b#{low_start_row+i}")
       
       low           = r("costpercapita_as#{low_start_row+i}")
@@ -112,6 +112,10 @@ class ModelResult < ModelUtilities
       finance_low   = 0 # r("costpercapita_cp{low_start_row+i}") # Bodge for the zero interest rate at low
       finance_point = r("costpercapita_cp#{point_start_row+i}")
       finance_high  = r("costpercapita_cp#{high_start_row+i}")
+      puts "finance_point = #{finance_point}, finance_high = #{finance_high}"
+      if nil==finance_high
+        finance_high = 0
+      end
       finance_range = finance_high - finance_low
       
       costs = {low:low,point:point,high:high,range:range,finance_low:finance_low,finance_point:finance_point,finance_high:finance_high,finance_range:finance_range}

@@ -26,4 +26,4 @@ gem uninstall -a decc_2050_model
 gem install `ls -Rt decc_2050_model*.gem | head -1`
 popd
 
-sh /opt/decc/twenty-fifty/restart.sh
+bash /opt/decc/twenty-fifty/restart.sh

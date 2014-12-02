@@ -4,6 +4,30 @@ desc "Update all the code, based on the spreadsheet in spreadsheet/model.xlsx"
 task :generate_new_mode_from_excel => [:clean,'ext/model.c',:put_generated_files_in_right_place,:fix_test_require, :change_last_modified_date]
 
 desc "Generates c version of the model"
+
+def ColN2ColA(n)
+  c = ('a'.ord + (n-1)%26).chr
+  d = (n-1) / 26
+  if 0==d
+    return c
+  end
+  return ColN2ColA(d) + c
+end
+
+def ColA2ColN(a)
+  if ""==a
+    return 0
+  end
+  a = a.downcase
+  return (a[-1].ord - 'a'.ord + 1) + 26*(ColA2ColN(a[0..-2]))
+end
+
+def ColRange(from, to, row)
+  fn = ColA2ColN(from)
+  tn = ColA2ColN(to)
+  fn.upto(tn).map { |c| ColN2ColA(c) + "#{row}" }
+end
+
 file 'ext/model.c' do
   require 'excel_to_code'
   command = ExcelToC.new
@@ -15,6 +39,7 @@ file 'ext/model.c' do
   # CMJ: These rows should correspond to the rows in Control sheet where the 'model values' are
   # set. The e#{r} here defines the COLUMN.
   command.cells_that_can_be_set_at_runtime = { "Control" => (5.upto(46).to_a.map { |r| "e#{r}" }) }
+
 
   command.cells_to_keep = {
     # CMJ: The names, limits, 10 worders, long descriptions
@@ -28,9 +53,11 @@ file 'ext/model.c' do
         "d#{r}","f#{r}","h#{r}","i#{r}","j#{r}","k#{r}",
         "az#{r}","ba#{r}","bb#{r}","bc#{r}"] }).flatten, 
     "Intermediate output" => :all, 
-    # "CostPerCapita" => :all, 
     # "Land Use" => :all, 
     "Flows" => :all, 
+    # CMJ: We've got Cost Per Capita for Costs calculations
+    "CostPerCapita" => :all,
+
     # CMJ : We don't have AQOutputs sheet
     # "AQ Outputs" => :all, 
   }
@@ -52,7 +79,7 @@ file 'ext/model.c' do
   command.actually_compile_code = true
   command.actually_run_tests = true
 
-  command.run_in_memory = true
+  #command.run_in_memory = true
 
   command.go!
 end
