@@ -94,6 +94,7 @@ task :put_generated_files_in_right_place do
 
   mv 'ext/model.rb', 'lib/model/model.rb'
   mv 'ext/test_model.rb', 'test/test_model.rb'
+  touch 'ext/Makefile'
   rm 'ext/Makefile'
 end
 
