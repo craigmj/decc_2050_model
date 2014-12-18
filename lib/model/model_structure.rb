@@ -9,7 +9,7 @@ class ModelStructure < ModelUtilities
   def initialize
     @control_rows = (8..46).to_a
 
-    @excel = ModelShim.new
+    @excel = Model.new
     @choices = []
     types.each_with_index do |choice_type,i|
       grp = getGroup(i)

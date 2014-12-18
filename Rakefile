@@ -38,8 +38,8 @@ file 'ext/model.c' do
 
   # CMJ: These rows should correspond to the rows in Control sheet where the 'model values' are
   # set. The e#{r} here defines the COLUMN.
-  command.cells_that_can_be_set_at_runtime = { "Control" => (5.upto(46).to_a.map { |r| "e#{r}" }) }
-
+  command.cells_that_can_be_set_at_runtime =
+    { "Control" => (5.upto(46).to_a.map { |r| "e#{r}" }) }
 
   command.cells_to_keep = {
     # CMJ: The names, limits, 10 worders, long descriptions
