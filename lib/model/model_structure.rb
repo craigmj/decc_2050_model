@@ -22,9 +22,9 @@ class ModelStructure < ModelUtilities
       end
     end
 
-    puts "--- SUPPLY CHOICES ---"
-    supply_choices.each { |c| puts "#{c.group}:#{c.subgroup}:#{c.name}" }
-    puts "---"
+    # puts "--- SUPPLY CHOICES ---"
+    # supply_choices.each { |c| puts "#{c.group}:#{c.subgroup}:#{c.name}" }
+    # puts "---"
     # exit
   end
   
