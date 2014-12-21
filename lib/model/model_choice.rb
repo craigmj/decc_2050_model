@@ -16,15 +16,6 @@ class ModelChoice
   end
 
   NUMBER_TO_DOC_MAP = {
-    # 0 => 0,
-    # 7 => 'TidalStream',
-    # 8 => 'TidalRange',
-    # 27 => 'FuelCellsOrBatteries',
-    # 28 => 25,
-    # 29 => 'InternationalAviation',
-    # 30 => 'InternationalShipping',
-    # 32 => 29,
-    # 51 => 48 
   }
 
   def doc

@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 # Load RVM into a shell session *as a function*
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then
@@ -15,7 +15,7 @@ else
  source "$HOME/.rvm/scripts/rvm"
  RVMB="$HOME/.rvm/bin/rvm"
 fi
-rvm use 2.1.2
+rvm use 2.1.5
 
 pushd /opt/decc/decc_2050_model
 rm -f *.gem
@@ -26,4 +26,4 @@ gem uninstall -a decc_2050_model
 gem install `ls -Rt decc_2050_model*.gem | head -1`
 popd
 
-bash /opt/decc/twenty-fifty/restart.sh
+# bash /opt/decc/twenty-fifty/restart.sh

@@ -2,27 +2,14 @@ begin
   # If the model has already been compiled, we can check it for its version number
   # This is problematic since it always looks to the installed library to determine
   # the version number.
-  require_relative 'lib/model'
-  print "Testing for version\n"
-  ms = ModelStructure.instance
-  # puts ms.inspect
-  rs = ms.reported_calculator_version
-  if nil==rs
-    puts "REPORTED_CALCULATOR_VERSION IS NIL"
-  end
-  puts "RS = " + rs
-  version = ModelStructure.instance.reported_calculator_version[/\d+\.\d+\.\d+/]
-  puts "Successfully created version"
-  print "Version = " + version + "\n"
-rescue LoadError => e
-  # Otherwise we need to take it from the changes file
-  print "Loading from changes file\n"
-  version = IO.readlines(File.join(File.dirname(__FILE__),"CHANGES")).join[/#\s*(\d+\.\d+\.\d+)\b/,1]
+  version = %x(deccgem namegem)
 end
 
-if `git status --porcelain | wc -l`.to_i > 0
-  version = version + "pre"
-end
+# This adds pre if not committed - we'll ignore since
+# we've got untracked files here, so it's difficult to coordinate.
+#if `git status --porcelain | wc -l`.to_i > 0
+#  version = version + "pre"
+#end
 
 Gem::Specification.new do |s|
   s.name = "decc_2050_model"

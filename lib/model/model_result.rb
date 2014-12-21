@@ -4,7 +4,7 @@ class ModelResult < ModelUtilities
   attr_accessor :excel, :pathway
   
   def initialize
-    @excel = Model.new
+    @excel = ModelShim.new
   end
   
   def self.calculate_pathway(code)
@@ -121,10 +121,6 @@ class ModelResult < ModelUtilities
       finance_low   = 0 # r("costpercapita_cp{low_start_row+i}") # Bodge for the zero interest rate at low
       finance_point = r("costpercapita_cp#{point_start_row+i}")
       finance_high  = r("costpercapita_cp#{high_start_row+i}")
-      puts "finance_point = #{finance_point}, finance_high = #{finance_high}"
-      if nil==finance_high
-        finance_high = 0
-      end
       finance_range = finance_high - finance_low
       
       costs = {low:low,point:point,high:high,range:range,finance_low:finance_low,finance_point:finance_point,finance_high:finance_high,finance_range:finance_range}
