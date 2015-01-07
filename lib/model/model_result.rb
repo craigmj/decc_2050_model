@@ -110,17 +110,29 @@ class ModelResult < ModelUtilities
     
     # Normal cost components
     (0..number_of_components).to_a.each do |i|
-      puts "Component #{i}"
       name          = r("costpercapita_b#{low_start_row+i}")
+      puts "model_result.rb::cost_components_table Component #{i}: #{name}"
       
       low           = r("costpercapita_as#{low_start_row+i}")
       point         = r("costpercapita_as#{point_start_row+i}")
+      if (0==low)
+        low = point
+      end
       high          = r("costpercapita_as#{high_start_row+i}")
+      if (0==high)
+        high = point
+      end
       range         = high - low
       
-      finance_low   = 0 # r("costpercapita_cp{low_start_row+i}") # Bodge for the zero interest rate at low
+      finance_low   = r("costpercapita_cp#{low_start_row+i}") # Bodge for the zero interest rate at low
       finance_point = r("costpercapita_cp#{point_start_row+i}")
+      if (0==finance_low)
+        finance_low = finance_point
+      end
       finance_high  = r("costpercapita_cp#{high_start_row+i}")
+      if (0==finance_high)
+        finance_high = finance_point
+      end
       finance_range = finance_high - finance_low
       
       costs = {low:low,point:point,high:high,range:range,finance_low:finance_low,finance_point:finance_point,finance_high:finance_high,finance_range:finance_range}
@@ -132,15 +144,16 @@ class ModelResult < ModelUtilities
     end
     
     # Merge some of the points
-    t['Coal'] = sum(t['Indigenous fossil-fuel production - Coal'],t['Balancing imports - Coal'])
-    t.delete 'Indigenous fossil-fuel production - Coal'
-    t.delete 'Balancing imports - Coal'
-    t['Oil'] = sum(t['Indigenous fossil-fuel production - Oil'],t['Balancing imports - Oil'])
-    t.delete 'Indigenous fossil-fuel production - Oil'
-    t.delete 'Balancing imports - Oil'
-    t['Gas'] = sum(t['Indigenous fossil-fuel production - Gas'],t['Balancing imports - Gas'])
-    t.delete 'Indigenous fossil-fuel production - Gas'
-    t.delete 'Balancing imports - Gas'
+    # CMJ150107
+    # t['Coal'] = sum(t['Indigenous fossil-fuel production - Coal'],t['Balancing imports - Coal'])
+    # t.delete 'Indigenous fossil-fuel production - Coal'
+    # t.delete 'Balancing imports - Coal'
+    # t['Oil'] = sum(t['Indigenous fossil-fuel production - Oil'],t['Balancing imports - Oil'])
+    # t.delete 'Indigenous fossil-fuel production - Oil'
+    # t.delete 'Balancing imports - Oil'
+    # t['Gas'] = sum(t['Indigenous fossil-fuel production - Gas'],t['Balancing imports - Gas'])
+    # t.delete 'Indigenous fossil-fuel production - Gas'
+    # t.delete 'Balancing imports - Gas'
     
     # Finance cost
     name          = "Finance cost"
