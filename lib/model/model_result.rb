@@ -99,13 +99,13 @@ class ModelResult < ModelUtilities
   
   def cost_components_table
     t = {}
-    low_start_row = 3  #CMJ141216
+    low_start_row = 3  #CMJ150119
     # point_start_row = 57
     # high_start_row = 112
     # number_of_components = 27
-    point_start_row = 44  #CMJ141216
-    high_start_row = 86   # CMJ141216
-    number_of_components = 37 # CMJ141216
+    point_start_row = 45  #CMJ150119
+    high_start_row = 88   # CMJ150119
+    number_of_components = 38 # CMJ150119
 
     
     # Normal cost components

@@ -25,7 +25,7 @@ class ModelUtilities
     end
   end
   
-  CONTROL = (8..46).to_a.map { |r| "control_e#{r}"  }
+  CONTROL = (6..46).to_a.map { |r| "control_e#{r}"  }
   
   def set_choices(code)
     choices = code.split('')

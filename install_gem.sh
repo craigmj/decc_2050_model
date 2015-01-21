@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ex
+set -e
 
 # Load RVM into a shell session *as a function*
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then
