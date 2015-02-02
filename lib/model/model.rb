@@ -2503,20 +2503,6 @@ module Model
   attach_function 'intermediate_output_n224', [], ExcelValue.by_value
   attach_function 'intermediate_output_o224', [], ExcelValue.by_value
   attach_function 'intermediate_output_p224', [], ExcelValue.by_value
-  attach_function 'intermediate_output_c225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_d225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_e225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_f225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_g225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_h225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_i225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_j225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_k225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_l225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_m225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_n225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_o225', [], ExcelValue.by_value
-  attach_function 'intermediate_output_p225', [], ExcelValue.by_value
   attach_function 'intermediate_output_d226', [], ExcelValue.by_value
   attach_function 'intermediate_output_e226', [], ExcelValue.by_value
   attach_function 'intermediate_output_f226', [], ExcelValue.by_value
