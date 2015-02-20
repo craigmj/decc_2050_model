@@ -73,7 +73,7 @@ class ModelResult < ModelUtilities
     # Electricity use by sector
     e[:demand] = table 240, 245  # CMJ141216
     #e[:supply] = table 265, 273  # CMJ140924
-    e[:supply] = table 220, 229  # CMJ141216
+    e[:supply] = table 101,116  # CMJ150220 - should be different to primary_energy_tables
     e[:capacity] = table 128, 135 # CMJ141216
     e[:emissions] = table 207, 209  # CMJ141216
 
