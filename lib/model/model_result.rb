@@ -258,7 +258,8 @@ class ModelResult < ModelUtilities
   end
   
   def annual_data(sheet,row)
-    ('g'..'p').to_a.map { |c| r("#{sheet}_#{c}#{row}") }
+    # ('g'..'p').to_a.map { |c| r("#{sheet}_#{c}#{row}") }
+    ('h'..'p').to_a.map { |c| r("#{sheet}_#{c}#{row}") }
     # ['az','ba','bb','bc','bd','be','bf','bg','bh'].map { |c| r("#{sheet}_#{c}#{row}") }
   end
   
