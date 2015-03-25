@@ -47,7 +47,7 @@ class ModelResult < ModelUtilities
   def sankey_table
     s = [] 
     # CMJ141216 - Location correct, but a number of #N/A's in the spreadsheet. Will query.
-    (250..299).each do |row|
+    (251..301).each do |row|
       s << [r("flows_c#{row}"),r("flows_e#{row}"),r("flows_d#{row}")]
     end
     pathway[:sankey] = s
@@ -202,11 +202,12 @@ class ModelResult < ModelUtilities
       total = r("intermediate_output_p#{vector[2]}").to_f
       proportion = total > 0 ? "#{((imported/total) * 100).round}%" : "0%"
       i[vector[0]] = { '2050' => {quantity: imported, proportion: proportion} }
-      imported = r("intermediate_output_g#{vector[1]}").to_f
+      # CMJ150320 - we're baselining against 2010, so need to use col h
+      imported = r("intermediate_output_h#{vector[1]}").to_f
       imported = imported > 0 ? imported.round : 0
-      total = r("intermediate_output_g#{vector[2]}").to_f
+      total = r("intermediate_output_h#{vector[2]}").to_f
       proportion = total > 0 ? "#{((imported/total) * 100).round}%" : "0%"
-      i[vector[0]]['2007'] = { quantity: imported, proportion: proportion }
+      i[vector[0]]['2010'] = { quantity: imported, proportion: proportion }
     end
     pathway['imports'] = i
   end
@@ -224,11 +225,12 @@ class ModelResult < ModelUtilities
     # end
     # AM140904 - Seems ok??
     # CMJ141216 - Assuming Ok
-    total_2007 = r("intermediate_output_g230").to_f
+    # CMJ150320 Modified to 2010 in col h
+    total_2010 = r("intermediate_output_h230").to_f
     total_2050 = r("intermediate_output_p230").to_f
     (220..229).each do |row|
       d[r("intermediate_output_d#{row}")] = { 
-        '2007' => "#{((r("intermediate_output_g#{row}").to_f / total_2007)*100).round}%",
+        '2010' => "#{((r("intermediate_output_g#{row}").to_f / total_2010)*100).round}%",
         '2050' => "#{((r("intermediate_output_p#{row}").to_f / total_2050)*100).round}%"
       }
     end
