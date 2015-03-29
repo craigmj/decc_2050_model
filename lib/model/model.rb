@@ -664,9 +664,6 @@ module Model
   attach_function 'control_bc46', [], ExcelValue.by_value
   attach_function 'control_a1', [], ExcelValue.by_value
   # end of Control
-  # end of AGL
-  # end of WST
-  # end of BIO.SUP
   # end of Preferences
   attach_function 'intermediate_output_b2', [], ExcelValue.by_value
   attach_function 'intermediate_output_g3', [], ExcelValue.by_value
@@ -4825,6 +4822,9 @@ module Model
   attach_function 'flows_n150', [], ExcelValue.by_value
   attach_function 'flows_p150', [], ExcelValue.by_value
   attach_function 'flows_s150', [], ExcelValue.by_value
+  attach_function 'flows_c151', [], ExcelValue.by_value
+  attach_function 'flows_d151', [], ExcelValue.by_value
+  attach_function 'flows_e151', [], ExcelValue.by_value
   attach_function 'flows_s151', [], ExcelValue.by_value
   attach_function 'flows_s152', [], ExcelValue.by_value
   attach_function 'flows_c158', [], ExcelValue.by_value
@@ -5115,6 +5115,9 @@ module Model
   attach_function 'flows_c301', [], ExcelValue.by_value
   attach_function 'flows_d301', [], ExcelValue.by_value
   attach_function 'flows_e301', [], ExcelValue.by_value
+  attach_function 'flows_c302', [], ExcelValue.by_value
+  attach_function 'flows_d302', [], ExcelValue.by_value
+  attach_function 'flows_e302', [], ExcelValue.by_value
   attach_function 'flows_c110', [], ExcelValue.by_value
   attach_function 'flows_c111', [], ExcelValue.by_value
   attach_function 'flows_e127', [], ExcelValue.by_value
@@ -5122,7 +5125,6 @@ module Model
   attach_function 'flows_e129', [], ExcelValue.by_value
   attach_function 'flows_e146', [], ExcelValue.by_value
   attach_function 'flows_e150', [], ExcelValue.by_value
-  attach_function 'flows_e151', [], ExcelValue.by_value
   attach_function 'flows_e152', [], ExcelValue.by_value
   attach_function 'flows_e153', [], ExcelValue.by_value
   attach_function 'flows_e154', [], ExcelValue.by_value
@@ -17558,6 +17560,9 @@ module Model
   # end of TRA.b
   # end of XVI.a
   # end of XVI.b
+  # end of AGL
+  # end of WST
+  # end of BIO.SUP
   # end of 2006
   # end of 2010
   # end of 2015

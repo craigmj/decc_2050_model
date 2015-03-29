@@ -47,7 +47,7 @@ class ModelResult < ModelUtilities
   def sankey_table
     s = [] 
     # CMJ141216 - Location correct, but a number of #N/A's in the spreadsheet. Will query.
-    (251..301).each do |row|
+    (251..302).each do |row|
       s << [r("flows_c#{row}"),r("flows_e#{row}"),r("flows_d#{row}")]
     end
     pathway[:sankey] = s
