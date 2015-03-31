@@ -193,6 +193,7 @@ class ModelResult < ModelUtilities
       ["Gas",49,51],  # +TOTAL CMJ141216
       ["Bioenergy",40,41], # +TOTAL CMJ141216
       ["Uranium",30,30],    # +TOTAL CMJ141216
+      ["Hydro", 34, 36], # +TOTAL CMJ150330 - based on Kent input
       #["Electricity",115,118], # +TOTAL AM140904
       ["Electricity",115,118], # +TOTAL CMJ141216
       ["Primary energy",231,230] # +TOTAL CMJ141216
