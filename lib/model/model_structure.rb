@@ -100,12 +100,12 @@ class ModelStructure < ModelUtilities
 
   def demand_choices
     # CMJ: Subset of choices that are demand
-    choices[20...choices.length]
+    choices[19...choices.length]
   end
   
   def supply_choices
     # CMJ: Subset of choices that are supply
-    choices[1..19]
+    choices[1..18]
   end
   
   def geosequestration_choice
